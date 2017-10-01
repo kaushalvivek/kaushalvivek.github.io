@@ -1,1 +1,0 @@
-window.location.href = "https://youtu.be/zry9454g9i4"
