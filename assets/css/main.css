@@ -318,6 +318,18 @@ body {
     height: 0;
 }
 
+.black {
+    color: #000;
+}
+
+.gray {
+    color: #a6a6a6;
+}
+
+.red {
+    color: #793d70;
+}
+
 .row.uniform>*> :first-child {
     margin-top: 0;
 }
