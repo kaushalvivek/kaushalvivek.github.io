@@ -68,6 +68,12 @@ h6 {
     left: 35%;
 }
 
+#stage {
+    top: 3%;
+    right: 80%;
+    left: 0%;
+}
+
 #instruction {
     top: 15%;
     right: 40%;

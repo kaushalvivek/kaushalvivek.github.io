@@ -7,7 +7,11 @@ var low_risk_req = [3, 3, 4, 3, 3, 3, 4, 3, 4, 4];
 var performance_score = [8, 5, 7, 9, 8, 8, 5, 7, 9, 4]
 var high_risk_co = ['Google Inc.', 'Amazon', 'Apple Inc.', 'Facebook Inc.', 'Microsoft'];
 var low_risk_co = ['Infosys', 'TCS', 'L&T Infotech', 'Accenture', 'Cognizant'];
-// ---------------------------------------------------------------------------------------------------
+var high_high = ['Your risk paid off. Enjoy the cash!',
+        'We are thoroughly impressed with your gut instincts.',
+        'Shooting for the stars, are you? Great Aim.'
+    ]
+    // ---------------------------------------------------------------------------------------------------
 
 // Variables 
 // ---------------------------------------------------------------------------------------------------
@@ -67,7 +71,9 @@ function generate() {
         $("#generator").hide();
         $('#main_title').hide();
         $('#score').hide();
+        $('#stage').hide();
         window.location.href = "https://goo.gl/forms/4qj1YDNmrWHvhfUy2";
+        return
     }
     if (state == 10 && chosen == 0) {
         send_data();
@@ -123,6 +129,8 @@ function generate() {
             $('#worth').removeClass('fadeOut');
             $('#worth').addClass('fadeIn');
             $('#worth').show();
+            $("#stage").addClass('fadeIn');
+            $('#stage').show();
         }, 2000
     )
     window.setTimeout(
@@ -152,6 +160,7 @@ function reset() {
 // ---------------------------------------------------------------------------------------------------
 function intro() {
     $("#job1").hide();
+    $("#stage").hide();
     $("#job2").hide();
     $("#worth").hide();
     $("#score").hide();
@@ -165,12 +174,14 @@ function intro() {
         function() {
             $("#job1").addClass('fadeIn');
             $("#job2").addClass('fadeIn');
+            $("#stage").addClass('fadeIn');
             $("#worth").addClass('fadeIn');
             $("#instruction").addClass('fadeIn');
             $("#generator").addClass('fadeIn');
             $("#job1").show();
             $("#job2").show();
             $("#worth").show();
+            $("#stage").show();
             $("#instruction").show();
             $("#generator").show();
             job_manager();
@@ -197,6 +208,7 @@ function job_manager() {
         $('#job2').html('Salary: $' + low_risk_sal[state] + ',000<br/><br/>Required Performance: ' + low_risk_req[state])
     }
     state += 1;
+    $("#stage").html('Stage: ' + state + "/10")
     reset();
 }
 // ---------------------------------------------------------------------------------------------------
@@ -244,7 +256,6 @@ function send_data() {
 
 // Function to Send Mail
 // ---------------------------------------------------------------------------------------------------
-
 function getData() {
     var data = {
         KEY: idkey,
