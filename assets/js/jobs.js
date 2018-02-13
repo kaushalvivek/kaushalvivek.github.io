@@ -7,11 +7,24 @@ var low_risk_req = [3, 3, 4, 3, 3, 3, 4, 3, 4, 4];
 var performance_score = [8, 5, 7, 9, 8, 8, 5, 7, 9, 4]
 var high_risk_co = ['Google Inc.', 'Amazon', 'Apple Inc.', 'Facebook Inc.', 'Microsoft'];
 var low_risk_co = ['Infosys', 'TCS', 'L&T Infotech', 'Accenture', 'Cognizant'];
-var high_high = ['Your risk paid off. Enjoy the cash!',
-        'We are thoroughly impressed with your gut instincts.',
-        'Shooting for the stars, are you? Great Aim.'
-    ]
-    // ---------------------------------------------------------------------------------------------------
+
+var high_good = ['Your risk paid off. Enjoy the cash!',
+    'We are thoroughly impressed with your gut instincts.',
+    'Your accuracy is uncanny, Great job.',
+    'Congratulations! You kept your job.',
+    'You survived the year! Well Done.'
+]
+var high_bad = ['Gut instincts do not always pay off. You\'re fired.',
+    'You are fired, sorry.',
+    'We like the way you take risks, but your employer doesn\'t, sorry. You\'re fired.',
+    'We see what you were trying to do, but it didn\'t work out. Fired.',
+    'Risks are good. Too much of risk is a differnt story. Fired, sorry.'
+]
+var low = ['Playing Safe, are we?'
+
+]
+
+// ---------------------------------------------------------------------------------------------------
 
 // Variables 
 // ---------------------------------------------------------------------------------------------------
@@ -37,7 +50,7 @@ function selected1() {
     responses.push(1);
     chosen = 1;
     if (high_risk_req[state - 1] > performance_score[state - 1]) {
-        net_worth -= 200;
+        net_worth -= 150;
     } else {
         net_worth += high_risk_sal[state - 1];
     }
