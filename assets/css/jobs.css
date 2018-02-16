@@ -74,6 +74,13 @@ h6 {
     left: 0%;
 }
 
+#highscore {
+    font-size: 22px;
+    top: 3%;
+    right: 0%;
+    left: 70%;
+}
+
 #instruction {
     top: 15%;
     right: 40%;

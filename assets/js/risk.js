@@ -9,7 +9,7 @@ function intro() {
         }, 2000)
     window.setTimeout(
         function() {
-            $("#main_title").html('Welcome to this Research Survey.')
+            $("#main_title").html('How good are you at taking decisions?')
             $("#main_title").removeClass('fadeOut')
         }, 2800)
     window.setTimeout(
