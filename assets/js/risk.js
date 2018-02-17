@@ -36,7 +36,7 @@ function temp() {
 
 function instruction() {
     $('#button_1').hide()
-    $('#instructions_p').html('There will be three rounds, with five stages in each round.<br /><br /> In each stage, you will be given two job options, you have to select one.<br /><br />Every job requires you to perform well, your performance will be rated every year.<br /><br />If your annual performance is below the company\'s requirement, you\'ll be fired.<br /><br /> Getting fired results in $100,000 being deducted from your net worth, so choose wisely. </br><br /> The goal is to be as rich as possible at the end of the rounds.')
+    $('#instructions_p').html('There will be three rounds, with five stages in each round.<br /><br /> In each stage, you will be given two job options, you have to select one.<br /><br />Every job requires you to perform well, your performance will be rated at the end of every stage.<br /><br />If your performance is below the company\'s requirement at the end of a stage, you\'ll be fired.<br /><br /> Getting fired results in $100,000 being deducted from your net worth, so choose wisely. </br><br /> The goal is to be as rich as possible at the end of the rounds.')
     $('#instructions').html('Remember these.')
     $('#main_title').addClass('fadeOut')
 
