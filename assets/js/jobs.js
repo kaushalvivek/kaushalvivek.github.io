@@ -8,7 +8,8 @@ var performance_score = [8, 5, 7, 9, 8, 8, 4, 7, 9, 4, 7, 6, 3, 8, 9]
 var high_risk_co = ['Google Inc.', 'Amazon', 'Apple Inc.', 'Facebook Inc.', 'Microsoft', 'Capgemini', 'HCL Technologies', 'Tech Mahindra', 'Wipro', 'Honeywell Co.'];
 var low_risk_co = ['Infosys', 'TCS', 'L&T Infotech', 'Accenture', 'Cognizant', 'Adobe', 'Intel', 'Uber', 'Samsung', 'Netflix'];
 
-var high_good = [1, 4, 5, 6, 9, 11, 14, 15];
+var url = 'https://script.google.com/macros/s/AKfycbzE1030v0R1CnEpxGatJ1aAKGL-Ixfvwk4nldj_PvQH3TAOy5iv/exec'
+var url_redundant = 'https://script.google.com/macros/s/AKfycbwWET5t7_fkC-ep8auARG0B1ua6jNcU7e1b4mEJUPiNbCcuRl0/exec'
 
 var high_high = ['Your risk paid off. Enjoy the cash!',
     'We are thoroughly impressed with your gut instincts.',
@@ -88,13 +89,14 @@ function selected2() {
 function generate() {
 
     if (state == 15 && chosen == 3) {
-        handle_send();
+        handle_send(url);
         animation1();
         $('#main_title').hide();
         window.location.href = "https://goo.gl/forms/4qj1YDNmrWHvhfUy2";
         return
     }
     if (state == 15 && chosen == 0) {
+        handle_send(url_redundant);
         send_data();
         return;
     } else if (state == 10 && chosen == 0) {
@@ -293,9 +295,8 @@ function getData() {
     return data;
 }
 
-function handle_send() {
+function handle_send(url) {
     var data = getData();
-    var url = "https://script.google.com/macros/s/AKfycbzE1030v0R1CnEpxGatJ1aAKGL-Ixfvwk4nldj_PvQH3TAOy5iv/exec";
     var xhr = new XMLHttpRequest();
     xhr.open('POST', url);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');

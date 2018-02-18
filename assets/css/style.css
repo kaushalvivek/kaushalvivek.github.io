@@ -70,8 +70,8 @@ h6 {
 #instructions_p {
     font-size: 18px;
     top: 16%;
-    right: 25%;
-    left: 25%;
+    right: 15%;
+    left: 15%;
 }
 
 
@@ -99,6 +99,7 @@ button {
 #button_2 {
     left: 47.5%;
     right: 47.5%;
+    top: 65%;
 }
 
 button:hover {
