@@ -1710,6 +1710,10 @@ hr.major {
     margin: 3rem 0;
 }
 
+hr.minor {
+    margin: 0.5rem 0;
+}
+
 .align-left {
     text-align: left;
 }
