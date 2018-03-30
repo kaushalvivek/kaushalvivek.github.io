@@ -35,7 +35,7 @@ mailchimp: vivekkaushal.us12.list-manage.com/subscribe/post?u=36ae92f84a7e3ee562
 analytics:  Google Analytics
 
 # Paginate
-paginate: 100
+paginate: 6
 paginate_path: /page:num/
 
 # Build settings
