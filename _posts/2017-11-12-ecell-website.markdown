@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title:  Entrepreneurship Cell Website
 date:   2017-11-12 10:40:20 +0530
 description: Official Website of the Entrepreneurship Cell, IIIT Hyderabad

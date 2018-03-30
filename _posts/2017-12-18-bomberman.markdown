@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title:  Bomberman - A Terminal based Game
 date:   2017-11-15 00:39:20 +0530
 description: An interactive terminal based python game.

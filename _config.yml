@@ -1,4 +1,4 @@
-title: My Blog - Vivek Kaushal
+title: Blog - Vivek Kaushal
 email: vivek.kaushal@outlook.com
 description: > # this means to ignore newlines until "baseurl:"
   This website is a blog, for all practical purposes.
@@ -29,7 +29,7 @@ instagram: vivekkaushal
 mailchimp: vivekkaushal.us12.list-manage.com/subscribe/post?u=36ae92f84a7e3ee5628d0bd73&amp;id=22ec77960c # Add your MailChimp form identifier.
 
 # Disqus
-discus_identifier: vivekkaushal1998 # Add your discus identifier
+discus_identifier: kaushalvivek-github-io.disqus.com # Add your discus identifier
 
 # Tracker
 analytics:  Google Analytics

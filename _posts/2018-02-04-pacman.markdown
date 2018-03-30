@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Pacman - A 2D Game
 date: 2018-02-04 16:11:20 +0530
 description: An OpenGL 2D Game coded in C for Grapics Coursework.

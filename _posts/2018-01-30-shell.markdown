@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title:  A Custom POSIX Shell
 date:   2018-01-13 01:39:20 +0530
 description: A POSIX based shell coded in C for Operating Systems Course.
