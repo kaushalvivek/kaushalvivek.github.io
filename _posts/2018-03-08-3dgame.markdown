@@ -1,0 +1,43 @@
+---
+layout: post
+title:  3D Game - OpenGL
+date:   2018-03-08 21:158:20 +0530
+description: A 3D Game using OpenGL in C.
+img: 3dgame.png # Add image post (optional)
+tags: [WorkSample, Code, Game]
+author: Vivek Kaushal
+---
+This was a course assignment for Graphics, in the Spring of 2018. A continuation of the previously posted 2D game, this is a 3D rendering coded in C using openGL.
+
+A classic boat manoeuvre game, with enemies to be shot with canons, gift boxes and rocks that act as hurdles.
+
+## Controls
+Following are the controls:
+### Movement
+```
+'W' to move forward.
+'A' to turn right.
+'D' to turn left.
+'S' to brake, or reverse.
+```
+### Camera
+```
+'R' for Follow Cam View.
+'T' for Top View.
+'Y' for Tower View.
+'U' for Boat view.
+```
+### Other Controls
+```
+'F' for shooting Canon.
+'B' for Boosting.
+'Space' for Jump.
+```
+
+### Installation Instructions
+> Install CMake and QT Creator, and then create a new project using the CMakeList.txt file.
+
+
+You can find the code for this game [here][github]{:target="_blank"}, it's an ongoing Open Source project, so feel free to contribute!
+
+[github]: https://github.com/kaushalvivek/OpenGL-3D

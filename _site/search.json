@@ -1,0 +1,67 @@
+[
+  
+    {
+      "title"    : "3D Game - OpenGL",
+      "category" : "",
+      "tags"     : "WorkSample, Code, Game",
+      "url"      : "/adam-blog/3dgame/",
+      "date"     : "2018-03-08 23:38:20 +0530"
+    } ,
+  
+    {
+      "title"    : "Can A Robot Play Better than You?",
+      "category" : "",
+      "tags"     : "Music, AI",
+      "url"      : "/adam-blog/shimon/",
+      "date"     : "2018-02-06 04:39:20 +0530"
+    } ,
+  
+    {
+      "title"    : "Pacman - A 2D Game",
+      "category" : "",
+      "tags"     : "WorkSample, Code, Game",
+      "url"      : "/adam-blog/pacman/",
+      "date"     : "2018-02-04 16:11:20 +0530"
+    } ,
+  
+    {
+      "title"    : "A Custom POSIX Shell",
+      "category" : "",
+      "tags"     : "WorkSample, Code",
+      "url"      : "/adam-blog/shell/",
+      "date"     : "2018-01-13 01:39:20 +0530"
+    } ,
+  
+    {
+      "title"    : "Google Script - An Upload Portal",
+      "category" : "",
+      "tags"     : "WorkSample, Code",
+      "url"      : "/adam-blog/google-script/",
+      "date"     : "2017-12-14 05:32:20 +0530"
+    } ,
+  
+    {
+      "title"    : "Bomberman - A Terminal based Game",
+      "category" : "",
+      "tags"     : "WorkSample, Game, Code",
+      "url"      : "/adam-blog/bomberman/",
+      "date"     : "2017-11-15 00:39:20 +0530"
+    } ,
+  
+    {
+      "title"    : "Entrepreneurship Cell Website",
+      "category" : "",
+      "tags"     : "WorkSample, Code",
+      "url"      : "/adam-blog/ecell-website/",
+      "date"     : "2017-11-12 10:40:20 +0530"
+    } ,
+  
+    {
+      "title"    : "Free Music For All",
+      "category" : "",
+      "tags"     : "WorkSample, Code",
+      "url"      : "/adam-blog/music-downloader/",
+      "date"     : "2017-10-05 05:13:20 +0530"
+    } 
+  
+]

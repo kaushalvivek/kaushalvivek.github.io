@@ -1,0 +1,50 @@
+title: My Blog - Vivek Kaushal
+email: vivek.kaushal@outlook.com
+description: > # this means to ignore newlines until "baseurl:"
+  This website is a blog, for all practical purposes.
+  It contains posts, thoughts, links, references that
+  I deem interesting and worth sharing. 
+  I'll try and write as much as possible.
+  Hope you find it a good read! 
+permalink: ':title/'
+baseurl: "/adam-blog" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Author settings
+author: Vivek Kaushal # add your name
+author-pic: face.jpg
+about-author: Hello, my name is Vivek Kaushal and I am a Micro-Economics Researcher, Tech-Enthusiast and a Musician who is currently an undergrad research student at the International Institute of Information Technology, Hyderabad.
+
+# Contact links
+email: vivek.kaushal@outlook.com
+phone: +91 8757251547
+website: vivekkaushal.com
+linkedin: vivekkaushal1998
+github: kaushalvivek # Add your Github handle
+twitter: dextronaut98 # Add your Twitter handle
+facebook: vivekkaushal1998
+instagram: vivekkaushal
+
+# Newsletter
+mailchimp: vivekkaushal.us12.list-manage.com/subscribe/post?u=36ae92f84a7e3ee5628d0bd73&amp;id=22ec77960c # Add your MailChimp form identifier.
+
+# Disqus
+discus_identifier: vivekkaushal1998 # Add your discus identifier
+
+# Tracker
+analytics:  Google Analytics
+
+# Paginate
+paginate: 100
+paginate_path: /page:num/
+
+# Build settings
+markdown: kramdown
+
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-sitemap
+
+include: [_pages]
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]

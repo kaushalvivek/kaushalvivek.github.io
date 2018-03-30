@@ -1,0 +1,18 @@
+---
+layout: post
+title:  Can A Robot Play Better than You?
+date:   2018-02-06 04:39:20 +0530
+description: Shimon is an AI Music Generator.
+img: shimon.jpg 
+tags: [Music, AI]
+author: Vivek Kaushal
+---
+
+We have a course on Artificial Intelligence here at IIIT, and the first class of the Spring Semester, Professor Paruchuri gave us examples of AI being implemented in different fields around the world. One that struck a chord with me (pun intended), was Shimon. An AI agent capable of creating music based on thousands of hours of musical data.
+
+[![Youtube Link](https://img.youtube.com/vi/l9OUbqWHOSk/0.jpg)](https://www.youtube.com/watch?v=l9OUbqWHOSk){:target="_blank"}
+
+It's been in development for some years, but this is the first time it has composed its own music. Once it had been fed the data it was able to use deep learning techniques to create two 30 second pieces of original music.
+The music sounds like a cross between Jazz and Classical, and is surprisigly soothing and rich.
+
+Click the image above for a video of Shimon's live performance.

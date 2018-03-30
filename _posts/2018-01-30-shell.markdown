@@ -1,0 +1,16 @@
+---
+layout: post
+title:  A Custom POSIX Shell
+date:   2018-01-13 01:39:20 +0530
+description: A POSIX based shell coded in C for Operating Systems Course.
+img: shell.jpg # Add image post (optional)
+tags: [WorkSample, Code]
+author: Vivek Kaushal
+---
+The coursework at IIIT has a wide range when it comes to how interesting you are going to find it. There are subjects and courses that seem like unnecessary rhetoric, while there are courses that blow you away with insights and kind of are the reason why people like me ventured into Computer Science to begin with.
+
+Operating Systems, in the Monsoon of 2017, was one such course. Aside from actually informing us on how systems work, it had a mini-project to code a shell in C from scratch based on POSIX architecture with implementation of system calls and hand-coded functioning of most common commands.
+
+You can find the code [at this link][github]{:target="_blank"}, it's open-source, feel free to use it. 
+
+[github]: https://github.com/kaushalvivek/Shell

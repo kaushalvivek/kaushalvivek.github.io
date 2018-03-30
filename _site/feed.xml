@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/adam-blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/adam-blog/" rel="alternate" type="text/html" /><updated>2018-03-30T18:38:48+05:30</updated><id>http://localhost:4000/adam-blog/</id><title type="html">My Blog - Vivek Kaushal</title><subtitle>This website is a blog, for all practical purposes. It contains posts, thoughts, links, references that I deem interesting and worth sharing.  I'll try and write as much as possible. Hope you find it a good read! 
+</subtitle><author><name>Vivek Kaushal</name></author><entry><title type="html">3D Game - OpenGL</title><link href="http://localhost:4000/adam-blog/3dgame/" rel="alternate" type="text/html" title="3D Game - OpenGL" /><published>2018-03-08T23:38:20+05:30</published><updated>2018-03-08T23:38:20+05:30</updated><id>http://localhost:4000/adam-blog/3dgame</id><content type="html" xml:base="http://localhost:4000/adam-blog/3dgame/">&lt;p&gt;This was a course assignment for Graphics, in the Spring of 2018. A continuation of the previously posted 2D game, this is a 3D rendering coded in C using openGL.&lt;/p&gt;
+
+&lt;p&gt;A classic boat manoeuvre game, with enemies to be shot with canons, gift boxes and rocks that act as hurdles.&lt;/p&gt;
+
+&lt;h2 id=&quot;controls&quot;&gt;Controls&lt;/h2&gt;
+&lt;p&gt;Following are the controls:&lt;/p&gt;
+&lt;h3 id=&quot;movement&quot;&gt;Movement&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;'W' to move forward.
+'A' to turn right.
+'D' to turn left.
+'S' to brake, or reverse.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;camera&quot;&gt;Camera&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;'R' for Follow Cam View.
+'T' for Top View.
+'Y' for Tower View.
+'U' for Boat view.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;other-controls&quot;&gt;Other Controls&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;'F' for shooting Canon.
+'B' for Boosting.
+'Space' for Jump.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;installation-instructions&quot;&gt;Installation Instructions&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Install CMake and QT Creator, and then create a new project using the CMakeList.txt file.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;You can find the code for this game &lt;a href=&quot;https://github.com/kaushalvivek/OpenGL-3D&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;, it’s an ongoing Open Source project, so feel free to contribute!&lt;/p&gt;</content><author><name>Vivek Kaushal</name></author><category term="WorkSample" /><category term="Code" /><category term="Game" /><summary type="html">This was a course assignment for Graphics, in the Spring of 2018. A continuation of the previously posted 2D game, this is a 3D rendering coded in C using openGL.</summary></entry><entry><title type="html">Can A Robot Play Better than You?</title><link href="http://localhost:4000/adam-blog/shimon/" rel="alternate" type="text/html" title="Can A Robot Play Better than You?" /><published>2018-02-06T04:39:20+05:30</published><updated>2018-02-06T04:39:20+05:30</updated><id>http://localhost:4000/adam-blog/shimon</id><content type="html" xml:base="http://localhost:4000/adam-blog/shimon/">&lt;p&gt;We have a course on Artificial Intelligence here at IIIT, and the first class of the Spring Semester, Professor Paruchuri gave us examples of AI being implemented in different fields around the world. One that struck a chord with me (pun intended), was Shimon. An AI agent capable of creating music based on thousands of hours of musical data.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=l9OUbqWHOSk&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://img.youtube.com/vi/l9OUbqWHOSk/0.jpg&quot; alt=&quot;Youtube Link&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It’s been in development for some years, but this is the first time it has composed its own music. Once it had been fed the data it was able to use deep learning techniques to create two 30 second pieces of original music.
+The music sounds like a cross between Jazz and Classical, and is surprisigly soothing and rich.&lt;/p&gt;
+
+&lt;p&gt;Click the image above for a video of Shimon’s live performance.&lt;/p&gt;</content><author><name>Vivek Kaushal</name></author><category term="Music" /><category term="AI" /><summary type="html">We have a course on Artificial Intelligence here at IIIT, and the first class of the Spring Semester, Professor Paruchuri gave us examples of AI being implemented in different fields around the world. One that struck a chord with me (pun intended), was Shimon. An AI agent capable of creating music based on thousands of hours of musical data.</summary></entry><entry><title type="html">Pacman - A 2D Game</title><link href="http://localhost:4000/adam-blog/pacman/" rel="alternate" type="text/html" title="Pacman - A 2D Game" /><published>2018-02-04T16:11:20+05:30</published><updated>2018-02-04T16:11:20+05:30</updated><id>http://localhost:4000/adam-blog/pacman</id><content type="html" xml:base="http://localhost:4000/adam-blog/pacman/">&lt;p&gt;Though I find the course redundant for someone who isn’t eventually going to venture into Computer Vision, I can’t deny that fact that Graphics’ assignments give a vague sense of achievement, creating games is fun.&lt;/p&gt;
+
+&lt;p&gt;This 2 dimensional game is a classic Pacman ball game with the objective of destroying incoming balls while staying away from procupines.&lt;/p&gt;
+
+&lt;h2 id=&quot;controls&quot;&gt;Controls&lt;/h2&gt;
+
+&lt;p&gt;-&lt;strong&gt;Movement :&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;‘Left’ for Moving Ball to Left&lt;/li&gt;
+  &lt;li&gt;‘Right’ for Moving Ball to Right&lt;/li&gt;
+  &lt;li&gt;‘Up’ for Moving Ball to Up&lt;/li&gt;
+  &lt;li&gt;‘Down’ for Moving Ball to Down&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;-&lt;strong&gt;Zoom and Pan :&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Scroll for Zoom&lt;/li&gt;
+  &lt;li&gt;‘W’ for pan Up&lt;/li&gt;
+  &lt;li&gt;‘S’ for pan Down&lt;/li&gt;
+  &lt;li&gt;‘A’ for pan Left&lt;/li&gt;
+  &lt;li&gt;‘D’ for pan Right&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;details&quot;&gt;Details&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Scoring and Health :&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;10 points for hitting a ball.&lt;/li&gt;
+  &lt;li&gt;Health decreases on touching the porcupine.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;compilation-and-running&quot;&gt;Compilation and Running&lt;/h2&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./compile.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;and then&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./first_test
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;to run the game.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;PS: This game with run on OS X only, as the compilation has been done keeping that in mind.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Click &lt;a href=&quot;https://github.com/kaushalvivek/PacMan&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt; to check the code out.&lt;/p&gt;</content><author><name>Vivek Kaushal</name></author><category term="WorkSample" /><category term="Code" /><category term="Game" /><summary type="html">Though I find the course redundant for someone who isn’t eventually going to venture into Computer Vision, I can’t deny that fact that Graphics’ assignments give a vague sense of achievement, creating games is fun.</summary></entry><entry><title type="html">A Custom POSIX Shell</title><link href="http://localhost:4000/adam-blog/shell/" rel="alternate" type="text/html" title="A Custom POSIX Shell" /><published>2018-01-13T01:39:20+05:30</published><updated>2018-01-13T01:39:20+05:30</updated><id>http://localhost:4000/adam-blog/shell</id><content type="html" xml:base="http://localhost:4000/adam-blog/shell/">&lt;p&gt;The coursework at IIIT has a wide range when it comes to how interesting you are going to find it. There are subjects and courses that seem like unnecessary rhetoric, while there are courses that blow you away with insights and kind of are the reason why people like me ventured into Computer Science to begin with.&lt;/p&gt;
+
+&lt;p&gt;Operating Systems, in the Monsoon of 2017, was one such course. Aside from actually informing us on how systems work, it had a mini-project to code a shell in C from scratch based on POSIX architecture with implementation of system calls and hand-coded functioning of most common commands.&lt;/p&gt;
+
+&lt;p&gt;You can find the code &lt;a href=&quot;https://github.com/kaushalvivek/Shell&quot; target=&quot;_blank&quot;&gt;at this link&lt;/a&gt;, it’s open-source, feel free to use it.&lt;/p&gt;</content><author><name>Vivek Kaushal</name></author><category term="WorkSample" /><category term="Code" /><summary type="html">The coursework at IIIT has a wide range when it comes to how interesting you are going to find it. There are subjects and courses that seem like unnecessary rhetoric, while there are courses that blow you away with insights and kind of are the reason why people like me ventured into Computer Science to begin with.</summary></entry><entry><title type="html">Google Script - An Upload Portal</title><link href="http://localhost:4000/adam-blog/google-script/" rel="alternate" type="text/html" title="Google Script - An Upload Portal" /><published>2017-12-14T05:32:20+05:30</published><updated>2017-12-14T05:32:20+05:30</updated><id>http://localhost:4000/adam-blog/google-script</id><content type="html" xml:base="http://localhost:4000/adam-blog/google-script/">&lt;p&gt;&lt;a href=&quot;http://www.megathon.tech&quot; target=&quot;_blank&quot;&gt;Megathon&lt;/a&gt; is an annual Hackaton that we, at E-Cell, organise. Being subtle, as I am, it gives me immense pleasure to tell you that it is one of the largest student-organised hackthon in India. Anyway, coming to the point, I headed the technical department of Megathon’17, and on the event day, a situation came up.&lt;/p&gt;
+
+&lt;p&gt;We were aware that we had more registrations than anticipated, but what we failed to see was the amount of time it was going to take to manually collect and evaluate the ideas. Hence, I was called upon to save the day (heroic music in the background), and I coded this portal in Google Script for uploads.&lt;/p&gt;
+
+&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Security&lt;/strong&gt;&lt;br /&gt;
+The upload is verified by a captcha to nullify bots and crawlers.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Customizability&lt;/strong&gt;&lt;br /&gt;
+The code is highly customisable to suit upload needs, one can specify upload size, format among other details.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Classification&lt;/strong&gt;&lt;br /&gt;
+Different files can be named differently as per requirements, here, there were five categories, so each upload is saved with a prefix for the category it belongs to.&lt;/p&gt;
+
+&lt;p&gt;Do check out the code &lt;a href=&quot;https://github.com/kaushalvivek/GSUploader&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;, it’s Open Source.&lt;/p&gt;</content><author><name>Vivek Kaushal</name></author><category term="WorkSample" /><category term="Code" /><summary type="html">Megathon is an annual Hackaton that we, at E-Cell, organise. Being subtle, as I am, it gives me immense pleasure to tell you that it is one of the largest student-organised hackthon in India. Anyway, coming to the point, I headed the technical department of Megathon’17, and on the event day, a situation came up.</summary></entry><entry><title type="html">Bomberman - A Terminal based Game</title><link href="http://localhost:4000/adam-blog/bomberman/" rel="alternate" type="text/html" title="Bomberman - A Terminal based Game" /><published>2017-11-15T00:39:20+05:30</published><updated>2017-11-15T00:39:20+05:30</updated><id>http://localhost:4000/adam-blog/bomberman</id><content type="html" xml:base="http://localhost:4000/adam-blog/bomberman/">&lt;h2 id=&quot;about-the-game&quot;&gt;About The Game&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Bomberman&lt;/strong&gt; (ボンバーマン Bonbāman, also known as Dyna Blaster in Europe) is a strategic, maze-based video game franchise originally developed by Hudson Soft and currently owned by &lt;strong&gt;&lt;em&gt;Konami&lt;/em&gt;&lt;/strong&gt;. The original game was published in 1983 and new games have been published at irregular intervals ever since. Today, Bomberman has featured in over 70 different games on numerous platforms.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;For more information click &lt;a href=&quot;https://en.wikipedia.org/wiki/Bomberman&quot; target=&quot;_blank&quot;&gt;here.&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;rules-of-the-game&quot;&gt;Rules of the Game&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;You control Bomberman throughout his efforts to climb the 50 floors of the underground labyrinth and reach the surface in order to become human. In order to do this, you must destroy every enemy. (Only a single level implemented in this rendition of the game.)&lt;/li&gt;
+    &lt;li&gt;Enemies are undergoing random walk, but &lt;em&gt;contact&lt;/em&gt; with them can kill your Bomberman.&lt;/li&gt;
+    &lt;li&gt;You have 3 lives for your Bomberman, getting killed 3 times will result in a &lt;strong&gt;GAME OVER&lt;/strong&gt;.&lt;/li&gt;
+    &lt;li&gt;The Bomberman can lay bombs that will kill enemies and destroy bricks in a limited range from where the bomb is planted, the walls remain unaffected.&lt;/li&gt;
+    &lt;li&gt;Destroying each bricks adds 10 points to the score, while killing each enemy adds 100 points.&lt;/li&gt;
+    &lt;li&gt;The game lasts for 120 seconds, you have to kill all enemies in that time or you lose.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;description-of-classes-created&quot;&gt;Description of Classes Created&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Board:&lt;/code&gt;&lt;br /&gt;
+The board class creates a 18x18 board for gameplay, with boundaries, walls and empty spaces. It also comprises of a getprint function to take a print of the board.&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;Bricks:&lt;/code&gt;&lt;br /&gt;
+The Brick class randomly adds 30 bricks to the board in empty spaces. It inherits the Board class. 
+&lt;code class=&quot;highlighter-rouge&quot;&gt;Bomberman:&lt;/code&gt;&lt;br /&gt;
+The Bomberman class has all the variables and functionality of Bomberman, this includes the generation, movement and bomb planting. This inherits Enemy and Bomb.&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;Bomb:&lt;/code&gt;&lt;br /&gt;
+The bomb class does not inherit any other class, it creates a bomb, keeps count of bombs and their positions, explosion, and then clears that explosion.&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;Enemy:&lt;/code&gt;&lt;br /&gt;
+The Enemy class inherits Bricks, and adds 4 enemies to the board, it manages the motion, deletion, generation and functionality of enemies.&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;Manage:&lt;/code&gt;&lt;br /&gt;
+Manage class manages score, printing, and the killing of Bomberman.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;how-to-play&quot;&gt;How To Play:&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Run the following code to start the game.
+      &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python3 run.py
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;Press enter to start the game.&lt;/li&gt;
+    &lt;li&gt;‘w, a, s, d’ use these controls for up, left, down, and right.&lt;/li&gt;
+    &lt;li&gt;use ‘b’ to plant a bomb.&lt;/li&gt;
+    &lt;li&gt;press ‘q’ to quit.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;reqiurements&quot;&gt;Reqiurements:&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Python3&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For mac:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;brew cask update
+sudo brew cask install python3
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;For Linux:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get update
+sudo apt-get install python3
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Download and play the game from &lt;a href=&quot;https://github.com/kaushalvivek/Bomberman&quot;&gt;here.&lt;/a&gt;&lt;/p&gt;</content><author><name>Vivek Kaushal</name></author><category term="WorkSample" /><category term="Game" /><category term="Code" /><summary type="html">About The Game</summary></entry><entry><title type="html">Entrepreneurship Cell Website</title><link href="http://localhost:4000/adam-blog/ecell-website/" rel="alternate" type="text/html" title="Entrepreneurship Cell Website" /><published>2017-11-12T10:40:20+05:30</published><updated>2017-11-12T10:40:20+05:30</updated><id>http://localhost:4000/adam-blog/ecell-website</id><content type="html" xml:base="http://localhost:4000/adam-blog/ecell-website/">&lt;p&gt;In the November of 2016, when I was first asked to work on a new website for the Entrepreneurship Cell, it was a challenging project. I had never created a complete website, equipped with a functional backend before, and spearheading a project like this one, while being in my first year was intimidating.&lt;/p&gt;
+
+&lt;p&gt;Though when we started working, things fell into place, and over the course of the Summers of 2017, we completed the webiste. Learning a lot about Django, the framework in which its deployed along the way. I presently head the Corporate Relations and Technological Front of the Entrepreneurship Cell at IIIT Hyderabad.&lt;/p&gt;
+
+&lt;p&gt;You can find the webiste &lt;a href=&quot;https://ecell.iiit.ac.in&quot; target=&quot;_blank&quot;&gt;here.&lt;/a&gt;, while the source code for the site is available openly &lt;a href=&quot;https://github.com/gokulbnr/E-Cell-Website&quot; target=&quot;_blank&quot;&gt;here.&lt;/a&gt;.&lt;/p&gt;
+
+&lt;!-- Declaring images
+![Yosh Ginsu](/adam-blog/assets/img/yosh-ginsu.jpg) --&gt;</content><author><name>Vivek Kaushal</name></author><category term="WorkSample" /><category term="Code" /><summary type="html">In the November of 2016, when I was first asked to work on a new website for the Entrepreneurship Cell, it was a challenging project. I had never created a complete website, equipped with a functional backend before, and spearheading a project like this one, while being in my first year was intimidating.</summary></entry><entry><title type="html">Free Music For All</title><link href="http://localhost:4000/adam-blog/music-downloader/" rel="alternate" type="text/html" title="Free Music For All" /><published>2017-10-05T05:13:20+05:30</published><updated>2017-10-05T05:13:20+05:30</updated><id>http://localhost:4000/adam-blog/music-downloader</id><content type="html" xml:base="http://localhost:4000/adam-blog/music-downloader/">&lt;p&gt;Before I bought a student subscription of Apple Music, Youtube was my primary source of music, as it is for a large percentage of the population, at least in my college. So I thought of this app, coded it in a caffine drenched night, and released it the next morning.&lt;/p&gt;
+
+&lt;p&gt;This application is a simple music downloader. You enter the name of an artist, the song you want to download, and it finds that song for you (scraping Youtube), downloads it and neatly stores it organised by Artists.&lt;/p&gt;
+
+&lt;p&gt;The reception was surprisingy nice. People liked it, so I added a few extra features, such as song suggestions for any artist and more customisability.&lt;/p&gt;
+
+&lt;p&gt;You can find the code for this application &lt;a href=&quot;https://github.com/kaushalvivek/Music-Downloader&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;, it’s an ongoing Open Source project, so feel free to contribute!&lt;/p&gt;</content><author><name>Vivek Kaushal</name></author><category term="WorkSample" /><category term="Code" /><summary type="html">Before I bought a student subscription of Apple Music, Youtube was my primary source of music, as it is for a large percentage of the population, at least in my college. So I thought of this app, coded it in a caffine drenched night, and released it the next morning.</summary></entry></feed>
