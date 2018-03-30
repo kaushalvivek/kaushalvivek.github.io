@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title> Instruction for Mac to run OpenGL </title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107718527-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-107718527-1');
+    </script>
+
+</head>
+
+<body>
+    <p>GLFW:<br /> - Install CMake<br /> - Obtain &amp; Extract the GLFW source code from<br /> <a href="https://github.com/glfw/glfw/archive/master.zip" target="_blank" rel="nofollow">https://github.com/glfw/glfw/archive/master.zip</a><br /> - Compile with
+        below commands<br /> $ cd glfw-master<br /> $ mkdir build<br /> $ cd build<br /> $ cmake -DBUILD_SHARED_LIBS=ON ..<br /> $ make &amp;&amp; sudo make install<br /><br />GLAD:<br /> - Go to <a href="http://glad.dav1d.de/" target="_blank" rel="nofollow">http://glad.dav1d.de</a><br
+        /> - Language: C/C++<br /> Specification: OpenGL<br /> gl: Version 4.5<br /> gles1: Version 1.0<br /> gles2: Version 3.2<br /> Profile: Core<br /> Select 'Add All' under extensions and click Generate.<br /> - Download the zip file generated.<br
+        /> - Copy contents of include/ folder in the downloaded directory <br /> to /usr/local/include/<br /> - src/glad.c should be always compiled along with your OpenGL <br /> code<br /><br />GLM:<br /> - Download the zip file from <a href="   https://github.com/g-truc/glm/releases/tag/0.9.7.2"> here </a><br
+        /> `` - Unzip it and copy the folder glm/glm/ to /usr/local/include<br /><br />copy glad.c to src of your project<br /><br />add #include for all the c,cpp files in the main file of your code.<br /><br />then run the following:<br /><br />g++
+        -o &lt;out_name&gt; main.cpp glad.c -framework OpenGL -lglfw -lglew</p>
+</body>
+
+</html>

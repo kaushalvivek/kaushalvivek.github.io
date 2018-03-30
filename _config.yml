@@ -7,8 +7,8 @@ description: > # this means to ignore newlines until "baseurl:"
   I'll try and write as much as possible.
   Hope you find it a good read! 
 permalink: ':title/'
-baseurl: "/adam-blog" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://kaushalvivek.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Author settings
 author: Vivek Kaushal # add your name
