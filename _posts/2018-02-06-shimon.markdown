@@ -5,7 +5,7 @@ title:  Can A Robot Play Better than You?
 date:   2018-02-06 04:39:20 +0530
 description: Shimon is an AI Music Generator.
 img: shimon.jpg 
-tags: [Music, AI]
+tags: [Article, Music, AI]
 author: Vivek Kaushal
 ---
 

@@ -2,10 +2,10 @@
 layout: post
 comments: true
 title:  Free Music For All
-date:   2017-10-05 5:13:20 +0530
+date:   2018-2-05 5:13:20 +0530
 description: Downloading music used to be easier. Hence, this.
 img: music-downloader.jpg # Add image post (optional)
-tags: [WorkSample, Code]
+tags: [Code, Music]
 author: Vivek Kaushal
 ---
 Before I bought a student subscription of Apple Music, Youtube was my primary source of music, as it is for a large percentage of the population, at least in my college. So I thought of this app, coded it in a caffine drenched night, and released it the next morning.

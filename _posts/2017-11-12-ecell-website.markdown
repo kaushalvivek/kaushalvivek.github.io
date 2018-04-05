@@ -5,7 +5,7 @@ title:  Entrepreneurship Cell Website
 date:   2017-11-12 10:40:20 +0530
 description: Official Website of the Entrepreneurship Cell, IIIT Hyderabad
 img: ecell.jpg
-tags: [WorkSample, Code]
+tags: [Code]
 author: Vivek Kaushal
 ---
 In the November of 2016, when I was first asked to work on a new website for the Entrepreneurship Cell, it was a challenging project. I had never created a complete website, equipped with a functional backend before, and spearheading a project like this one, while being in my first year was intimidating.

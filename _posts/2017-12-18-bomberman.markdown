@@ -6,7 +6,7 @@ date:   2017-11-15 00:39:20 +0530
 description: An interactive terminal based python game.
   Made with love, in a day, for procrastinated course deadlines.
 img: bomberman.jpg # Add image post (optional)
-tags: [WorkSample, Game, Code]
+tags: [Game, Code]
 author: Vivek Kaushal
 ---
 
