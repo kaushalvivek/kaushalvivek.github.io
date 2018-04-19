@@ -3,6 +3,16 @@ layout: default
 ---
 <div class="flex-container">
   {% include header.html %}
+
+  <div id="fb-root"></div>
+<!-- <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=218778225341794&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script> -->
+
   <article class="article-page">
     <div class="page-image">
       <div class="cover-image" style="background: url({{"/assets/img/" | prepend: site.baseurl | append : page.img}}) center no-repeat; background-size: cover;"></div>
@@ -33,6 +43,7 @@ layout: default
         {% include newsletter.html %}
         {% include advertisement.html %}
         {% include disqus.html %}
+        <!-- <div class="fb-comments" data-href="https://www.kaushalvivek.github.io" data-numposts="5"></div> -->
       </div>
     </div> <!-- End Wrapper -->
   </article>
