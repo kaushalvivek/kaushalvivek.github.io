@@ -5,7 +5,7 @@ title:  Why Bitcoin Failed Miserably
 date:   2018-05-08 01:47:20 +0530
 description: A Critical Analysis of Bitcoin
 img: bitcoin.jpg # Add image post (optional)
-tags: [Article]
+tags: [Article, Cryptocurrency]
 author: Vivek Kaushal
 ---
 
