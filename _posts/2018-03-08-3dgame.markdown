@@ -4,7 +4,7 @@ comments: true
 title:  3D Game - OpenGL
 date:   2018-03-08 21:18:20 +0530
 description: A 3D Game using OpenGL in C.
-img: 3dgame.png # Add image post (optional)
+image: /img/3dgame.png # Add image post (optional)
 tags: [Code, Game]
 author: Vivek Kaushal
 ---

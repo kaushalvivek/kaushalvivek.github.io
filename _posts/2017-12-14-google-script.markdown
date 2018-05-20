@@ -4,7 +4,7 @@ comments: true
 title: Google Script - An Upload Portal
 date: 2017-12-14 05:32:20 +0530
 description: A webapp coded in Google Script.
-img: google.jpg # Add image post (optional)
+image: /img/google.jpg # Add image post (optional)
 tags: [Code]
 author: Vivek Kaushal
 ---

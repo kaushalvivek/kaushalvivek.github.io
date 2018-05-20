@@ -4,7 +4,7 @@ comments: true
 title:  Why Bitcoin Failed Miserably
 date:   2018-05-08 01:47:20 +0530
 description: A Critical Analysis of Bitcoin
-img: bitcoin.jpg # Add image post (optional)
+image: /img/bitcoin.jpg # Add image post (optional)
 tags: [Article, Cryptocurrency]
 author: Vivek Kaushal
 ---
@@ -15,7 +15,7 @@ In the aftermath of the 2008 Global Economic Crisis, Bitcoin started as a novel 
 
 As of 2018, Bitcoin has miserably failed at achieving those goals. Despite a socialist vision, the implementation has been exceedingly capitalist. Bitcoin in the modern world is a lucrative venture that rides media-hype to yield quick earnings in a very speculative market. It’s a not a currency that has been mass adopted, it’s not suitable for retail or everyday transactions by the common consumer owing to the patchy implementation and structural issues of Blockchain. One can argue that the democratisation of data via Blockchain is to a significant extent worse than the established traditional capital.
 
-![Bitcoin]({{site.baseurl}}/assets/img/bitcoin-2.jpg)
+![Bitcoin]({{site.baseurl}}/img/bitcoin-2.jpg)
 
 Although Blockchain is coined the most disruptive technological development since the advent of the internet, it has its own set of issues. Bitcoin, based on the blockchain technology, borrows many of those issues. The major problems in the current implementation, usage and model of Bitcoin is illustrated in the following points.
 

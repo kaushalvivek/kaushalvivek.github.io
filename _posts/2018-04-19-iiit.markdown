@@ -4,7 +4,7 @@ comments: true
 title:  What is it Like to be at IIIT Hyderabad?
 date:   2018-04-19 15:47:20 +0530
 description: What is it Like to be at IIIT Hyderabad - A Quora Answer
-img: iiit.jpg # Add image post (optional)
+image: /img/iiit.jpg # Add image post (optional)
 tags: [Article, Quora]
 author: Vivek Kaushal
 ---

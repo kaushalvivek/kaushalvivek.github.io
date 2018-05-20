@@ -1,210 +1,569 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>QnA</title>
-	<meta name="description" content="">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta property="og:image" content="">
-	<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-touch-icon-114x114.png">
-	<!-- Chrome, Firefox OS and Opera -->
-	<meta name="theme-color" content="#311e3e">
-	<!-- Windows Phone -->
-	<meta name="msapplication-navbutton-color" content="#311e3e">
-	<!-- iOS Safari -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="#311e3e">
-	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
-	<!-- Styles -->
-	<link rel="stylesheet" href="/assets/css/main.css">
+  <!-- Beautiful Jekyll | MIT license | Copyright Dean Attali 2016 -->
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-	<link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon.ico/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon.ico/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon.ico/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon.ico/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon.ico/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon.ico/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon.ico/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon.ico/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon.ico/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicon.ico/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon.ico/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon.ico/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon.ico/favicon-16x16.png">
-	<link rel="manifest" href="/assets/favicon.ico/manifest.json">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="/assets/favicon.ico/ms-icon-144x144.png">
-	<meta name="theme-color" content="#ffffff">
+  <title>Vivek Kaushal - This website is a blog, for all practical purposes. It contains posts, thoughts, links, references that I deem interesting and worth sharing. I'll try and write as much as possible. Hope you find it a good read!</title>
+
+  <meta name="author" content="Vivek Kaushal" />
+
+  
+  <meta name="description" content="Technology | Travel | Economics | Music">
+  
+
+  <link rel="alternate" type="application/rss+xml" title="Vivek Kaushal - This website is a blog, for all practical purposes. It contains posts, thoughts, links, references that I deem interesting and worth sharing. I'll try and write as much as possible. Hope you find it a good read!" href="/feed.xml" />
+
+  
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','UA-107718527-1');</script>
+    <!-- End Google Tag Manager -->
+
+
+  
+    
+      
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" />
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    
+      <link rel="stylesheet" href="/css/bootstrap-social.css" />
+    
+      <link rel="stylesheet" href="/css/main.css" />
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+    
+  
+
+  
+
+  
+
+  
+
+    <!-- Facebook OpenGraph tags -->
+  
+
+  
+  <meta property="og:title" content="Vivek Kaushal" />
+  
+
+   
+  <meta property="og:description" content="Technology | Travel | Economics | Music">
+  
+
+
+  <meta property="og:type" content="website" />
+
+  
+  <meta property="og:url" content="http://localhost:4000/page2/" />
+  <link rel="canonical" href="http://localhost:4000/page2/" />
+  
+
+  
+  <meta property="og:image" content="http://localhost:4000/img/face.jpg" />
+  
+
+
+  <!-- Twitter summary cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@" />
+  <meta name="twitter:creator" content="@" />
+
+  
+  <meta name="twitter:title" content="Vivek Kaushal" />
+  
+
+  
+  <meta name="twitter:description" content="Technology | Travel | Economics | Music">
+  
+
+  
+  <meta name="twitter:image" content="http://localhost:4000/img/face.jpg" />
+  
+
+  
+
 </head>
 
-<body>
-  <div class="flex-container">
-  <header class="main-header">
-  <div class="wrapper">
-    <div class="header-flex">
-      <div class="menu-icon-container">
-        <span class="menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
-      </div>
-      <nav class="main-nav">
-        <span class="menu-icon-close"><i class="fa fa-times" aria-hidden="true"></i></span>
-        <ul>
-          <li><a href="/">Blog</a></li>
-          <li><a href="/about">About</a></li>
-        </ul>
-      </nav>
-      <p class="logo"><a href="/">Vivek Kaushal</a></p>
-      <div class="search-icon-container">
-        <span class="search-icon"><a><i class="fa fa-search" aria-hidden="true"></i></a></span>
-      </div>
+
+  <body>
+
+    
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=UA-107718527-1"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+  
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+        <a class="navbar-brand" href="http://localhost:4000">Vivek Kaushal</a>
+      
     </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+      
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/aboutme">About Me</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/Resume.pdf">Resume</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/tags">Topics</a>
+
+          </li>
+        
+        
+      </ul>
+    </div>
+
+	
+	<div class="avatar-container">
+	  <div class="avatar-img-border">
+	    <a href="http://localhost:4000 ">
+	      <img class="avatar-img" src="/img/face.jpg" />
+		</a>
+	  </div>
+	</div>
+	
+
   </div>
-</header> <!-- End Header -->
+</nav>
 
-  <div class="content wrapper">
-    <ol class="post-card-box clearfix">
-  
-  <li>
-    <div class="post-card">
-      <a href="/pacman/" class="post-card-image" style="background-image: url( /assets/img/pacman.png )">
-      </a>
 
-      <div class="post-card-body">
-        
-        <a href="/tags#Code" class="tag">|&#32;Code</a>
-        
-        <a href="/tags#Game" class="tag">|&#32;Game</a>
-        
-        <a href="/pacman/" class="post-card-link"><h3 class="post-card-title">Pacman - A 2D Game</h3></a>
-      </div>
-    </div>
-  </li>
-  
-  <li>
-    <div class="post-card">
-      <a href="/shell/" class="post-card-image" style="background-image: url( /assets/img/shell.jpg )">
-      </a>
+    <!-- TODO this file has become a mess, refactor it -->
 
-      <div class="post-card-body">
-        
-        <a href="/tags#Code" class="tag">|&#32;Code</a>
-        
-        <a href="/shell/" class="post-card-link"><h3 class="post-card-title">A Custom POSIX Shell</h3></a>
-      </div>
-    </div>
-  </li>
-  
-  <li>
-    <div class="post-card">
-      <a href="/google-script/" class="post-card-image" style="background-image: url( /assets/img/google.jpg )">
-      </a>
 
-      <div class="post-card-body">
-        
-        <a href="/tags#Code" class="tag">|&#32;Code</a>
-        
-        <a href="/google-script/" class="post-card-link"><h3 class="post-card-title">Google Script - An Upload Portal</h3></a>
-      </div>
-    </div>
-  </li>
-  
-  <li>
-    <div class="post-card">
-      <a href="/bomberman/" class="post-card-image" style="background-image: url( /assets/img/bomberman.jpg )">
-      </a>
 
-      <div class="post-card-body">
-        
-        <a href="/tags#Game" class="tag">|&#32;Game</a>
-        
-        <a href="/tags#Code" class="tag">|&#32;Code</a>
-        
-        <a href="/bomberman/" class="post-card-link"><h3 class="post-card-title">Bomberman - A Terminal based Game</h3></a>
-      </div>
-    </div>
-  </li>
-  
-  <li>
-    <div class="post-card">
-      <a href="/ecell-website/" class="post-card-image" style="background-image: url( /assets/img/ecell.jpg )">
-      </a>
 
-      <div class="post-card-body">
-        
-        <a href="/tags#Code" class="tag">|&#32;Code</a>
-        
-        <a href="/ecell-website/" class="post-card-link"><h3 class="post-card-title">Entrepreneurship Cell Website</h3></a>
-      </div>
-    </div>
-  </li>
-  
-</ol>
 
-  <div class="search-box">
-  <div class="wrapper">
-    <div class="search-grid">
-      <form class="search-form">
-        <div id="search-container">
-          <input type="text" id="search-input" class="search" placeholder="Search">
+<header class="header-section ">
+
+<div class="intro-header no-img">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="page-heading">
+          <h1>Vivek Kaushal</h1>
+		  
+		    
+            <hr class="small">
+            <span class="page-subheading">Technology | Travel | Economics | Music</span>
+			
+		  
+		  
+		  
         </div>
-      </form>
-      <ul id="results-container" class="results-search"></ul>
-      <div class="icon-close-container">
-        <span class="search-icon-close"><i class="fa fa-times" aria-hidden="true"></i></span>
       </div>
     </div>
   </div>
 </div>
+</header>
 
-  <div class="pagination clearfix">
+
+
+
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <div class="posts-list">
   
-    <a href="/" class="previous"><i class="fa fa-angle-left" aria-hidden="true"></i> Previous</a>
+  <article class="post-preview">
+    <a href="/2018-02-05-music-downloader/">
+	  <h2 class="post-title">Free Music For All</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on February 5, 2018
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/2018-02-05-music-downloader/">
+          <img src="/img/music-downloader.jpg">
+        </a>
+      </div>
+      
+      <div class="post-entry">
+        Before I bought a student subscription of Apple Music, Youtube was my primary source of music, as it is for a large percentage of the population, at least in my college. So I thought of this app, coded it in a caffine drenched night, and released it the next morning....
+        
+        
+          <a href="/2018-02-05-music-downloader/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/tags#Code">Code</a>
+      
+      <a href="/tags#Music">Music</a>
+      
+      
+    </div>
+    
+
+   </article>
   
+  <article class="post-preview">
+    <a href="/2018-02-04-pacman/">
+	  <h2 class="post-title">Pacman - A 2D Game</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on February 4, 2018
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/2018-02-04-pacman/">
+          <img src="/img/pacman.png">
+        </a>
+      </div>
+      
+      <div class="post-entry">
+        Though I find the course redundant for someone who isn’t eventually going to venture into Computer Vision, I can’t deny that fact that Graphics’ assignments give a vague sense of achievement, creating games is fun.
+
+
+        
+        
+          <a href="/2018-02-04-pacman/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/tags#Code">Code</a>
+      
+      <a href="/tags#Game">Game</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/2018-01-13-shell/">
+	  <h2 class="post-title">A Custom POSIX Shell</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on January 13, 2018
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/2018-01-13-shell/">
+          <img src="/img/shell.jpg">
+        </a>
+      </div>
+      
+      <div class="post-entry">
+        The coursework at IIIT has a wide range when it comes to how interesting you are going to find it. There are subjects and courses that seem like unnecessary rhetoric, while there are courses that blow you away with insights and kind of are the reason why people like me...
+        
+        
+          <a href="/2018-01-13-shell/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/tags#Code">Code</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/2017-12-14-google-script/">
+	  <h2 class="post-title">Google Script - An Upload Portal</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on December 14, 2017
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/2017-12-14-google-script/">
+          <img src="/img/google.jpg">
+        </a>
+      </div>
+      
+      <div class="post-entry">
+        Megathon is an annual Hackaton that we, at E-Cell, organise. Being subtle, as I am, it gives me immense pleasure to tell you that it is one of the largest student-organised hackthon in India. Anyway, coming to the point, I headed the technical department of Megathon’17, and on the event...
+        
+        
+          <a href="/2017-12-14-google-script/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/tags#Code">Code</a>
+      
+      
+    </div>
+    
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/2017-11-15-bomberman/">
+	  <h2 class="post-title">Bomberman - A Terminal based Game</h2>
+
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on November 15, 2017
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/2017-11-15-bomberman/">
+          <img src="/img/bomberman.jpg">
+        </a>
+      </div>
+      
+      <div class="post-entry">
+        About The Game
+
+
+        
+        
+          <a href="/2017-11-15-bomberman/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>
+    </div>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/tags#Game">Game</a>
+      
+      <a href="/tags#Code">Code</a>
+      
+      
+    </div>
+    
+
+   </article>
   
 </div>
 
-  </div> <!-- End Wrapper -->
-  <footer class="main-footer">
-  <div class="copyright">
-    <p>2018 &copy; Vivek Kaushal</p>
+
+<ul class="pager main-pager">
+  
+  <li class="previous">
+    <a href="/">&larr; Newer Posts</a>
+  </li>
+  
+  
+  <li class="next">
+    <a href="/page3">Older Posts &rarr;</a>
+  </li>
+  
+</ul>
+
+
+	    
+    </div>
   </div>
-</footer> <!-- End Footer -->
-
 </div>
 
-  <!-- JS -->
-<script src="/assets/js/jquery-3.2.1.min.js"></script>
-<script src="/assets/js/jekyll-search.js"></script>
-<script>
-  SimpleJekyllSearch({
-    searchInput: document.getElementById('search-input'),
-    resultsContainer: document.getElementById('results-container'),
-    json: '/search.json',
-    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
-    noResultsText: 'No results found',
-    fuzzy: false,
-    exclude: ['Welcome']
-  });
-</script>
-<script src="/assets/js/main.js"></script>
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107718527-1">
-</script>
-<script>
-    window.dataLayer = window.dataLayer || [];
+    <footer>
+  <div class="container beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links"><li><a href="mailto:vivek.kaushal@outlook.com" title="Email me"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">Email me</span>
+              </a>
+            </li><li><a href="https://www.facebook.com/vivekkaushal1998" title="Facebook"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">Facebook</span>
+              </a>
+            </li><li><a href="https://github.com/kaushalvivek" title="GitHub"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">GitHub</span>
+              </a>
+            </li><li><a href="https://linkedin.com/in/vivekkaushal1998" title="LinkedIn"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">LinkedIn</span>
+              </a>
+            </li><li><a href="https://www.instagram.com/vivekkaushal" title="Instagram"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">Instagram</span>
+              </a>
+            </li></ul>
+      <p class="copyright text-muted">
+      Vivek Kaushal
+      &nbsp;&bull;&nbsp;
+      2018
 
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
+      
+      &nbsp;&bull;&nbsp;
+      <a href="http://localhost:4000">vivekkaushal.com</a>
+      
 
-    gtag('config', 'UA-107718527-1');
-</script>
-</body>
+      
+      </p>
+          <!-- Please don't remove this, keep my open source work credited :) -->
+    <p class="theme-by text-muted">
+      Theme by
+      <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
+    </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+    
+
+
+
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script>
+      	if (typeof jQuery == 'undefined') {
+      	  document.write('<script src="/js/jquery-1.11.2.min.js"></scr' + 'ipt>');
+      	}
+      </script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/bootstrap.min.js"></script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/main.js"></script>
+    
+  
+
+
+
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-107718527-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytics -->
+
+
+  
+  </body>
 </html>

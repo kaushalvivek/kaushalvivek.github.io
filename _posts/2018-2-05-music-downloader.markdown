@@ -4,7 +4,7 @@ comments: true
 title:  Free Music For All
 date:   2018-2-05 5:13:20 +0530
 description: Downloading music used to be easier. Hence, this.
-img: music-downloader.jpg # Add image post (optional)
+image: /img/music-downloader.jpg # Add image post (optional)
 tags: [Code, Music]
 author: Vivek Kaushal
 ---
