@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Bomberman - A Terminal based Game</title>
+  <title>Entrepreneurship Cell Website</title>
 
   <meta name="author" content="Vivek Kaushal" />
 
@@ -60,19 +60,19 @@
   
 
   
-  <meta property="og:title" content="Bomberman - A Terminal based Game" />
+  <meta property="og:title" content="Entrepreneurship Cell Website" />
   
 
    
-  <meta property="og:description" content="About The Game Bomberman (ボンバーマン Bonbāman, also known as Dyna Blaster in Europe) is a strategic, maze-based video game franchise originally developed by Hudson Soft and currently owned by Konami. The original game was published in 1983 and new games have been published at irregular intervals ever since. Today, Bomberman...">
+  <meta property="og:description" content="In the November of 2016, when I was first asked to work on a new website for the Entrepreneurship Cell, it was a challenging project. I had never created a complete website, equipped with a functional backend before, and spearheading a project like this one, while being in my first...">
   
 
 
   <meta property="og:type" content="website" />
 
   
-  <meta property="og:url" content="http://localhost:4000/2017-11-15-bomberman/" />
-  <link rel="canonical" href="http://localhost:4000/2017-11-15-bomberman/" />
+  <meta property="og:url" content="http://localhost:4000/2017-11-11-ecell-website/" />
+  <link rel="canonical" href="http://localhost:4000/2017-11-11-ecell-website/" />
   
 
   
@@ -86,11 +86,11 @@
   <meta name="twitter:creator" content="@" />
 
   
-  <meta name="twitter:title" content="Bomberman - A Terminal based Game" />
+  <meta name="twitter:title" content="Entrepreneurship Cell Website" />
   
 
   
-  <meta name="twitter:description" content="About The Game Bomberman (ボンバーマン Bonbāman, also known as Dyna Blaster in Europe) is a strategic, maze-based video game franchise originally developed by Hudson Soft and currently owned by Konami. The original game was published in 1983 and new games have been published at irregular intervals ever since. Today, Bomberman...">
+  <meta name="twitter:description" content="In the November of 2016, when I was first asked to work on a new website for the Entrepreneurship Cell, it was a challenging project. I had never created a complete website, equipped with a functional backend before, and spearheading a project like this one, while being in my first...">
   
 
   
@@ -194,7 +194,7 @@
 	<div class="avatar-container">
 	  <div class="avatar-img-border">
 	    <a href="http://localhost:4000">
-	      <img class="avatar-img" src="/img/bomberman.jpg" />
+	      <img class="avatar-img" src="/img/ecell.jpg" />
 		</a>
 	  </div>
 	</div>
@@ -217,11 +217,11 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div class="post-heading">
-          <h1>Bomberman - A Terminal based Game</h1>
+          <h1>Entrepreneurship Cell Website</h1>
 		  
 		  
 		  
-		  <span class="post-meta">Posted on November 15, 2017</span>
+		  <span class="post-meta">Posted on November 11, 2017</span>
 		  
         </div>
       </div>
@@ -240,83 +240,14 @@
       
 
       <article role="main" class="blog-post">
-        <h2 id="about-the-game">About The Game</h2>
+        <p>In the November of 2016, when I was first asked to work on a new website for the Entrepreneurship Cell, it was a challenging project. I had never created a complete website, equipped with a functional backend before, and spearheading a project like this one, while being in my first year was intimidating.</p>
 
-<blockquote>
-  <p><strong>Bomberman</strong> (ボンバーマン Bonbāman, also known as Dyna Blaster in Europe) is a strategic, maze-based video game franchise originally developed by Hudson Soft and currently owned by <strong><em>Konami</em></strong>. The original game was published in 1983 and new games have been published at irregular intervals ever since. Today, Bomberman has featured in over 70 different games on numerous platforms.</p>
-</blockquote>
+<p>Though when we started working, things fell into place, and over the course of the Summers of 2017, we completed the webiste. Learning a lot about Django, the framework in which its deployed along the way. I presently head the Corporate Relations and Technological Front of the Entrepreneurship Cell at IIIT Hyderabad.</p>
 
-<p>For more information click <a href="https://en.wikipedia.org/wiki/Bomberman" target="_blank">here.</a></p>
+<p>You can find the webiste <a href="https://ecell.iiit.ac.in" target="_blank">here.</a>, while the source code for the site is available openly <a href="https://github.com/gokulbnr/E-Cell-Website" target="_blank">here.</a>.</p>
 
-<hr />
-
-<h2 id="rules-of-the-game">Rules of the Game</h2>
-
-<blockquote>
-  <ul>
-    <li>You control Bomberman throughout his efforts to climb the 50 floors of the underground labyrinth and reach the surface in order to become human. In order to do this, you must destroy every enemy. (Only a single level implemented in this rendition of the game.)</li>
-    <li>Enemies are undergoing random walk, but <em>contact</em> with them can kill your Bomberman.</li>
-    <li>You have 3 lives for your Bomberman, getting killed 3 times will result in a <strong>GAME OVER</strong>.</li>
-    <li>The Bomberman can lay bombs that will kill enemies and destroy bricks in a limited range from where the bomb is planted, the walls remain unaffected.</li>
-    <li>Destroying each bricks adds 10 points to the score, while killing each enemy adds 100 points.</li>
-    <li>The game lasts for 120 seconds, you have to kill all enemies in that time or you lose.</li>
-  </ul>
-</blockquote>
-
-<hr />
-
-<h2 id="description-of-classes-created">Description of Classes Created</h2>
-<p><code class="highlighter-rouge">Board:</code><br />
-The board class creates a 18x18 board for gameplay, with boundaries, walls and empty spaces. It also comprises of a getprint function to take a print of the board.<br />
-<code class="highlighter-rouge">Bricks:</code><br />
-The Brick class randomly adds 30 bricks to the board in empty spaces. It inherits the Board class. 
-<code class="highlighter-rouge">Bomberman:</code><br />
-The Bomberman class has all the variables and functionality of Bomberman, this includes the generation, movement and bomb planting. This inherits Enemy and Bomb.<br />
-<code class="highlighter-rouge">Bomb:</code><br />
-The bomb class does not inherit any other class, it creates a bomb, keeps count of bombs and their positions, explosion, and then clears that explosion.<br />
-<code class="highlighter-rouge">Enemy:</code><br />
-The Enemy class inherits Bricks, and adds 4 enemies to the board, it manages the motion, deletion, generation and functionality of enemies.<br />
-<code class="highlighter-rouge">Manage:</code><br />
-Manage class manages score, printing, and the killing of Bomberman.</p>
-
-<hr />
-
-<h2 id="how-to-play">How To Play:</h2>
-<blockquote>
-  <ul>
-    <li>Run the following code to start the game.
-      <div class="highlighter-rouge"><pre class="highlight"><code>python3 run.py
-</code></pre>
-      </div>
-    </li>
-    <li>Press enter to start the game.</li>
-    <li>‘w, a, s, d’ use these controls for up, left, down, and right.</li>
-    <li>use ‘b’ to plant a bomb.</li>
-    <li>press ‘q’ to quit.</li>
-  </ul>
-</blockquote>
-
-<hr />
-
-<h2 id="reqiurements">Reqiurements:</h2>
-<ul>
-  <li>Python3</li>
-</ul>
-
-<p>For mac:</p>
-<div class="highlighter-rouge"><pre class="highlight"><code>brew cask update
-sudo brew cask install python3
-</code></pre>
-</div>
-<p>For Linux:</p>
-<div class="highlighter-rouge"><pre class="highlight"><code>sudo apt-get update
-sudo apt-get install python3
-</code></pre>
-</div>
-<hr />
-
-<p>Download and play the game from <a href="https://github.com/kaushalvivek/Bomberman">here.</a></p>
-
+<!-- Declaring images
+![Yosh Ginsu](/assets/img/yosh-ginsu.jpg) -->
 
       </article>
 
@@ -324,8 +255,6 @@ sudo apt-get install python3
         <div class="blog-tags">
           Tags:
           
-          
-            <a href="/tags#Game">Game</a>
           
             <a href="/tags#Code">Code</a>
           
@@ -344,7 +273,7 @@ sudo apt-get install python3
 
   
   <!--- Share on Twitter -->
-    <a href="https://twitter.com/intent/tweet?text=Bomberman+-+A+Terminal+based+Game+http://localhost:4000/2017-11-15-bomberman/"
+    <a href="https://twitter.com/intent/tweet?text=Entrepreneurship+Cell+Website+http://localhost:4000/2017-11-11-ecell-website/"
       class="btn btn-social-icon btn-twitter" title="Share on Twitter">
       <span class="fa fa-fw fa-twitter" aria-hidden="true"></span>
       <span class="sr-only">Twitter</span>
@@ -353,7 +282,7 @@ sudo apt-get install python3
 
   
   <!--- Share on Facebook -->
-    <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/2017-11-15-bomberman/"
+    <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/2017-11-11-ecell-website/"
       class="btn btn-social-icon btn-facebook" title="Share on Facebook">
       <span class="fa fa-fw fa-facebook" aria-hidden="true"></span>
       <span class="sr-only">Facebook</span>
@@ -364,7 +293,7 @@ sudo apt-get install python3
 
   
   <!--- Share on LinkedIn -->
-    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/2017-11-15-bomberman/"
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/2017-11-11-ecell-website/"
       class="btn btn-social-icon btn-linkedin" title="Share on LinkedIn">
       <span class="fa fa-fw fa-linkedin" aria-hidden="true"></span>
       <span class="sr-only">LinkedIn</span>
@@ -379,13 +308,9 @@ sudo apt-get install python3
 
       <ul class="pager blog-pager">
         
-        <li class="previous">
-          <a href="/2017-11-12-ecell-website/" data-toggle="tooltip" data-placement="top" title="Entrepreneurship Cell Website">&larr; Previous Post</a>
-        </li>
-        
         
         <li class="next">
-          <a href="/2017-12-14-google-script/" data-toggle="tooltip" data-placement="top" title="Google Script - An Upload Portal">Next Post &rarr;</a>
+          <a href="/2017-11-14-bomberman/" data-toggle="tooltip" data-placement="top" title="Bomberman - A Terminal based Game">Next Post &rarr;</a>
         </li>
         
       </ul>

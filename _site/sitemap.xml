@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/2017-11-12-ecell-website/</loc>
+<loc>http://localhost:4000/2017-11-11-ecell-website/</loc>
 <lastmod>2017-11-11T21:10:20-08:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/2017-11-15-bomberman/</loc>
+<loc>http://localhost:4000/2017-11-14-bomberman/</loc>
 <lastmod>2017-11-14T11:09:20-08:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/2017-12-14-google-script/</loc>
+<loc>http://localhost:4000/2017-12-13-google-script/</loc>
 <lastmod>2017-12-13T16:02:20-08:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/2018-01-13-shell/</loc>
+<loc>http://localhost:4000/2018-01-12-shell/</loc>
 <lastmod>2018-01-12T12:09:20-08:00</lastmod>
 </url>
 <url>
@@ -21,11 +21,11 @@
 <lastmod>2018-02-04T02:41:20-08:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/2018-02-05-music-downloader/</loc>
+<loc>http://localhost:4000/2018-02-04-music-downloader/</loc>
 <lastmod>2018-02-04T15:43:20-08:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/2018-02-06-shimon/</loc>
+<loc>http://localhost:4000/2018-02-05-shimon/</loc>
 <lastmod>2018-02-05T15:09:20-08:00</lastmod>
 </url>
 <url>
@@ -41,7 +41,7 @@
 <lastmod>2018-04-19T03:17:20-07:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/2018-05-08-bitcoin-failure/</loc>
+<loc>http://localhost:4000/2018-05-07-bitcoin-failure/</loc>
 <lastmod>2018-05-07T13:17:20-07:00</lastmod>
 </url>
 <url>
@@ -62,5 +62,9 @@
 <url>
 <loc>http://localhost:4000/Resume.pdf</loc>
 <lastmod>2018-05-20T04:22:25-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/neha/neha.html</loc>
+<lastmod>2018-06-01T19:19:51-07:00</lastmod>
 </url>
 </urlset>
