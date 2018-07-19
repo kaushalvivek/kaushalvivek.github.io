@@ -49,6 +49,10 @@
 <lastmod>2018-06-03T01:17:20-07:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/2018-07-18-britain/</loc>
+<lastmod>2018-07-18T13:09:20-07:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/aboutme/</loc>
 </url>
 <url>
@@ -66,9 +70,5 @@
 <url>
 <loc>http://localhost:4000/Resume.pdf</loc>
 <lastmod>2018-05-20T04:22:25-07:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/neha/neha.html</loc>
-<lastmod>2018-06-01T19:24:33-07:00</lastmod>
 </url>
 </urlset>

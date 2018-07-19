@@ -7,6 +7,17 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>10 Takeaways from the UK</title>
+        <description>
+          
+          A generation has grown up with ‘Wanderlust’ posters on their wall, ‘Carpe Diem’ wallpapers and a shallow love for YOLO. I am no exception. So when the opportunity presented itself to publish a paper in a summer conference at the University of York, I put my heart and soul into...
+        </description>
+        <pubDate>Wed, 18 Jul 2018 13:09:20 -0700</pubDate>
+        <link>http://localhost:4000/2018-07-18-britain/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018-07-18-britain/</guid>
+      </item>
+    
+      <item>
         <title>Subtle Art of De-MOSS-ing</title>
         <description>
           
