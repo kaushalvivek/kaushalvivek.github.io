@@ -1,13 +1,7 @@
 ---
 layout: page
 title: About Me
-subtitle: Hello.
+subtitle: Under Maintenance
 ---
 
-<center>
-<img src="/img/vk.jpg"/>
-</center>
-
-My name is Vivek Kaushal and that's me posing casually and being all touristy. I am a **neuroeconomics researcher** and a **hobbyist developer**. Currently, an undergraduate research student at the *International Institute of Information Technology, Hyderabad.*
-
-I enjoy good food, good music and good company, and look forwards to new projects and opportunities in research and other areas, you can find my resume [here.]({{site.baseurl}}/Resume.pdf)
+This page will be updated before 06:00 IST, 8th October, 2018
