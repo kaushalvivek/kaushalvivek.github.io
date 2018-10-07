@@ -1,0 +1,55 @@
+---
+layout: post
+comments: true
+title: What Technolo
+date: 2018-02-04 16:11:20 +0530
+description: An OpenGL 2D Game coded in C for Grapics Coursework.
+image: /img/pacman.png
+tags: [Code, Game]
+author: Vivek Kaushal
+---
+
+Though I find the course redundant for someone who isn't eventually going to venture into Computer Vision, I can't deny that fact that Graphics' assignments give a vague sense of achievement, creating games is fun.
+
+This 2 dimensional game is a classic Pacman ball game with the objective of destroying incoming balls while staying away from procupines.
+
+Controls
+----------
+
+-**Movement :**
+- 'Left' for Moving Ball to Left
+- 'Right' for Moving Ball to Right
+- 'Up' for Moving Ball to Up
+- 'Down' for Moving Ball to Down
+
+-**Zoom and Pan :**
+- Scroll for Zoom
+- 'W' for pan Up
+- 'S' for pan Down
+- 'A' for pan Left
+- 'D' for pan Right
+
+Details
+--------
+
+- **Scoring and Health :**
+- 10 points for hitting a ball.
+- Health decreases on touching the porcupine.
+
+
+Compilation and Running
+------------------------------
+```
+./compile.sh
+```
+and then
+```
+./first_test
+```
+to run the game.
+
+_PS: This game with run on OS X only, as the compilation has been done keeping that in mind._
+
+Click [here][github]{:target="_blank"} to check the code out.
+
+[github]: https://github.com/kaushalvivek/PacMan
