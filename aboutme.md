@@ -34,7 +34,7 @@ Travel brings you closer to yourself. It's simple really, when you've met enough
 <img src="{{site.baseurl}}/img/severance.jpg">
 </center>
 
-This here, is Dr.Charles Severance. I met him recently at a conference, and he represents, better than anyone else, how technology can empower people. Dr.Severance has written books, designed courses and tutorials that have taught more people on this planet how to code, than possibly anyone else. And here he is, casually making fun of my iPhone SE's camera for being crappy, after he told me how he plans on changing the education system in middle schools.
+This here, is Dr.Charles Severance. I met him recently at a conference, and he represents, better than anyone else, how technology can empower people. Dr.Severance has written books, designed courses and tutorials that have taught more people on this planet how to code, than possibly anyone else. And here he is, casually poking humour at small iPhones and making fun of my iPhone SE's camera for being crappy, after he told me how he plans on changing the education system in middle schools.
 
 ### Gym
 <center>
