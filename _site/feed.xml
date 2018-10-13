@@ -3,8 +3,8 @@
   <channel>
     <title>Vivek Kaushal</title>
     <description>This website is a blog, for all practical purposes. It contains posts, thoughts, links, references that I deem interesting and worth sharing. I'll try and write as much as possible. Hope you find it a good read!</description>
-    <link>http://localhost:4000</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <link>http://www.vivekkaushal.com</link>
+    <atom:link href="http://www.vivekkaushal.com/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
         <title>10 Takeaways from the UK</title>
@@ -13,8 +13,8 @@
           A generation has grown up with ‘Wanderlust’ posters on their wall, ‘Carpe Diem’ wallpapers and a shallow love for YOLO. I am no exception. So when the opportunity presented itself to publish a paper in a summer conference at the University of York, I put my heart and soul into...
         </description>
         <pubDate>Wed, 18 Jul 2018 13:09:20 -0700</pubDate>
-        <link>http://localhost:4000/2018-07-18-britain/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018-07-18-britain/</guid>
+        <link>http://www.vivekkaushal.com/2018-07-18-britain/</link>
+        <guid isPermaLink="true">http://www.vivekkaushal.com/2018-07-18-britain/</guid>
       </item>
     
       <item>
@@ -24,8 +24,8 @@
           Ever since it’s introduction in 1994, Stanford’s MOSS, or Measure of Software Similarity, has been an integral part of programming classes worldwide to detect plagiarism in coding assignments. It’s an effective measure, a good system, but, it’s not perfect. Stanford’s MOSS is beatable. In this article, I aim to accumulate...
         </description>
         <pubDate>Sun, 03 Jun 2018 01:17:20 -0700</pubDate>
-        <link>http://localhost:4000/2018-06-03-subtle-art-of-demossing/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018-06-03-subtle-art-of-demossing/</guid>
+        <link>http://www.vivekkaushal.com/2018-06-03-subtle-art-of-demossing/</link>
+        <guid isPermaLink="true">http://www.vivekkaushal.com/2018-06-03-subtle-art-of-demossing/</guid>
       </item>
     
       <item>
@@ -35,8 +35,8 @@
           In the aftermath of the 2008 Global Economic Crisis, Bitcoin started as a novel idea, to setup a new financial ecosystem that eliminates middlemen and gives transaction powers directly into the hands of the masses. Anonymous, instantaneous transactions with universal acceptability were the goals of Bitcoin. As of 2018, Bitcoin...
         </description>
         <pubDate>Mon, 07 May 2018 13:17:20 -0700</pubDate>
-        <link>http://localhost:4000/2018-05-07-bitcoin-failure/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018-05-07-bitcoin-failure/</guid>
+        <link>http://www.vivekkaushal.com/2018-05-07-bitcoin-failure/</link>
+        <guid isPermaLink="true">http://www.vivekkaushal.com/2018-05-07-bitcoin-failure/</guid>
       </item>
     
       <item>
@@ -46,8 +46,8 @@
           I was recently asked to answer this question on Quora, am posting it here for the interested. You can check out the answer on quora here. I believe the experience is very different for different people, depending largely on your own personality and world view. Though there are commonalities that...
         </description>
         <pubDate>Thu, 19 Apr 2018 03:17:20 -0700</pubDate>
-        <link>http://localhost:4000/2018-04-19-iiit/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018-04-19-iiit/</guid>
+        <link>http://www.vivekkaushal.com/2018-04-19-iiit/</link>
+        <guid isPermaLink="true">http://www.vivekkaushal.com/2018-04-19-iiit/</guid>
       </item>
     
       <item>
@@ -57,8 +57,8 @@
           Amazon Dash buttons are physical buttons that order a specified quantity of a fixed product directly, by automating payment and the entire shopping experience. When Amazon first launched Dash Buttons on 31st March 2015, the product was received with awe and ridicule alike. The ill-planned (or was it) launch date...
         </description>
         <pubDate>Thu, 05 Apr 2018 10:07:20 -0700</pubDate>
-        <link>http://localhost:4000/2018-04-05-dash-buttons/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018-04-05-dash-buttons/</guid>
+        <link>http://www.vivekkaushal.com/2018-04-05-dash-buttons/</link>
+        <guid isPermaLink="true">http://www.vivekkaushal.com/2018-04-05-dash-buttons/</guid>
       </item>
     
       <item>
@@ -68,8 +68,8 @@
           This was a course assignment for Graphics, in the Spring of 2018. A continuation of the previously posted 2D game, this is a 3D rendering coded in C using openGL. A classic boat manoeuvre game, with enemies to be shot with canons, gift boxes and rocks that act as hurdles....
         </description>
         <pubDate>Thu, 08 Mar 2018 07:48:20 -0800</pubDate>
-        <link>http://localhost:4000/2018-03-08-3dgame/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018-03-08-3dgame/</guid>
+        <link>http://www.vivekkaushal.com/2018-03-08-3dgame/</link>
+        <guid isPermaLink="true">http://www.vivekkaushal.com/2018-03-08-3dgame/</guid>
       </item>
     
       <item>
@@ -79,8 +79,8 @@
           We have a course on Artificial Intelligence here at IIIT, and the first class of the Spring Semester, Professor Paruchuri gave us examples of AI being implemented in different fields around the world. One that struck a chord with me (pun intended), was Shimon. An AI agent capable of creating...
         </description>
         <pubDate>Mon, 05 Feb 2018 15:09:20 -0800</pubDate>
-        <link>http://localhost:4000/2018-02-05-shimon/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018-02-05-shimon/</guid>
+        <link>http://www.vivekkaushal.com/2018-02-05-shimon/</link>
+        <guid isPermaLink="true">http://www.vivekkaushal.com/2018-02-05-shimon/</guid>
       </item>
     
       <item>
@@ -90,8 +90,8 @@
           Before I bought a student subscription of Apple Music, Youtube was my primary source of music, as it is for a large percentage of the population, at least in my college. So I thought of this app, coded it in a caffine drenched night, and released it the next morning....
         </description>
         <pubDate>Sun, 04 Feb 2018 15:43:20 -0800</pubDate>
-        <link>http://localhost:4000/2018-02-04-music-downloader/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018-02-04-music-downloader/</guid>
+        <link>http://www.vivekkaushal.com/2018-02-04-music-downloader/</link>
+        <guid isPermaLink="true">http://www.vivekkaushal.com/2018-02-04-music-downloader/</guid>
       </item>
     
       <item>
@@ -101,8 +101,8 @@
           Though I find the course redundant for someone who isn’t eventually going to venture into Computer Vision, I can’t deny that fact that Graphics’ assignments give a vague sense of achievement, creating games is fun. This 2 dimensional game is a classic Pacman ball game with the objective of destroying...
         </description>
         <pubDate>Sun, 04 Feb 2018 02:41:20 -0800</pubDate>
-        <link>http://localhost:4000/2018-02-04-pacman/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018-02-04-pacman/</guid>
+        <link>http://www.vivekkaushal.com/2018-02-04-pacman/</link>
+        <guid isPermaLink="true">http://www.vivekkaushal.com/2018-02-04-pacman/</guid>
       </item>
     
       <item>
@@ -112,8 +112,8 @@
           The coursework at IIIT has a wide range when it comes to how interesting you are going to find it. There are subjects and courses that seem like unnecessary rhetoric, while there are courses that blow you away with insights and kind of are the reason why people like me...
         </description>
         <pubDate>Fri, 12 Jan 2018 12:09:20 -0800</pubDate>
-        <link>http://localhost:4000/2018-01-12-shell/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018-01-12-shell/</guid>
+        <link>http://www.vivekkaushal.com/2018-01-12-shell/</link>
+        <guid isPermaLink="true">http://www.vivekkaushal.com/2018-01-12-shell/</guid>
       </item>
     
       <item>
@@ -123,8 +123,8 @@
           Megathon is an annual Hackaton that we, at E-Cell, organise. Being subtle, as I am, it gives me immense pleasure to tell you that it is one of the largest student-organised hackthon in India. Anyway, coming to the point, I headed the technical department of Megathon’17, and on the event...
         </description>
         <pubDate>Wed, 13 Dec 2017 16:02:20 -0800</pubDate>
-        <link>http://localhost:4000/2017-12-13-google-script/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017-12-13-google-script/</guid>
+        <link>http://www.vivekkaushal.com/2017-12-13-google-script/</link>
+        <guid isPermaLink="true">http://www.vivekkaushal.com/2017-12-13-google-script/</guid>
       </item>
     
       <item>
@@ -134,8 +134,8 @@
           About The Game Bomberman (ボンバーマン Bonbāman, also known as Dyna Blaster in Europe) is a strategic, maze-based video game franchise originally developed by Hudson Soft and currently owned by Konami. The original game was published in 1983 and new games have been published at irregular intervals ever since. Today, Bomberman...
         </description>
         <pubDate>Tue, 14 Nov 2017 11:09:20 -0800</pubDate>
-        <link>http://localhost:4000/2017-11-14-bomberman/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017-11-14-bomberman/</guid>
+        <link>http://www.vivekkaushal.com/2017-11-14-bomberman/</link>
+        <guid isPermaLink="true">http://www.vivekkaushal.com/2017-11-14-bomberman/</guid>
       </item>
     
       <item>
@@ -145,8 +145,8 @@
           In the November of 2016, when I was first asked to work on a new website for the Entrepreneurship Cell, it was a challenging project. I had never created a complete website, equipped with a functional backend before, and spearheading a project like this one, while being in my first...
         </description>
         <pubDate>Sat, 11 Nov 2017 21:10:20 -0800</pubDate>
-        <link>http://localhost:4000/2017-11-11-ecell-website/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017-11-11-ecell-website/</guid>
+        <link>http://www.vivekkaushal.com/2017-11-11-ecell-website/</link>
+        <guid isPermaLink="true">http://www.vivekkaushal.com/2017-11-11-ecell-website/</guid>
       </item>
     
   </channel>
