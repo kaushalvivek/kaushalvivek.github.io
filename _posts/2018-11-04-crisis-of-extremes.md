@@ -1,12 +1,14 @@
 ---
 layout: post
-comments: true
 title:  A Psychological Crisis of Extremes
-date:   2018-11-04 01:39:20 +0530
+date:   2018-11-04 01:39
 description: A Look at Millennial Depression
-image: /img/extremes.jpg # Add image post (optional)
-tags: [Technology, Life]
+image: /assets/images/extremes.jpg # Add image post (optional)
+headerImage : true
+tags:
+- Life
 author: Vivek Kaushal
+category : blog
 ---
 
 Millennials are amongst the most depressed generations in recorded human history. Don't take my word for it, search for yourself, but the fact largely stands. Reports published in the BBC, Psychology Today, Vogue and various other sources hold consensus. In this article, I discuss a theory that attempts to explain this rather unfortunate and curious phenomenon. Its called a crisis of extremes.

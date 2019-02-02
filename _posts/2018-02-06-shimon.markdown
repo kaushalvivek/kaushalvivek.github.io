@@ -1,12 +1,15 @@
 ---
 layout: post
-comments: true
-title:  Can A Robot Play Better than You?
+title:  "Can A Robot Play Better than You?"
 date:   2018-02-06 04:39:20 +0530
 description: Shimon is an AI Music Generator.
-image: /img/shimon.jpg 
-tags: [Article, Music, AI]
-author: Vivek Kaushal
+image: /assets/images/shimon.jpg 
+headerImage: false
+tags: 
+- Music
+- AI
+author: vivekkaushal
+category: blog
 ---
 
 We have a course on Artificial Intelligence here at IIIT, and the first class of the Spring Semester, Professor Paruchuri gave us examples of AI being implemented in different fields around the world. One that struck a chord with me (pun intended), was Shimon. An AI agent capable of creating music based on thousands of hours of musical data.

@@ -1,13 +1,18 @@
 ---
 layout: post
-comments: true
-title:  Bomberman - A Terminal based Game
-date:   2017-11-15 00:39:20 +0530
+title:  "Bomberman - A Terminal based Game"
+date:   2017-11-15 00:39
 description: An interactive terminal based python game.
   Made with love, in a day, for procrastinated course deadlines.
-image: /img/bomberman.jpg # Add image post (optional)
-tags: [Game, Code]
-author: Vivek Kaushal
+image: /assets/images/bomberman.jpg # Add image post (optional)
+headerImage: true
+tags:
+- Python
+- Game
+author: vivekkaushal
+category: projects
+projects: true
+
 ---
 
 About The Game

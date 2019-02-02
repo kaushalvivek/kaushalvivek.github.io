@@ -1,12 +1,16 @@
 ---
 layout: post
-comments: true
-title:  A Custom POSIX Shell
-date:   2018-01-13 01:39:20 +0530
+title:  "A Custom POSIX Shell"
+date:   2018-01-13 01:39
 description: A POSIX based shell coded in C for Operating Systems Course.
-image: /img/shell.jpg # Add image post (optional)
-tags: [Code]
-author: Vivek Kaushal
+image: /assets/images/shell.jpg # Add image post (optional)
+headerImage: true
+tags:
+- C++
+- Operating Systems
+author: vivekkaushal
+category: projects
+projects: true
 ---
 The coursework at IIIT has a wide range when it comes to how interesting you are going to find it. There are subjects and courses that seem like unnecessary rhetoric, while there are courses that blow you away with insights and kind of are the reason why people like me ventured into Computer Science to begin with.
 

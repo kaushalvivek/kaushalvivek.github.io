@@ -1,12 +1,14 @@
 ---
 layout: post
-comments: true
-title:  How Amazon Plans To Change Shopping
+title:  "How Amazon Plans To Change Shopping"
 date:   2018-04-05 22:37:20 +0530
 description: An introduction to Dash Buttons.
-image: /img/dash-buttons.jpg # Add image post (optional)
-tags: [Article, IOT]
-author: Vivek Kaushal
+image: /assets/images/dash-buttons.jpg # Add image post (optional)
+headerImage: true
+tags: 
+- IOT
+author: vivekkaushal
+category: blog
 ---
 *Amazon Dash buttons are physical buttons that order a specified quantity of a fixed product directly, by automating payment and the entire shopping experience.*
 
@@ -14,7 +16,7 @@ When Amazon first launched Dash Buttons on 31st March 2015, the product was rece
 
 Only, they didn't. They survived.
 
-![Dash Buttons]({{site.baseurl}}/img/dash-buttons-1.jpg)
+![Dash Buttons]({{site.url}}/assets/images/dash-buttons-1.jpg)
 
 There is no denying the utility of the tech, but the strong force behind Dash Buttons is actually the customisability that Amazon has rolled out over the last 3 years since the product's launch. Programmable Dash Buttons that can be coded for tasks *(call APIs or order)*, Virtual Dash Buttons that have identical utility but are present on screens have been strides in easing the shopping experience.
 

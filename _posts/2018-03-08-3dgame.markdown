@@ -1,12 +1,17 @@
 ---
 layout: post
-comments: true
-title:  3D Game - OpenGL
-date:   2018-03-08 21:18:20 +0530
+title:  "A 3D Game in OpenGL"
+date:   2018-03-08 21:18
 description: A 3D Game using OpenGL in C.
-image: /img/3dgame.png # Add image post (optional)
-tags: [Code, Game]
-author: Vivek Kaushal
+image: /assets/images/3dgame.png # Add image post (optional)
+headerImage: true
+tags:
+- C++
+- OpenGL
+- Game
+author: vivekkaushal
+category: projects
+projects: true
 ---
 This was a course assignment for Graphics, in the Spring of 2018. A continuation of the previously posted 2D game, this is a 3D rendering coded in C using openGL.
 

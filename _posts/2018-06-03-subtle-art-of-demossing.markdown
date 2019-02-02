@@ -1,12 +1,16 @@
 ---
 layout: post
 comments: true
-title:  Subtle Art of De-MOSS-ing
-date:   2018-06-03 13:47:20 +0530
+title:  "Subtle Art of De-MOSS-ing"
+date:   2018-06-03 13:47
 description: 9 Ways of beating Stanford's MOSS
-image: /img/moss2.png # Add image post (optional)
-tags: [Article, Code]
-author: Vivek Kaushal
+image: /assets/images/moss2.png # Add image post (optional)
+headerImage : false
+tags:
+- Hack
+- Academics
+author: vivekkaushal
+category: blog
 ---
 Ever since it’s introduction in 1994, Stanford's MOSS, or Measure of Software Similarity, has been an integral part of programming classes worldwide to detect plagiarism in coding assignments. It’s an effective measure, a good system, but, it’s not perfect. 
 

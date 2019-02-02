@@ -1,12 +1,17 @@
 ---
 layout: post
-comments: true
-title: Pacman - A 2D Game
-date: 2018-02-04 16:11:20 +0530
+title: "A 2D Game in OpenGL"
+date: 2018-02-04 16:11
 description: An OpenGL 2D Game coded in C for Grapics Coursework.
-image: /img/pacman.png
-tags: [Code, Game]
-author: Vivek Kaushal
+image: /assets/images/pacman.png
+headerImage: true
+tags:
+- C++
+- OpenGL
+- Game
+author: vivekkaushal
+category: projects
+projects: true
 ---
 
 Though I find the course redundant for someone who isn't eventually going to venture into Computer Vision, I can't deny that fact that Graphics' assignments give a vague sense of achievement, creating games is fun.

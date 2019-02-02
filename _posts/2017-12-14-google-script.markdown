@@ -1,12 +1,17 @@
 ---
 layout: post
-comments: true
-title: Google Script - An Upload Portal
-date: 2017-12-14 05:32:20 +0530
+title: "An Upload Portal in Google Script"
+date: 2017-12-14 05:32
 description: A webapp coded in Google Script.
-image: /img/google.jpg # Add image post (optional)
-tags: [Code]
-author: Vivek Kaushal
+image: /assets/images/google.jpg # Add image post (optional)
+headerImage: true
+tags:
+- Web Development
+- Google Script
+- WebApp
+author: vivekkaushal
+category: projects
+projects: true
 ---
 
 [Megathon][megathon]{:target="_blank"} is an annual Hackaton that we, at E-Cell, organise. Being subtle, as I am, it gives me immense pleasure to tell you that it is one of the largest student-organised hackthon in India. Anyway, coming to the point, I headed the technical department of Megathon'17, and on the event day, a situation came up.

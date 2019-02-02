@@ -1,34 +1,49 @@
 ---
 layout: page
-title: 'Tag Index'
+title: Tags
 ---
+<section class="list">
+    <h1 class="title">Tags</h1>
 
-{%- capture site_tags -%}
-    {%- for tag in site.tags -%}
-        {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
-    {%- endfor -%}
-{%- endcapture -%}
-{%- assign tags_list = site_tags | split:',' | sort -%}
+    {% assign tags_list = site.tags %}
 
-{%- for tag in tags_list -%}
-    <a href="#{{- tag -}}" class="btn btn-primary tag-btn"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})</a>
-{%- endfor -%}
+    {% if tags_list.first[0] == null %}
+        {% for tag in tags_list %}
+            <a class="item" href="#{{ tag | slugify }}">{{ tag }}</a>
+        {% endfor %}
+    {% else %}
+        {% for tag in tags_list %}
+            <a class="item" href="#{{ tag[0] | slugify }}">{{ tag[0] }}</a>
+        {% endfor %}
+    {% endif %}
 
-<div id="full-tags-list">
-{%- for tag in tags_list -%}
-    <h2 id="{{- tag -}}" class="linked-section">
-        <i class="fa fa-tag" aria-hidden="true"></i>
-        &nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})
-    </h2>
-    <div class="post-list">
-        {%- for post in site.tags[tag] -%}
-            <div class="tag-entry">
-                <a href="{{- site.url -}}{{- post.url -}}">{{- post.title -}}</a>
-                <div class="entry-date">
-                    <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: "%B %d, %Y" -}}</time>
-                </div>
-            </div>
-        {%- endfor -%}
-    </div>
-{%- endfor -%}
-</div>
+    {% assign tags_list = nil %}
+</section>
+
+<hr>
+
+<section class="tag-list">
+    {% for tag in site.tags  %}
+    <h2 class="title" id="{{ tag[0] | slugify }}">#{{ tag[0] }}</h2>
+
+    <ul class="list">
+        {% assign pages_list = tag[1] %}
+        {% for post in pages_list reversed %}
+            {% if post.title != null %}
+                {% if group == null or group == post.group %}
+                    <li class="item">
+                        <a class="url" href="{{ site.url }}{{ post.url }}">
+                            <aside class="date"><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%b %d %Y" }}</time></aside>
+                            <h3 class="title">{{ post.title }}</h3>
+                        </a>
+                    </li>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+        {% assign pages_list = nil %}
+        {% assign group = nil %}
+    </ul>
+
+    <div class="breaker"></div>
+    {% endfor %}
+</section>
