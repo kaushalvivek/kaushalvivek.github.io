@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Bowling Alley Simulation - Codebase Refactoring"
+title: "Bowling Simulation - Code Refactoring"
 date: 2019-2-11 22:32
 description: Removed code smells and optimized performance
 image: /assets/images/messenger.png # Add image post (optional)
