@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Winning Customers Online - The Hyperlocal Approach"
-date:   2018-12-1 01:47
+date:   2018-12-5 01:47
 description: Scaling an e-commernce business the right way in a crowded market.
 image: /assets/images/scale.png # Add image post (optional)
 headerImage: true
