@@ -2,7 +2,7 @@
 layout: post
 title:  "An Overview of the AgriTech Sector"
 date:   2018-9-5 01:47
-description: An objective look at the Indian Banking Sector
+description: An objective look at the Indian Agritech Sector
 image: /assets/images/agritech-overview.jpg # Add image post (optional)
 headerImage: true
 tags: 
