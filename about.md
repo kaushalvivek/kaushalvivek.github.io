@@ -5,6 +5,10 @@ title: About
 
 # Hello 
 
+<center>
+<img src="{{site.url}}/assets/images/selfie.jpg">
+</center>
+
 My name is **Vivek Kaushal** and I am a **research student** at [IIIT Hyderabad](https://iiit.ac.in). I work with the Cognitive Sciences Lab here, and presently, my primary area of interests include *neuroeconomics, risk, financial decision making and entrepreneurship.*
 
 Ever since I was a kid, I've liked solving problems; and that makes me very fond of how code empowers you to do really cool things with computers. I am a **hobbyist developer**, but my true calling lies in finding innovative ways to solve problems in interesting fields.
