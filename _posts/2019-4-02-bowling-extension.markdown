@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Bowling Extension - Building Usability into an Existing System"
+title: "Building Usability into an Existing System"
 date: 2019-4-1 22:32
 description: Added Interactivity and Usability into an existing codebase
 image: /assets/images/welcomescreen.png # Add image post (optional)
