@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Book Report - Seeing Like A Feminist"
+title:  "Seeing Like A Feminist - Book Review"
 date:   2019-2-27 01:47
 description: Book report for Seeing Like a Feminist by Nivedita Menon
 image: /assets/images/seeing-like-a-feminist.png # Add image post (optional)
