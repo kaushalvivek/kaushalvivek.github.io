@@ -9,6 +9,7 @@ tags:
 - React
 - JavaScript
 - Web Development
+- Open Source
 author: vivekkaushal
 category: projects
 projects: true
