@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Career Choice Simulator"
+title: "Research Project - Career Choice Simulator"
 date: 2019-4-9 22:32
 description: Research in risk and decision making
 image: /assets/images/career.png # Add image post (optional)
