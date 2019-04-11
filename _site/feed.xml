@@ -1,4 +1,41 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-04-10T02:03:30+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Vivek Kaushal</title><subtitle>A blog about technology and stuff related</subtitle><entry><title type="html">Career Choice Simulator</title><link href="http://localhost:4000/career-choice-simulator/" rel="alternate" type="text/html" title="Career Choice Simulator" /><published>2019-04-09T22:32:00+05:30</published><updated>2019-04-09T22:32:00+05:30</updated><id>http://localhost:4000/career-choice-simulator</id><content type="html" xml:base="http://localhost:4000/career-choice-simulator/">&lt;p&gt;Link : &lt;a href=&quot;http://web2py.iiit.ac.in/research_centres/publications/view_publication/inproceedings/1541&quot;&gt;http://web2py.iiit.ac.in/research_centres/publications/view_publication/inproceedings/1541&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-04-11T22:55:48+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Vivek Kaushal</title><subtitle>A blog about technology and stuff related</subtitle><entry><title type="html">To-Do WebApp in React</title><link href="http://localhost:4000/react-to-do/" rel="alternate" type="text/html" title="To-Do WebApp in React" /><published>2019-04-11T22:32:00+05:30</published><updated>2019-04-11T22:32:00+05:30</updated><id>http://localhost:4000/react-to-do</id><content type="html" xml:base="http://localhost:4000/react-to-do/">&lt;p&gt;I’ve started learning React as a part of my effort to master React and Flutter over the course of next couple of months. This is a simple to-do app created as a part of a learning react.&lt;/p&gt;
+
+&lt;h3 id=&quot;functionalities-&quot;&gt;Functionalities :&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Add to-do&lt;/li&gt;
+  &lt;li&gt;Display to-dos&lt;/li&gt;
+  &lt;li&gt;Cross off to-do&lt;/li&gt;
+  &lt;li&gt;Show number of active to-dos&lt;/li&gt;
+  &lt;li&gt;filters for all/inactive/active to-dos&lt;/li&gt;
+  &lt;li&gt;Mark to-dos as complete&lt;/li&gt;
+  &lt;li&gt;Delete button for todos&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;pre-requisites&quot;&gt;Pre-requisites:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Node&lt;/li&gt;
+  &lt;li&gt;React&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;usage-&quot;&gt;Usage :&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Clone the repository or download a zip, &lt;a href=&quot;https://github.com/kaushalvivek/react-to-do/&quot;&gt;link to repo.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Navigate to the root &lt;code class=&quot;highlighter-rouge&quot;&gt;to-do/&lt;/code&gt; folder&lt;/li&gt;
+  &lt;li&gt;Run:
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm install
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Run :
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm start
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Based on the tutorial:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=I6IY2TqnPDA&amp;amp;t=464s&quot;&gt;Practical React&lt;/a&gt; course by Ben Awad.&lt;/p&gt;</content><author><name>vivekkaushal</name></author><category term="projects" /><category term="React" /><category term="JavaScript" /><category term="Web Development" /><summary type="html">I’ve started learning React as a part of my effort to master React and Flutter over the course of next couple of months. This is a simple to-do app created as a part of a learning react.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/career.png" /></entry><entry><title type="html">Research Project - Career Choice Simulator</title><link href="http://localhost:4000/career-choice-simulator/" rel="alternate" type="text/html" title="Research Project - Career Choice Simulator" /><published>2019-04-09T22:32:00+05:30</published><updated>2019-04-09T22:32:00+05:30</updated><id>http://localhost:4000/career-choice-simulator</id><content type="html" xml:base="http://localhost:4000/career-choice-simulator/">&lt;p&gt;Link : &lt;a href=&quot;http://web2py.iiit.ac.in/research_centres/publications/view_publication/inproceedings/1541&quot;&gt;http://web2py.iiit.ac.in/research_centres/publications/view_publication/inproceedings/1541&lt;/a&gt;&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Motive : To explore correlation between risk behaviour and academic performance
 Method : Created a simple binary choice career simulator with an intuitive interface.
@@ -825,8 +862,4 @@ Classes which violate the rule were modified to reduce the number of required pa
   &lt;li&gt;&quot;Acute Urban-Rural Divide in Internet Penetration in India: Report.&quot; &lt;em&gt;The Economic Times&lt;/em&gt;, Economic Times, 20 Feb. 2018, economictimes.indiatimes.com/tech/internet/acute-urban-rural-divide-in-internet-penetration-in-india-report/articleshow/62997468.cms.&lt;/li&gt;
   &lt;li&gt;&quot;India Had 30.86M Credit Cards, 880.03M Debit Cards in May 2017.&quot; &lt;em&gt;MediaNama&lt;/em&gt;, 5 July 2017, www.medianama.com/2017/07/223-india-credit-cards-debit-cards-may-2017/.&lt;/li&gt;
   &lt;li&gt;N, Sushma U. &quot;Morgan Stanley Explains Why India's e-Commerce Market Is a Hot Investment Opportunity.&quot; &lt;em&gt;Quartz&lt;/em&gt;, Quartz, 29 Sept. 2017, qz.com/1089559/morgan-stanley-explains-why-indias-e-commerce-market-is-a-hot-investment-opportunity/.&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>vivekkaushal</name></author><category term="blog" /><category term="Scaling" /><category term="Technology" /><category term="Market Analysis" /><summary type="html">The Indian e-commerce space is touted to be worth $200 Billion by 2026. With an immense market potential, it's not a surprise that an unproportionally large number of Indian startups are in the e-commerce sphere. Though a much more dismal fact is that a significant proportion of these startups shut shop within the first few years of starting out. Common reasons cited for these failures include:</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/scale.png" /></entry><entry><title type="html">Micronotes and Checklists</title><link href="http://localhost:4000/notes/" rel="alternate" type="text/html" title="Micronotes and Checklists" /><published>2018-11-26T07:32:00+05:30</published><updated>2018-11-26T07:32:00+05:30</updated><id>http://localhost:4000/notes</id><content type="html" xml:base="http://localhost:4000/notes/">&lt;p&gt;Before every exam, exactly the night before it, I prepare a checklist of things to study. Occasionally with micro-notes. I felt this might be useful to someone looking to explore those topics, or studying for the same exam, if you happen to be at IIIT. So, I’ve created a repository of notes and checklists that I hope people would find useful.&lt;/p&gt;
-
-&lt;p&gt;For any other course material, feel free to mail me at &lt;a href=&quot;mailto:vivek.kaushal@outlook.com&quot;&gt;vivek.kaushal@outlook.com&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Checkout the repository &lt;a href=&quot;https://github.com/kaushalvivek/Micro-Notes-and-Checklists&quot;&gt;here.&lt;/a&gt;&lt;/p&gt;</content><author><name>vivekkaushal</name></author><category term="projects" /><category term="Notes" /><category term="Academics" /><summary type="html">Before every exam, exactly the night before it, I prepare a checklist of things to study. Occasionally with micro-notes. I felt this might be useful to someone looking to explore those topics, or studying for the same exam, if you happen to be at IIIT. So, I’ve created a repository of notes and checklists that I hope people would find useful.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/notes.png" /></entry></feed>
+&lt;/ol&gt;</content><author><name>vivekkaushal</name></author><category term="blog" /><category term="Scaling" /><category term="Technology" /><category term="Market Analysis" /><summary type="html">The Indian e-commerce space is touted to be worth $200 Billion by 2026. With an immense market potential, it's not a surprise that an unproportionally large number of Indian startups are in the e-commerce sphere. Though a much more dismal fact is that a significant proportion of these startups shut shop within the first few years of starting out. Common reasons cited for these failures include:</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/scale.png" /></entry></feed>
