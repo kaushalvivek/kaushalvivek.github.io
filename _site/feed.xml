@@ -1,4 +1,109 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-04-11T22:55:48+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Vivek Kaushal</title><subtitle>A blog about technology and stuff related</subtitle><entry><title type="html">To-Do WebApp in React</title><link href="http://localhost:4000/react-to-do/" rel="alternate" type="text/html" title="To-Do WebApp in React" /><published>2019-04-11T22:32:00+05:30</published><updated>2019-04-11T22:32:00+05:30</updated><id>http://localhost:4000/react-to-do</id><content type="html" xml:base="http://localhost:4000/react-to-do/">&lt;p&gt;I’ve started learning React as a part of my effort to master React and Flutter over the course of next couple of months. This is a simple to-do app created as a part of a learning react.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-05-04T00:13:46+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Vivek Kaushal</title><subtitle>A blog about technology and stuff related</subtitle><entry><title type="html">Zero : A Theoretical Overview</title><link href="http://localhost:4000/zero/" rel="alternate" type="text/html" title="Zero : A Theoretical Overview" /><published>2019-05-03T22:32:00+05:30</published><updated>2019-05-03T22:32:00+05:30</updated><id>http://localhost:4000/zero</id><content type="html" xml:base="http://localhost:4000/zero/">&lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;This term paper looks at work done by different eminent researchers towards the understanding of zero – as a price and as a probability, along with our perception of zero. The concept is looked at both from an economic point of view and from a psychological angle. Theories proposed to adjust the standard economic model to better reflect human behaviour and bounded rationality, found experimentally, are also discussed. The mentioned experiments can be repeated on different demographic sections with interesting results, and remain a point of further study. The emergence of neuroeconomics to fill gaps in standard economics theory has also been explored.&lt;/p&gt;
+
+&lt;h2 id=&quot;readings&quot;&gt;Readings&lt;/h2&gt;
+&lt;p&gt;Readings for this theoretical overview include the following works:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Paper/Book&lt;/th&gt;
+      &lt;th&gt;Author&lt;/th&gt;
+      &lt;th&gt;Date&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Zero As a Special Price - True Value for Free Products&lt;/td&gt;
+      &lt;td&gt;Dan Ariely, Kristina Shampanier&lt;/td&gt;
+      &lt;td&gt;2007&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Predictably Irrational&lt;/td&gt;
+      &lt;td&gt;Dan Ariely&lt;/td&gt;
+      &lt;td&gt;2008&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Thinking Fast and Thinking Slow&lt;/td&gt;
+      &lt;td&gt;Daniel Kahneman&lt;/td&gt;
+      &lt;td&gt;2011&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Prospect Theory : An Analysis of Decision under Risk&lt;/td&gt;
+      &lt;td&gt;Kahneman, Tversky&lt;/td&gt;
+      &lt;td&gt;1979&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Freakonomics&lt;/td&gt;
+      &lt;td&gt;Steven D. Levitt&lt;/td&gt;
+      &lt;td&gt;2005&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Effort for Payment : A Tale of Two Markets&lt;/td&gt;
+      &lt;td&gt;Heyman and Ariely&lt;/td&gt;
+      &lt;td&gt;2004&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;context&quot;&gt;Context&lt;/h2&gt;
+
+&lt;p&gt;The standard economic theory aims to explain macroeconomic and microeconomic observations of the world, looking into financial decisions that we make, and the implications of our decisions on larger market forces. It also attempts to theoretically deconstruct these market forces and understand their base causes.&lt;/p&gt;
+
+&lt;p&gt;In Steven D. Levitt’s words, Economics can be be described as ‘a study of incentives’. This definition inherently puts economics under a cognitive lens, with the study of human behaviour gaining utmost importance, in both microeconomic and macroeconomic contexts. Yet, bizarrely enough, standard economic theory assumes humans to be perfectly rational beings, with all decisions being taken by humans under perfect or imperfect information conditions, presumed to be perfectly rational.&lt;/p&gt;
+
+&lt;p&gt;This stance of standard economic theory started being questioned in the early 1970s with the rise of psychological economists of the likes of Daniel Kahneman and Amos Tversky. Questions were raised on the presumed rationality of humans in financial decision making, and a series of controlled experimentation clearly showed deviations from the standard economic theory. These experimentations and proposed models for human behaviour that could better explain human irrationality in financial decisions were clubbed under the domain of a new and upcoming field – Behavioral Economics.&lt;/p&gt;
+
+&lt;p&gt;Besides active work in Behavioral Economics over the past few decades, the development of a much more focused sub-domain – Neuroeconomics – has been notable. Neuroeconomics looks at financial decision making from a cognitive neuroscience perspective, evaluating experimentally observed bounded rationality of humans, based on literature available in neuroscience.&lt;/p&gt;
+
+&lt;p&gt;Now that we have a contextual understanding of the domain, let’s look at work done in neuroeconomics on the concept of zero.&lt;/p&gt;
+
+&lt;h2 id=&quot;literature-overview&quot;&gt;Literature Overview&lt;/h2&gt;
+
+&lt;p&gt;Daniel Kahneman won the Nobel prize in Economics, in 2002 for his and Amos Tversky’s work on Prospect Theory (1979). A notable point here is that Kahneman never took a course in Economics throughout his academic career. Their paper published in 1979, among other things, also looked at the irrational behaviour people exhibit when comparing zero and near-zero probabilities.&lt;/p&gt;
+
+&lt;p&gt;As put in words by Dan Ariely, “Kahneman and Tversky’s (1979) work on probabilities indicates that when it comes to gambles, people perceive zero probability (and certainty) substantially differently than they do small positive probabilities. That is, whereas the values of the latter are perceived as higher than they actually are, perceptions of zero probability are accurate.”&lt;/p&gt;
+
+&lt;p&gt;In Daniel Kahneman’s ‘Thinking Fast and Thinking Slow’ he talks about two systems behind our cognitive decision making – System 1 and System 2. System 2 is the logical decision making that we do while being conscious of the process, like how you (the reader) are reading this document and understanding words and context; whereas System 1 is the force behind our intuitions – like why you (the reader) may not like this font, you did not consciously weigh the pros and cons of the font before making the decision, that’s how System 1 works, without our conscious focus.
+Now here, the proposition is that System 1 is responsible for the ‘irrational’ prejudice that we have for near-zero probabilities, a more detailed explanation is available in discussions ahead.&lt;/p&gt;
+
+&lt;p&gt;Another important point in our understanding of Zero is the context in which it is perceived. In Chicago Booth School economist Steven D. Levitt’s 2005 bestseller ‘Freakonomics’ he highlighted the differences between Market Norms and Social Norms. We follow market norms when we value things in a financial manner, whereas social norms are followed in decisions where there’s an absence of financial context – such as appreciation for home-cooked food. Levitt’s work on Market and Social norms was reiterated in Heyman and Ariely’s ‘Effort for Payment : A Tale of Two Markets’. With certain deviations from standard economic theory when dealing with Zero, explained in a social context. For example, when a class of students were asked to take chocolates, the demand was higher when the chocolates were priced, compared to when the chocolates were free. This economic abnormality can be explained by the theory on social norms, where free chocolates weren’t perceived as an economic transaction.&lt;/p&gt;
+
+&lt;p&gt;In ‘Zero As a Special Price - True Value for Free Products’, Dan Ariely and Kristina Shampanier attempt to sum up existing theories on abnormalities regarding zero from an economic context while relying on experimentation to validate their hypothesis. Standard economic theory says that when faced with a choice of selecting one of several available products (or possibly buying nothing), people will choose the option with the highest cost–benefit difference. But in this paper, Dan Ariely and Kristina Shampanier propose that decisions about free products differ as people do not simply subtract costs from benefits and perceive the benefits associated with free products as higher.&lt;/p&gt;
+
+&lt;p&gt;To test this radical proposal, a series of experiments were carried out while contrasting demand for two products across conditions where they maintained a constant price difference between goods, but varied the said prices such that the cheaper product in the set of products is priced at either a low positive or a zero price. The results showed a skewed demand for zero-priced products which were against the prediction of standard economic theory, and confirmed the hypothesis put forward in the paper. Thus, people appear to act as if zero pricing of a good not only decreases its cost but also adds to its benefits. These tests were both real and hypothetical in nature, and carried out on campus residents of MIT, Cambridge.&lt;/p&gt;
+
+&lt;p&gt;Beyond this effect, several psychological antecedents of the effect were proposed as well, including social norms, mapping difficulty among others. More details on the saime are discussed in the Discussion section below.&lt;/p&gt;
+
+&lt;h2 id=&quot;discussion&quot;&gt;Discussion&lt;/h2&gt;
+
+&lt;p&gt;Based on existing literature on the subject, we can say with a fair degree of confidence that humans aren’t perfectly rational. Prospect theory among other popular works have firmly established the bounded and contextual nature of human rationality when it comes to decision making. Taking up the study of economic theory abnormalities surrounding ‘Zero’ proved to be an excellent way to gauge various sub-domains of Behavioural Economics, and by extent human behaviour and our cognitive structure.&lt;/p&gt;
+
+&lt;p&gt;Zero being perceived as a ‘social norm’ in contextual decisions highlights how our ‘System 1’ functions, and how quickly our brain is able to differentiate a financial context from a non-financial one without us being consciously aware of it. The way our brain seems to be hot-wired from birth to gauge patterns in certain respects, such as language, reading facial expressions, understanding social contexts is fascinating to say the least. These functionalities of ‘System 1’ as put by Daniel Kahneman, are built out of synaptic networks that comprise Associative Memory and is incredibly powerful and engagingly interesting.&lt;/p&gt;
+
+&lt;p&gt;It is this ‘System 1’ that give chess masters an instinctive responses to different board positions, where others will use their logical, conscious thought process. Our perception of near-zero probability and zero costs eventually boils down to this ‘System 1’ only. This rapid-decision-making functionality has been honed throughout human evolution to ensure our survival, and that involves quick decision making in situations, without a logical evaluation, when the context of the decision seems familiar. Hence, when someone gives us something for ‘free’, taking it is the instinctive reaction. It’s a risk-free decision, that on face-value and past context seems intuitive.&lt;/p&gt;
+
+&lt;p&gt;The study of how our instincts are honed, and how our brain actually functions in intuitive decision-making, while studying our understanding of ‘Zero’ has been a thought provoking venture.&lt;/p&gt;
+
+&lt;h2 id=&quot;future-scope&quot;&gt;Future Scope&lt;/h2&gt;
+
+&lt;p&gt;Although the work done by the academic community in Behavioural Economics and intuitive decision making has been phenomenal, there is still scope for further refinement and verification of concepts concerning our understanding of ‘Zero’ price and probability. Some points that I feel future studies can be built around are as follows:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Looking at a younger demographic might help researchers understand some of the characteristics of intuition and help segregate environmental factors and learnt behaviour from evolutionary traits.&lt;/li&gt;
+  &lt;li&gt;Although microscopic transactions have been well-explored, work still needs to be done at the macroscopic level, explaining market forces from a neuroscience perspective still remain the holy grail of behavioural economics.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Ariely, Dan. Predictably Irrational : the Hidden Forces That Shape Our Decisions. New York :Harper Perennial, 2010. Print.&lt;/li&gt;
+  &lt;li&gt;Ariely, Dan &amp;amp; Shampanier, Kristina. Zero As a Special Price, http://web.mit.edu/ariely/www/MIT/Papers/zero.pdf&lt;/li&gt;
+  &lt;li&gt;Heyman, James &amp;amp; Ariely, Dan. (2004). Effort for Payment A Tale of Two Markets. Psychological science. 15. 787-93. 10.1111/j.0956-7976.2004.00757.x.&lt;/li&gt;
+  &lt;li&gt;Kahneman, Daniel, 1934-. Thinking, Fast and Slow. New York :Farrar, Straus and Giroux, 2011. Print.&lt;/li&gt;
+  &lt;li&gt;Kahneman, Daniel &amp;amp; Tversky, Amos, 1979. “Prospect Theory: An Analysis of Decision under Risk,” Econometrica, Econometric Society, vol. 47(2), pages 263-291, March.&lt;/li&gt;
+  &lt;li&gt;Levitt, Steven D, and Stephen J. Dubner. Freakonomics: A Rogue Economist Explores the Hidden Side of Everything. New York: William Morrow, 2005. Print.&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>vivekkaushal</name></author><category term="blog" /><category term="Zero" /><category term="Behavioural Economics" /><category term="Research" /><summary type="html">Abstract This term paper looks at work done by different eminent researchers towards the understanding of zero – as a price and as a probability, along with our perception of zero. The concept is looked at both from an economic point of view and from a psychological angle. Theories proposed to adjust the standard economic model to better reflect human behaviour and bounded rationality, found experimentally, are also discussed. The mentioned experiments can be repeated on different demographic sections with interesting results, and remain a point of further study. The emergence of neuroeconomics to fill gaps in standard economics theory has also been explored.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/career.png" /></entry><entry><title type="html">To-Do WebApp in React</title><link href="http://localhost:4000/react-to-do/" rel="alternate" type="text/html" title="To-Do WebApp in React" /><published>2019-04-11T22:32:00+05:30</published><updated>2019-04-11T22:32:00+05:30</updated><id>http://localhost:4000/react-to-do</id><content type="html" xml:base="http://localhost:4000/react-to-do/">&lt;p&gt;I’ve started learning React as a part of my effort to master React and Flutter over the course of next couple of months. This is a simple to-do app created as a part of a learning react.&lt;/p&gt;
 
 &lt;h3 id=&quot;functionalities-&quot;&gt;Functionalities :&lt;/h3&gt;
 
@@ -35,7 +140,7 @@
 
 &lt;p&gt;Based on the tutorial:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=I6IY2TqnPDA&amp;amp;t=464s&quot;&gt;Practical React&lt;/a&gt; course by Ben Awad.&lt;/p&gt;</content><author><name>vivekkaushal</name></author><category term="projects" /><category term="React" /><category term="JavaScript" /><category term="Web Development" /><summary type="html">I’ve started learning React as a part of my effort to master React and Flutter over the course of next couple of months. This is a simple to-do app created as a part of a learning react.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/career.png" /></entry><entry><title type="html">Research Project - Career Choice Simulator</title><link href="http://localhost:4000/career-choice-simulator/" rel="alternate" type="text/html" title="Research Project - Career Choice Simulator" /><published>2019-04-09T22:32:00+05:30</published><updated>2019-04-09T22:32:00+05:30</updated><id>http://localhost:4000/career-choice-simulator</id><content type="html" xml:base="http://localhost:4000/career-choice-simulator/">&lt;p&gt;Link : &lt;a href=&quot;http://web2py.iiit.ac.in/research_centres/publications/view_publication/inproceedings/1541&quot;&gt;http://web2py.iiit.ac.in/research_centres/publications/view_publication/inproceedings/1541&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=I6IY2TqnPDA&amp;amp;t=464s&quot;&gt;Practical React&lt;/a&gt; course by Ben Awad.&lt;/p&gt;</content><author><name>vivekkaushal</name></author><category term="projects" /><category term="React" /><category term="JavaScript" /><category term="Web Development" /><category term="Open Source" /><summary type="html">I’ve started learning React as a part of my effort to master React and Flutter over the course of next couple of months. This is a simple to-do app created as a part of a learning react.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/career.png" /></entry><entry><title type="html">Research Project - Career Choice Simulator</title><link href="http://localhost:4000/career-choice-simulator/" rel="alternate" type="text/html" title="Research Project - Career Choice Simulator" /><published>2019-04-09T22:32:00+05:30</published><updated>2019-04-09T22:32:00+05:30</updated><id>http://localhost:4000/career-choice-simulator</id><content type="html" xml:base="http://localhost:4000/career-choice-simulator/">&lt;p&gt;Link : &lt;a href=&quot;http://web2py.iiit.ac.in/research_centres/publications/view_publication/inproceedings/1541&quot;&gt;http://web2py.iiit.ac.in/research_centres/publications/view_publication/inproceedings/1541&lt;/a&gt;&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Motive : To explore correlation between risk behaviour and academic performance
 Method : Created a simple binary choice career simulator with an intuitive interface.
@@ -789,77 +894,4 @@ Classes which violate the rule were modified to reduce the number of required pa
 
 &lt;p&gt;This script is a cron job and has been written with an intention to notify you via email whenever you get a new parcel, courier, letter etc. at IIIT Hyderabad, and your delivery is logged at Nilgiri. Read up ahead for usage instructions and setup.&lt;/p&gt;
 
-&lt;p&gt;Checkout the code and deployment instructions &lt;a href=&quot;https://github.com/kaushalvivek/IIIT-Courier-Notification&quot;&gt;here.&lt;/a&gt;&lt;/p&gt;</content><author><name>vivekkaushal</name></author><category term="projects" /><category term="Scripts" /><category term="Python" /><category term="Selenium" /><category term="Open Source" /><category term="Automation" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/courier.png" /></entry><entry><title type="html">Winning Customers Online - The Hyperlocal Approach</title><link href="http://localhost:4000/scaling-in-hyperlocal-communities/" rel="alternate" type="text/html" title="Winning Customers Online - The Hyperlocal Approach" /><published>2018-12-05T01:47:00+05:30</published><updated>2018-12-05T01:47:00+05:30</updated><id>http://localhost:4000/scaling-in-hyperlocal-communities</id><content type="html" xml:base="http://localhost:4000/scaling-in-hyperlocal-communities/">&lt;p&gt;The Indian e-commerce space is touted to be worth $200 Billion by 2026. With an immense market potential, it's not a surprise that an unproportionally large number of Indian startups are in the e-commerce sphere. Though a much more dismal fact is that a significant proportion of these startups shut shop within the first few years of starting out. Common reasons cited for these failures include:&lt;/p&gt;
-
-&lt;h3 id=&quot;competition&quot;&gt;Competition&lt;/h3&gt;
-
-&lt;p&gt;Established e-commerce players with higher funding can often offer steep discounts that cut into the revenue of new companies.&lt;/p&gt;
-
-&lt;h3 id=&quot;scalability&quot;&gt;Scalability&lt;/h3&gt;
-
-&lt;p&gt;Scaling an ecommerce venture beyond metropolis cities is a challenge for major players in the field and new and upcoming startups alike. The crowded market space in metros makes sustaining an ecommerce business on tier one city sales alone a major challenge.&lt;/p&gt;
-
-&lt;h3 id=&quot;funding-crunch&quot;&gt;Funding Crunch&lt;/h3&gt;
-
-&lt;p&gt;The e-commerce space has been hit by a crunch in venture capital and other sources of funding that have been largely redirected to other up and coming tech in the promising fields of blockchain, cryptocurrency, medtech and agritech. A simple website and a marketplace are no longer promising ventures for investment in the modern economy. Investments in e-commerce are not focussed on late stage startups and comparatively established players who are looking at reaping benefits and turning profitable in the near future.&lt;/p&gt;
-
-&lt;p&gt;In this article &lt;strong&gt;we address scalability issues of an ecommerce venture&lt;/strong&gt; , more particularly in hyperlocal communities that have largely been out of focus and out of reach for even major ecommerce players.&lt;/p&gt;
-
-&lt;h2 id=&quot;why-should-you-scale-to-hyperlocal-communities&quot;&gt;Why should you scale to hyperlocal communities?&lt;/h2&gt;
-
-&lt;p&gt;In all fairness, it has been a decade since ecommerce took off in India with the popular rise of Flipkart and the entry of global players such as Amazon and Ebay. A decade ago, the primary targets for any new ecommerce venture were Indian metropolis, tier one cities with huge populations and a higher disposable income than the national average. Though now, with the Indian ecommerce sector maturing, growth has slowed down in tier one cities. While as per a 2018 report in MoneyControl, ecommerce revenue growth is thrice as much in tier two cities. Expanding to tier two and tier three cities is essentially to tap the growing ecommerce user base in these cities. A few points to summarise the opportunities available in the hyperlocal ecommerce space in India are as follows:&lt;/p&gt;
-
-&lt;h3 id=&quot;increasing-internet-penetration&quot;&gt;Increasing Internet Penetration&lt;/h3&gt;
-
-&lt;p&gt;Morgan Stanley expects the online Indian customer base to increase form 60 million in 2016 to 475 million by 2026. While urban regions already have an internet penetration of 64.8% as of December 2017, the penetration is dismally low at 18% in rural India. Hence the projection model of Morgan Stanley implies that a major chunk of new user growth is going to come from rural regions in the next decade.&lt;/p&gt;
-
-&lt;h3 id=&quot;infrastructural-improvements&quot;&gt;Infrastructural Improvements&lt;/h3&gt;
-
-&lt;p&gt;The launch of 4G network in India has brought about a telecommunication revolution, with the cheapest data rates in the world and a bidding war to earn new customers. It has also made mobile broadband available to the general India diaspora ast affordable prices.&lt;/p&gt;
-
-&lt;h3 id=&quot;limited-local-options&quot;&gt;Limited Local Options&lt;/h3&gt;
-
-&lt;p&gt;Unlike tier one cities, tier two and tier three localities do not have plentiful brick and mortar options to cater to all of their needs, which opens up immense potential for ecommerce based solutions.&lt;/p&gt;
-
-&lt;h3 id=&quot;online-to-offline-models&quot;&gt;Online to Offline Models&lt;/h3&gt;
-
-&lt;p&gt;Service, delivery and logistics issues in rural regions have opened avenues for ecommerce startups that use brick and mortar stores as fronts for online sales. &lt;strong&gt;Indiabuys&lt;/strong&gt; is an assisted startup launched in 2017 with support from Amazon that aims to bridge the availability and delivery divide between rural and urban regions through its 'phygital' model of operation.&lt;/p&gt;
-
-&lt;h2 id=&quot;how-to-scale-to-hyperlocal-communities&quot;&gt;How to scale to hyperlocal communities?&lt;/h2&gt;
-
-&lt;p&gt;Many ecommerce ventures have identified the potential of tier two and tier three townships of India and have attempted to venture in the untapped market, though more often than not with limited success or heavy losses. &lt;strong&gt;Grofers&lt;/strong&gt; , a major market player in e-commerce groceries had to close its operations in 9 tier two Indian cities due to logistical issues and unsustainable losses. &lt;strong&gt;Bigbasket&lt;/strong&gt; is also struggling to manage losses in hyperlocal communities despite having deep pockets. Despite their hold on markets in metros, startups have struggled in hyperlocal communities as they fail to adopt to new challenges.The following points hold key solutions to scaling in hyperlocal communities in India:&lt;/p&gt;
-
-&lt;h3 id=&quot;platforms-ease-of-usage&quot;&gt;Platform's Ease of Usage&lt;/h3&gt;
-&lt;p&gt;Unlike a large proportion of internet users in metropolitan cities, users in tier two, tier three and rural regions are more likely to have started internet usage in the last two years, as per Morgan Stanley. This directly affects their navigatibility and usage comfort on websites and in mobile applications. This upskilling in tier one cities is largely because of increased exposure to technology rather than any concentrated up-skilling initiative. Hence, before expanding to hyperlocal communities, e-commerce ventures must ensure that their platform is easy to use and navigate.&lt;/p&gt;
-
-&lt;p&gt;The Government of India, in its 2018 budget, allocated INR 10,000 Cr for the development of telecom infrastructure. However, currently, many businesses are making 'Lite' versions of their apps to suit the needs of tier two and tier three markets and work within their internet speed constraints. Ola Cabs has one such 'Lite' app that doesn't use as much internet data by minimizing the load on GPS and maps.&lt;/p&gt;
-
-&lt;h3 id=&quot;transcending-the-language-barrier&quot;&gt;Transcending the Language Barrier&lt;/h3&gt;
-&lt;p&gt;India has immense vernacular diversity, and although English is largely accepted as a means of communication for online purchases and transactions in urban metropolis, the same cannot be said about tier two and tier three cities. To truly reach out to such hyperlocal communities, making one's platform available in local languages is sure shot strategy that guarantees returns and also puts one miles ahead of competition.&lt;/p&gt;
-
-&lt;h3 id=&quot;mobile-optimisation&quot;&gt;Mobile Optimisation&lt;/h3&gt;
-&lt;p&gt;In continuation with the platform's ease of usage, optimisation for smartphone's is essential as an overwhelming majority of users in hyperlocal communities access internet through their mobile devices. This can be achieved through websites designed to render on smartphones and mobile applications available for download.&lt;/p&gt;
-
-&lt;h3 id=&quot;multiple-payment-options&quot;&gt;Multiple Payment Options&lt;/h3&gt;
-&lt;p&gt;India has 30.86 million credit cards and 880 million debit cards as of 2017, while the debit card penetration is high, it's usage still remains dismally low in rural regions for online transactions. With the launch of Unified Payments' Interface (UPI) and increasing popularity of mobile wallets that are easier to control and operate, e-commerce ventures should ensure that they provide multiple payment options to cater to a wide variety of customers and ensure that the payment process is in their comfort zone.&lt;/p&gt;
-
-&lt;h3 id=&quot;cash-on-delivery&quot;&gt;Cash on Delivery&lt;/h3&gt;
-&lt;p&gt;Despite a fast developing financial infrastructure, high debit card penetration and the launch of UPI, trust remains low in online transactions for users based in hyperlocal communities. The absence of Cash on Delivery as a payment option often ends up being a dealbreaker for online purchases, hence, an e-commerce startup looking to scale in hyperlocal communities must accept Cash on Delivery as a mode of payment.&lt;/p&gt;
-
-&lt;h3 id=&quot;customer-service&quot;&gt;Customer Service&lt;/h3&gt;
-&lt;p&gt;More often than not, company warehouses, local offices and servicing headquarters for e-commerce firms are located in large metropolises; this results in delayed delivery of product, comparatively poorer customer service and experience for customers from tier two and tier three cities. E-commerce ventures must ensure that measure are taken to ensure that customer experience for non-urban regions remains at par with metro cities.&lt;/p&gt;
-
-&lt;h3 id=&quot;targeted-inventory&quot;&gt;Targeted Inventory&lt;/h3&gt;
-&lt;p&gt;An e-commerce venture launching in hyperlocal communities much model its inventory to suit the requirements and demands of local customers. Continuous modifications, upgradations and stocking of the inventory based on user feedback and demand assessment will enable an e-commerce firm to properly gauge and respond to local interests.&lt;/p&gt;
-
-&lt;h3 id=&quot;technical-enhancement-of-buying-experience&quot;&gt;Technical Enhancement of Buying Experience&lt;/h3&gt;
-&lt;p&gt;Innovations such as 'Style Studio' - &lt;strong&gt;Myntra's&lt;/strong&gt; virtual trial room, &lt;strong&gt;Lenskart's&lt;/strong&gt; 3D Try On among others aim to bring the experience of shopping online as close to real world experiences as possible. Such methods instill a sense of familiarity and comfort in users, especially first time users who are hesitant to spend online. Any new venture in e-commerce must look at technologies such as 360 degree AR/VR, 3D modelling among others to bring their inventories as close to the real world as possible.&lt;/p&gt;
-
-&lt;h2 id=&quot;bibliography&quot;&gt;Bibliography:&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;em&gt;Tech in Asia - Connecting Asia's Startup Ecosystem&lt;/em&gt;, Tech in Asia, www.techinasia.com/insights-from-25-failed-startups-in-india-2016.&lt;/li&gt;
-  &lt;li&gt;&quot;Acute Urban-Rural Divide in Internet Penetration in India: Report.&quot; &lt;em&gt;The Economic Times&lt;/em&gt;, Economic Times, 20 Feb. 2018, economictimes.indiatimes.com/tech/internet/acute-urban-rural-divide-in-internet-penetration-in-india-report/articleshow/62997468.cms.&lt;/li&gt;
-  &lt;li&gt;&quot;India Had 30.86M Credit Cards, 880.03M Debit Cards in May 2017.&quot; &lt;em&gt;MediaNama&lt;/em&gt;, 5 July 2017, www.medianama.com/2017/07/223-india-credit-cards-debit-cards-may-2017/.&lt;/li&gt;
-  &lt;li&gt;N, Sushma U. &quot;Morgan Stanley Explains Why India's e-Commerce Market Is a Hot Investment Opportunity.&quot; &lt;em&gt;Quartz&lt;/em&gt;, Quartz, 29 Sept. 2017, qz.com/1089559/morgan-stanley-explains-why-indias-e-commerce-market-is-a-hot-investment-opportunity/.&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>vivekkaushal</name></author><category term="blog" /><category term="Scaling" /><category term="Technology" /><category term="Market Analysis" /><summary type="html">The Indian e-commerce space is touted to be worth $200 Billion by 2026. With an immense market potential, it's not a surprise that an unproportionally large number of Indian startups are in the e-commerce sphere. Though a much more dismal fact is that a significant proportion of these startups shut shop within the first few years of starting out. Common reasons cited for these failures include:</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/scale.png" /></entry></feed>
+&lt;p&gt;Checkout the code and deployment instructions &lt;a href=&quot;https://github.com/kaushalvivek/IIIT-Courier-Notification&quot;&gt;here.&lt;/a&gt;&lt;/p&gt;</content><author><name>vivekkaushal</name></author><category term="projects" /><category term="Scripts" /><category term="Python" /><category term="Selenium" /><category term="Open Source" /><category term="Automation" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/courier.png" /></entry></feed>
