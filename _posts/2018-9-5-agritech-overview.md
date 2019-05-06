@@ -13,6 +13,9 @@ tags:
 author: vivekkaushal
 category: blog
 ---
+
+*This article was written while working for [T-Hub](https://t-hub.co), under the guidance of Sandhya Kanukollu.*
+
 ## An Introduction to the Agricultural Scene of India
 
 Agriculture has been a very crucial and huge operational space that directly affects more than 250 million cultivators and agricultural labourers. More than 58% of rural population depend solely on agriculture as their means of livelihood. It plays a very important role in India’ economy.

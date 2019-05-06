@@ -12,7 +12,7 @@ author: vivekkaushal
 category: blog
 ---
 
-
+*This article was written while working for [T-Hub](https://t-hub.co), under the guidance of Sandhya Kanukollu.*
 
 In the aftermath of the 2008 Global Economic Crisis, Bitcoin started as a novel idea, to setup a new financial ecosystem that eliminates middlemen and gives transaction powers directly into the hands of the masses. Anonymous, instantaneous transactions with universal acceptability were the goals of Bitcoin.
 

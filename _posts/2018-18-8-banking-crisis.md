@@ -13,6 +13,8 @@ author: vivekkaushal
 category: blog
 ---
 
+*This article was written while working for [T-Hub](https://t-hub.co), under the guidance of Sandhya Kanukollu.*
+
 ## Abstract
 
 This article aims to analyse the current Indian Banking Crisis due to non-performing assets of corporate defaulters, identify the motivation and cause for the gradual increase in the number of defaulters for NPAs in India, and suggest possible remedies and changes to alleviate the present situation.

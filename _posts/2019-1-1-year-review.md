@@ -13,6 +13,8 @@ author: vivekkaushal
 category: blog
 ---
 
+*This article was written while working for [T-Hub](https://t-hub.co), under the guidance of Sandhya Kanukollu.*
+
 We are now at the end of 2018, and it has been an extraordinary year for technology entrepreneurs, and of course, the Indian ecosystem has much to rejoice about. Sure, there were some lows, but the highs outweighed them as the startups made some big moves. Whether it be cutting-edge developments in Artificial Intelligence and IoT, or bureaucratic and industrial standards for data privacy and security, 2018 had it all. Plenty of technologies that were primarily &#39;buzzwords&#39; in 2017, matured in 2018, with greater stability and broader appeal.
 
 2018 was a tremendous year for the entrepreneurial community in the Indian ecosystem as well, where a final boost was observed for funding in late-stage ventures (Eg: Berkshire Hathaway&#39;s stake in PayTM). The shifting pattern of funding clearly illustrated a move towards India becoming a more mature market. Another noteworthy point was the slowdown in early-stage venture funding, which is in line with our earlier observations and the recent move on the Angel Tax is something to dwell upon. Despite the minute hiccups, deep-tech startups continued to raise eyebrows and attract capital even in early stage and initial seed rounds.

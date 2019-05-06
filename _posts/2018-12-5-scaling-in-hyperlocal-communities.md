@@ -13,6 +13,8 @@ author: vivekkaushal
 category: blog
 ---
 
+*This article was written while working for [T-Hub](https://t-hub.co), under the guidance of Sandhya Kanukollu.*
+
 The Indian e-commerce space is touted to be worth $200 Billion by 2026. With an immense market potential, it&#39;s not a surprise that an unproportionally large number of Indian startups are in the e-commerce sphere. Though a much more dismal fact is that a significant proportion of these startups shut shop within the first few years of starting out. Common reasons cited for these failures include:
 
 ### Competition
