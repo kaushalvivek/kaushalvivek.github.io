@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Data Analytics : Finding Patterns in Consumer Freedom"
+title: "Big Data : Finding Patterns in Consumer Freedom"
 date: 2019-7-7 02:32
 description: An attempt to understand trends in consumer freedom over the last decade.
 image: /assets/images/fermi.png # Add image post (optional)
@@ -10,6 +10,7 @@ tags:
 - Statistics
 - Data Analytics
 - Data Science
+- Big Data
 author: vivekkaushal
 category: projects
 projects: true
