@@ -50,7 +50,7 @@ My earliest memory of reading is enjoying Enid Blyton's "The Famous Five", I lov
 
 ### Gym
 <center>
-<img src="{{site.url}}/assets/images/gym.jpg">
+<img src="{{site.url}}/assets/images/gym.png">
 </center>
 
 I started working out to earn compulsory college credits. Then it was about proving a point to myself. Now, I do it because it works better than caffeine in boosting my energy levels and motivation.  
