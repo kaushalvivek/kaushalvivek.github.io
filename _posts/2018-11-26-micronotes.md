@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Micronotes and Checklists"
+title: "Micronotes and Checklists - IIIT Courses"
 date: 2018-11-26 07:32
 description: Checklists and Micro-notes for certain courses at IIIT Hyderabad.
 image: /assets/images/notes.png # Add image post (optional)
@@ -10,7 +10,7 @@ tags:
 - Academics
 author: vivekkaushal
 category: projects
-projects: true
+notes: true
 ---
 
 Before every exam, exactly the night before it, I prepare a checklist of things to study. Occasionally with micro-notes. I felt this might be useful to someone looking to explore those topics, or studying for the same exam, if you happen to be at IIIT. So, I've created a repository of notes and checklists that I hope people would find useful.

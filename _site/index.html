@@ -742,10 +742,12 @@ pre {
     transform: translateY(0); } }
 .home,
 .blog,
+.notes,
 .projects {
   margin-top: 125px; }
   .home > .list,
   .blog > .list,
+  .notes > .list,
   .projects > .list {
     border-top: 1px solid #ededed;
     margin-top: 30px;
@@ -753,6 +755,7 @@ pre {
     position: relative; }
     .home > .list:before,
     .blog > .list:before,
+    .notes > .list:before,
     .projects > .list:before {
       display: block;
       content: " ";
@@ -769,12 +772,14 @@ pre {
 
 .home > .list > .item,
 .blog > .list > .item,
+.notes > .list > .item,
 .projects > .list > .item {
   display: block;
   width: 95%;
   margin: 0 auto; }
 .home > .list > .item > .url,
 .blog > .list > .item > .url,
+.notes > .list > .item > .url,
 .projects > .list > .item > .url {
   width: 100%;
   display: block;
@@ -782,6 +787,7 @@ pre {
   text-decoration: none; }
 .home > .list > .item > .url > .title,
 .blog > .list > .item > .url > .title,
+.notes > .list > .item > .url > .title,
 .projects > .list > .item > .url > .title {
   margin: 0;
   width: 75%;
@@ -789,10 +795,12 @@ pre {
   transition: all ease-in-out 0.2s; }
 .home > .list > .item:hover > .url > .title,
 .blog > .list > .item:hover > .url > .title,
+.notes > .list > .item:hover > .url > .title,
 .projects > .list > .item:hover > .url > .title {
   color: #4b0082; }
 .home > .list aside,
 .blog > .list aside,
+.notes > .list aside,
 .projects > .list aside {
   position: relative;
   top: 2px;
@@ -805,12 +813,15 @@ pre {
   transition: all ease-in-out 0.2s; }
 .home > .list .item:hover .url aside,
 .blog > .list .item:hover .url aside,
+.notes > .list .item:hover .url aside,
 .projects > .list .item:hover .url aside {
   color: #666; }
 
+.notes > .list > .item > .url > .title,
 .blog > .list > .item > .url > .title,
 .projects > .list > .item > .url > .title {
   display: inline; }
+.notes > .list > .item > .url > .emoji,
 .blog > .list > .item > .url > .emoji,
 .projects > .list > .item > .url > .emoji {
   display: inline;
@@ -1415,17 +1426,18 @@ pre {
             
 
 
-    <header class="header-home animated">
-        
-            <a class="link" href="http://localhost:4000/about">
-                <img class="selfie" alt="Vivek Kaushal" src="http://localhost:4000/assets/images/profile.jpg" />
-            </a>
-        
+<header class="header-home animated">
+    
+    <a class="link" href="http://localhost:4000/about">
+        <img class="selfie" alt="Vivek Kaushal"
+            src="http://localhost:4000/assets/images/profile.jpg" />
+    </a>
+    
 
-        <h1 class="title">Vivek Kaushal</h1>
-        <h2 class="description">CS Undergrad, IIIT Hyderabad</h2>
+    <h1 class="title">Vivek Kaushal</h1>
+    <h2 class="description">CS Undergrad, IIIT Hyderabad</h2>
 
-        <div class="social-links">
+    <div class="social-links">
     
         <a class="link" data-title="facebook.com/vivekkaushal1998" href="http://facebook.com/vivekkaushal1998" target="_blank">
             <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
@@ -1487,7 +1499,7 @@ pre {
     
 </div>
 
-    </header>
+</header>
 
 
 <nav class="nav-home">
@@ -1495,46 +1507,50 @@ pre {
         
 
         
-            
-                <li class="item">
-                    <a class="link" href="http://localhost:4000/blog">Blog</a>
-                </li>
-            
+        
+        <li class="item">
+            <a class="link" href="http://localhost:4000/blog">Blog</a>
+        </li>
+        
         
 
         
-            
-                <li class="item">
-                    <a class="link" href="http://localhost:4000/projects">Projects</a>
-                </li>
-            
+        
+        <li class="item">
+            <a class="link" href="http://localhost:4000/projects">Projects</a>
+        </li>
+        
         
 
         
-            
-                <li class="item">
-                    <a class="link" href="http://localhost:4000/about">About</a>
-                </li>
-            
+        
+        <li class="item">
+            <a class="link" href="http://localhost:4000/about">About</a>
+        </li>
+        
         
 
         
-            <li class="item">
-                <a class="link" href="http://localhost:4000/assets/Resume.pdf">Résumé</a>
-            </li>
+        
+        <li class="item">
+            <a class="link" href="http://localhost:4000/notes">Notes</a>
+        </li>
+        
+        
+
+        
+        <li class="item">
+            <a class="link"
+                href="http://localhost:4000/assets/Resume.pdf">Résumé</a>
+        </li>
         
     </ul>
 </nav>
 
 
 
-
-
 <footer class="footer-main">
     Vivek Kaushal © 2019
-    <!-- <p class="extra">
-        <a class="link" href="https://github.com/sergiokopplin/indigo">Indigo theme</a> by <a class="link" href="https://github.com/sergiokopplin/indigo">Kopplin</a>
-    </p> -->
 </footer>
 
         </div>

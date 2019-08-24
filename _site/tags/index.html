@@ -742,10 +742,12 @@ pre {
     transform: translateY(0); } }
 .home,
 .blog,
+.notes,
 .projects {
   margin-top: 125px; }
   .home > .list,
   .blog > .list,
+  .notes > .list,
   .projects > .list {
     border-top: 1px solid #ededed;
     margin-top: 30px;
@@ -753,6 +755,7 @@ pre {
     position: relative; }
     .home > .list:before,
     .blog > .list:before,
+    .notes > .list:before,
     .projects > .list:before {
       display: block;
       content: " ";
@@ -769,12 +772,14 @@ pre {
 
 .home > .list > .item,
 .blog > .list > .item,
+.notes > .list > .item,
 .projects > .list > .item {
   display: block;
   width: 95%;
   margin: 0 auto; }
 .home > .list > .item > .url,
 .blog > .list > .item > .url,
+.notes > .list > .item > .url,
 .projects > .list > .item > .url {
   width: 100%;
   display: block;
@@ -782,6 +787,7 @@ pre {
   text-decoration: none; }
 .home > .list > .item > .url > .title,
 .blog > .list > .item > .url > .title,
+.notes > .list > .item > .url > .title,
 .projects > .list > .item > .url > .title {
   margin: 0;
   width: 75%;
@@ -789,10 +795,12 @@ pre {
   transition: all ease-in-out 0.2s; }
 .home > .list > .item:hover > .url > .title,
 .blog > .list > .item:hover > .url > .title,
+.notes > .list > .item:hover > .url > .title,
 .projects > .list > .item:hover > .url > .title {
   color: #4b0082; }
 .home > .list aside,
 .blog > .list aside,
+.notes > .list aside,
 .projects > .list aside {
   position: relative;
   top: 2px;
@@ -805,12 +813,15 @@ pre {
   transition: all ease-in-out 0.2s; }
 .home > .list .item:hover .url aside,
 .blog > .list .item:hover .url aside,
+.notes > .list .item:hover .url aside,
 .projects > .list .item:hover .url aside {
   color: #666; }
 
+.notes > .list > .item > .url > .title,
 .blog > .list > .item > .url > .title,
 .projects > .list > .item > .url > .title {
   display: inline; }
+.notes > .list > .item > .url > .emoji,
 .blog > .list > .item > .url > .emoji,
 .projects > .list > .item > .url > .emoji {
   display: inline;
@@ -1415,122 +1426,55 @@ pre {
             
 
 
-    <header class="header-home animated">
-        
-            <a class="link" href="http://localhost:4000/about">
-                <img class="selfie" alt="Vivek Kaushal" src="http://localhost:4000/assets/images/profile.jpg" />
-            </a>
-        
-
-        <h1 class="title">Vivek Kaushal</h1>
-        <h2 class="description">CS Undergrad, IIIT Hyderabad</h2>
-
-        <div class="social-links">
-    
-        <a class="link" data-title="facebook.com/vivekkaushal1998" href="http://facebook.com/vivekkaushal1998" target="_blank">
-            <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
-        </a>
-    
-
-    
-
-    
-
-    
-        <a class="link" data-title="instagram.com/vivekkaushal" href="http://instagram.com/vivekkaushal" target="_blank">
-            <svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg>
-        </a>
-    
-
-    
-
-    
-        <a class="link" data-title="linkedin.com/in/vivekkaushal1998" href="http://linkedin.com/in/vivekkaushal1998" target="_blank">
-            <svg class="icon icon-linkedin"><use xlink:href="#icon-linkedin"></use></svg>
-        </a>
-    
-
-    
-
-    
-
-    
-
-    
-        <a class="link" data-title="github.com/kaushalvivek" href="https://github.com/kaushalvivek" target="_blank">
-            <svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg>
-        </a>
-    
-
-    
-        <a class="link" data-title="gitlab.com/kaushalvivek" href="https://gitlab.com/kaushalvivek" target="_blank">
-            <svg class="icon icon-gitlab"><use xlink:href="#icon-gitlab"></use></svg>
-        </a>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <a class="link" data-title="vivek.kaushal@outlook.com" href="mailto:vivek.kaushal@outlook.com">
-            <svg class="icon icon-mail"><use xlink:href="#icon-mail"></use></svg>
-        </a>
-    
-</div>
-
-    </header>
-
 
 <nav class="nav">
     <ul class="list">
         
-            <li class="item">
-                <a class="link" href="http://localhost:4000/">Home</a>
-            </li>
+        <li class="item">
+            <a class="link" href="http://localhost:4000/">Home</a>
+        </li>
         
 
         
-            
-                <li class="item">
-                    <a class="link" href="http://localhost:4000/blog">Blog</a>
-                </li>
-            
+        
+        <li class="item">
+            <a class="link" href="http://localhost:4000/blog">Blog</a>
+        </li>
+        
         
 
         
-            
-                <li class="item">
-                    <a class="link" href="http://localhost:4000/projects">Projects</a>
-                </li>
-            
+        
+        <li class="item">
+            <a class="link" href="http://localhost:4000/projects">Projects</a>
+        </li>
+        
         
 
         
-            
-                <li class="item">
-                    <a class="link" href="http://localhost:4000/about">About</a>
-                </li>
-            
+        
+        <li class="item">
+            <a class="link" href="http://localhost:4000/about">About</a>
+        </li>
+        
         
 
         
-            <li class="item">
-                <a class="link" href="http://localhost:4000/assets/Resume.pdf">Résumé</a>
-            </li>
+        
+        <li class="item">
+            <a class="link" href="http://localhost:4000/notes">Notes</a>
+        </li>
+        
+        
+
+        
+        <li class="item">
+            <a class="link"
+                href="http://localhost:4000/assets/Resume.pdf">Résumé</a>
+        </li>
         
     </ul>
 </nav>
-
-
 
 <section class="list">
     <h1 class="title">Tags</h1>
@@ -1664,6 +1608,20 @@ pre {
             <a class="item" href="#web-dvelopment">Web Dvelopment</a>
         
             <a class="item" href="#the-metropolis-project">The Metropolis Project</a>
+        
+            <a class="item" href="#books">Books</a>
+        
+            <a class="item" href="#reading">Reading</a>
+        
+            <a class="item" href="#fiction">Fiction</a>
+        
+            <a class="item" href="#mooc">MOOC</a>
+        
+            <a class="item" href="#coursera">Coursera</a>
+        
+            <a class="item" href="#entrepreneurship">Entrepreneurship</a>
+        
+            <a class="item" href="#market-research">Market Research</a>
         
     
 
@@ -2562,9 +2520,9 @@ pre {
             
                 
                     <li class="item">
-                        <a class="url" href="http://localhost:4000/notes/">
+                        <a class="url" href="http://localhost:4000/micronotes/">
                             <aside class="date"><time datetime="26-11-2018">Nov 26 2018</time></aside>
-                            <h3 class="title">Micronotes and Checklists</h3>
+                            <h3 class="title">Micronotes and Checklists - IIIT Courses</h3>
                         </a>
                     </li>
                 
@@ -2708,6 +2666,39 @@ pre {
                         <a class="url" href="http://localhost:4000/year-review/">
                             <aside class="date"><time datetime="01-01-2019">Jan 01 2019</time></aside>
                             <h3 class="title">2018 : Year End Review and 2019 Trends</h3>
+                        </a>
+                    </li>
+                
+            
+        
+            
+                
+                    <li class="item">
+                        <a class="url" href="http://localhost:4000/entrepreneurship-research-notes/">
+                            <aside class="date"><time datetime="25-08-2019">Aug 25 2019</time></aside>
+                            <h3 class="title">Research on Entrepreneurship Market for T-Hub</h3>
+                        </a>
+                    </li>
+                
+            
+        
+            
+                
+                    <li class="item">
+                        <a class="url" href="http://localhost:4000/finance-research-notes/">
+                            <aside class="date"><time datetime="25-08-2019">Aug 25 2019</time></aside>
+                            <h3 class="title">Finance Market Research for T-Hub</h3>
+                        </a>
+                    </li>
+                
+            
+        
+            
+                
+                    <li class="item">
+                        <a class="url" href="http://localhost:4000/market-research-notes/">
+                            <aside class="date"><time datetime="25-08-2019">Aug 25 2019</time></aside>
+                            <h3 class="title">Research on Technology Market for T-Hub</h3>
                         </a>
                     </li>
                 
@@ -2936,9 +2927,53 @@ pre {
             
                 
                     <li class="item">
-                        <a class="url" href="http://localhost:4000/notes/">
+                        <a class="url" href="http://localhost:4000/micronotes/">
                             <aside class="date"><time datetime="26-11-2018">Nov 26 2018</time></aside>
-                            <h3 class="title">Micronotes and Checklists</h3>
+                            <h3 class="title">Micronotes and Checklists - IIIT Courses</h3>
+                        </a>
+                    </li>
+                
+            
+        
+            
+                
+                    <li class="item">
+                        <a class="url" href="http://localhost:4000/coursera-probability/">
+                            <aside class="date"><time datetime="24-08-2019">Aug 24 2019</time></aside>
+                            <h3 class="title">Coursera : Introduction to Probability and Data - Notes</h3>
+                        </a>
+                    </li>
+                
+            
+        
+            
+                
+                    <li class="item">
+                        <a class="url" href="http://localhost:4000/entrepreneurship-research-notes/">
+                            <aside class="date"><time datetime="25-08-2019">Aug 25 2019</time></aside>
+                            <h3 class="title">Research on Entrepreneurship Market for T-Hub</h3>
+                        </a>
+                    </li>
+                
+            
+        
+            
+                
+                    <li class="item">
+                        <a class="url" href="http://localhost:4000/finance-research-notes/">
+                            <aside class="date"><time datetime="25-08-2019">Aug 25 2019</time></aside>
+                            <h3 class="title">Finance Market Research for T-Hub</h3>
+                        </a>
+                    </li>
+                
+            
+        
+            
+                
+                    <li class="item">
+                        <a class="url" href="http://localhost:4000/market-research-notes/">
+                            <aside class="date"><time datetime="25-08-2019">Aug 25 2019</time></aside>
+                            <h3 class="title">Research on Technology Market for T-Hub</h3>
                         </a>
                     </li>
                 
@@ -3126,6 +3161,17 @@ pre {
                         <a class="url" href="http://localhost:4000/predictably-irrational/">
                             <aside class="date"><time datetime="06-04-2019">Apr 06 2019</time></aside>
                             <h3 class="title">Predictably Irrational - Book Review</h3>
+                        </a>
+                    </li>
+                
+            
+        
+            
+                
+                    <li class="item">
+                        <a class="url" href="http://localhost:4000/books-read/">
+                            <aside class="date"><time datetime="24-08-2019">Aug 24 2019</time></aside>
+                            <h3 class="title">All Books I've Read</h3>
                         </a>
                     </li>
                 
@@ -3582,6 +3628,17 @@ pre {
                 
             
         
+            
+                
+                    <li class="item">
+                        <a class="url" href="http://localhost:4000/coursera-probability/">
+                            <aside class="date"><time datetime="24-08-2019">Aug 24 2019</time></aside>
+                            <h3 class="title">Coursera : Introduction to Probability and Data - Notes</h3>
+                        </a>
+                    </li>
+                
+            
+        
         
         
     </ul>
@@ -3698,14 +3755,176 @@ pre {
 
     <div class="breaker"></div>
     
+    <h2 class="title" id="books">#Books</h2>
+
+    <ul class="list">
+        
+        
+            
+                
+                    <li class="item">
+                        <a class="url" href="http://localhost:4000/books-read/">
+                            <aside class="date"><time datetime="24-08-2019">Aug 24 2019</time></aside>
+                            <h3 class="title">All Books I've Read</h3>
+                        </a>
+                    </li>
+                
+            
+        
+        
+        
+    </ul>
+
+    <div class="breaker"></div>
+    
+    <h2 class="title" id="reading">#Reading</h2>
+
+    <ul class="list">
+        
+        
+            
+                
+                    <li class="item">
+                        <a class="url" href="http://localhost:4000/books-read/">
+                            <aside class="date"><time datetime="24-08-2019">Aug 24 2019</time></aside>
+                            <h3 class="title">All Books I've Read</h3>
+                        </a>
+                    </li>
+                
+            
+        
+        
+        
+    </ul>
+
+    <div class="breaker"></div>
+    
+    <h2 class="title" id="fiction">#Fiction</h2>
+
+    <ul class="list">
+        
+        
+            
+                
+                    <li class="item">
+                        <a class="url" href="http://localhost:4000/books-read/">
+                            <aside class="date"><time datetime="24-08-2019">Aug 24 2019</time></aside>
+                            <h3 class="title">All Books I've Read</h3>
+                        </a>
+                    </li>
+                
+            
+        
+        
+        
+    </ul>
+
+    <div class="breaker"></div>
+    
+    <h2 class="title" id="mooc">#MOOC</h2>
+
+    <ul class="list">
+        
+        
+            
+                
+                    <li class="item">
+                        <a class="url" href="http://localhost:4000/coursera-probability/">
+                            <aside class="date"><time datetime="24-08-2019">Aug 24 2019</time></aside>
+                            <h3 class="title">Coursera : Introduction to Probability and Data - Notes</h3>
+                        </a>
+                    </li>
+                
+            
+        
+        
+        
+    </ul>
+
+    <div class="breaker"></div>
+    
+    <h2 class="title" id="coursera">#Coursera</h2>
+
+    <ul class="list">
+        
+        
+            
+                
+                    <li class="item">
+                        <a class="url" href="http://localhost:4000/coursera-probability/">
+                            <aside class="date"><time datetime="24-08-2019">Aug 24 2019</time></aside>
+                            <h3 class="title">Coursera : Introduction to Probability and Data - Notes</h3>
+                        </a>
+                    </li>
+                
+            
+        
+        
+        
+    </ul>
+
+    <div class="breaker"></div>
+    
+    <h2 class="title" id="entrepreneurship">#Entrepreneurship</h2>
+
+    <ul class="list">
+        
+        
+            
+                
+                    <li class="item">
+                        <a class="url" href="http://localhost:4000/entrepreneurship-research-notes/">
+                            <aside class="date"><time datetime="25-08-2019">Aug 25 2019</time></aside>
+                            <h3 class="title">Research on Entrepreneurship Market for T-Hub</h3>
+                        </a>
+                    </li>
+                
+            
+        
+            
+                
+                    <li class="item">
+                        <a class="url" href="http://localhost:4000/finance-research-notes/">
+                            <aside class="date"><time datetime="25-08-2019">Aug 25 2019</time></aside>
+                            <h3 class="title">Finance Market Research for T-Hub</h3>
+                        </a>
+                    </li>
+                
+            
+        
+        
+        
+    </ul>
+
+    <div class="breaker"></div>
+    
+    <h2 class="title" id="market-research">#Market Research</h2>
+
+    <ul class="list">
+        
+        
+            
+                
+                    <li class="item">
+                        <a class="url" href="http://localhost:4000/market-research-notes/">
+                            <aside class="date"><time datetime="25-08-2019">Aug 25 2019</time></aside>
+                            <h3 class="title">Research on Technology Market for T-Hub</h3>
+                        </a>
+                    </li>
+                
+            
+        
+        
+        
+    </ul>
+
+    <div class="breaker"></div>
+    
 </section>
 
 
 <footer class="footer-main">
     Vivek Kaushal © 2019
-    <!-- <p class="extra">
-        <a class="link" href="https://github.com/sergiokopplin/indigo">Indigo theme</a> by <a class="link" href="https://github.com/sergiokopplin/indigo">Kopplin</a>
-    </p> -->
 </footer>
 
         </div>
