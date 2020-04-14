@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="Vivek Kaushal">
 <meta property="og:description" content="Basics of environment setup for a MERN Stack application">
 <meta property="og:locale" content="english">
-<meta property="og:updated_time" content="2020-04-14T13:42:56.539Z">
+<meta property="og:updated_time" content="2020-04-14T13:50:32.527Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Getting Started with MERN">
 <meta name="twitter:description" content="Basics of environment setup for a MERN Stack application">
@@ -143,6 +143,12 @@
 <li><strong>R</strong>eactJS</li>
 <li><strong>N</strong>odeJS </li>
 </ul>
+<p>In this post, we’ll go through the basics and logistics of getting started with MERN development. I’ve limited the content of this post to the bare essentials, while learning MERN development from FreeCodeCamp. Resources for where are :</p>
+<ul>
+<li><a href="https://medium.com/@beaucarnes/learn-the-mern-stack-by-building-an-my-mern-app-mern-tutorial-59c13c1237a1" target="_blank" rel="noopener">Article</a></li>
+<li><a href="https://github.com/beaucarnes/mern-my-mern-app-mongodb" target="_blank" rel="noopener">Code</a></li>
+<li><a href="https://www.youtube.com/watch?v=7CqJlxBYj-M" target="_blank" rel="noopener">Video</a></li>
+</ul>
 <h1 id="Enviroment-Setup"><a href="#Enviroment-Setup" class="headerlink" title="Enviroment Setup"></a>Enviroment Setup</h1><h2 id="Setting-up-MongoDB-Atlas"><a href="#Setting-up-MongoDB-Atlas" class="headerlink" title="Setting up MongoDB Atlas"></a>Setting up MongoDB Atlas</h2><p>For this sample application, we’ll be using Google Cloud Platform to host the database of our application. To connect our app to MongoDB, follow these steps:</p>
 <ul>
 <li>Go to <a href="https://www.mongodb.com/cloud/atlas" target="_blank" rel="noopener">https://www.mongodb.com/cloud/atlas</a></li>
@@ -161,15 +167,15 @@
 </ul>
 <h2 id="Creating-React-Project"><a href="#Creating-React-Project" class="headerlink" title="Creating React Project"></a>Creating React Project</h2><p>After you’ve setup MongoDB Atlas, we’ll setup the local environment for the project. Do the following:</p>
 <ul>
-<li><p>Create a root folder for the project. We’ll call it <em>exercise-tracker</em></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir exercise-tracker</span><br><span class="line">$ <span class="built_in">cd</span> exercise-tracker</span><br></pre></td></tr></table></figure>
+<li><p>Create a root folder for the project. We’ll call it <em>my-mern-app</em></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir my-mern-app</span><br><span class="line">$ <span class="built_in">cd</span> my-mern-app</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>Create a react app within the root project folder</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npx create-react-app mern-exercise-tracker</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npx create-react-app mern-my-mern-app</span><br></pre></td></tr></table></figure>
 
 </li>
 </ul>
-<p><strong>NOTE :</strong> If you already have <em>create-react-app</em> installed globally via npm, this would throw up an error, as global installations of <em>create-react-app</em> are no longer supported. In this case, run the following command instead, which ignores local installations:<br>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npx --ignore-existing create-react-app mern-exercise-tracker</span><br></pre></td></tr></table></figure></p>
+<p><strong>NOTE :</strong> If you already have <em>create-react-app</em> installed globally via npm, this would throw up an error, as global installations of <em>create-react-app</em> are no longer supported. In this case, run the following command instead, which ignores local installations:<br>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npx --ignore-existing create-react-app mern-my-mern-app</span><br></pre></td></tr></table></figure></p>
 <h2 id="Setting-up-Environment-for-Backend"><a href="#Setting-up-Environment-for-Backend" class="headerlink" title="Setting up Environment for Backend"></a>Setting up Environment for Backend</h2><p>Once the react project has been created, create a folder for backend development within your project root folder. As this is a small project, we’d create this folder in the react app’s folder itself. Run the following commands:</p>
 <ul>
 <li><p>Create backend folder</p>
