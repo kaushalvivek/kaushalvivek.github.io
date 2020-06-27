@@ -18,7 +18,7 @@
 <meta property="og:image" content="https://kaushalvivek.github.io/images/cont1.png">
 <meta property="og:image" content="https://kaushalvivek.github.io/images/cont2.png">
 <meta property="og:image" content="https://kaushalvivek.github.io/images/cont3.png">
-<meta property="og:updated_time" content="2020-06-27T07:15:46.276Z">
+<meta property="og:updated_time" content="2020-06-27T07:22:29.398Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Containment Zone Management and Prediction - South Delhi">
 <meta name="twitter:description" content="A web-app to manage and predict containment zones of South Delhi">
@@ -150,10 +150,10 @@
 <p>I designed an approach using Google Maps’ geocoding API and k-means clustering that largely does the following:</p>
 <ul>
 <li>it looks at all the confirmed cases from the last 7 days – scraping this data from a live Google Sheet</li>
-<li>converts all the addresses into geocodes – pairs of longitude and latitude</li>
+<li>converts all the addresses into geocodes – pairs of longitude and latitude – using Google Maps’ geocodiing API</li>
 <li>plots these cases on a map – using Google Maps’ dynamic JS map API</li>
-<li>uses k-means clustering to create n clusters among these map plots – the value n is decided on the basis of maximization of desirable cluster</li>
-<li>a desirable cluster is defined as a region where 3 or more than 3 cases are in a region such that they are less than 100m away from each other</li>
+<li>uses k-means clustering to create n clusters among these map plots – the value n is decided on the basis of maximization of the number of reported clusters that meet containment criteria</li>
+<li>a suggested containment zone is defined as a region where 3 or more than 3 cases are in a region such that they are less than 100m away from each other</li>
 <li>the proposed clusters are termed ‘suggested containment zones’ and plotted on a map, again using Google Maps’ dynamic JS map API</li>
 <li>in addition to this, using a sheet of existing containment and mini-containment zones, features hae been added to plot and post review-reminders for the said zones.</li>
 <li>the application is built in python, and uses flask to serve web-pages</li>
