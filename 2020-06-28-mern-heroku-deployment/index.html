@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang=en>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <!-- so meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="HandheldFriendly" content="True">
+  <script data-ad-client="ca-pub-4317846002051636" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="A guide to deploying a MERN stack web-app to Heroku">
+<meta name="keywords" content="Development,MERN,Deployment,Heroku">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Deploying a MERN Web-App to Heroku">
+<meta property="og:url" content="https://kaushalvivek.github.io/2020-06-28-mern-heroku-deployment/index.html">
+<meta property="og:site_name" content="Vivek Kaushal">
+<meta property="og:description" content="A guide to deploying a MERN stack web-app to Heroku">
+<meta property="og:locale" content="english">
+<meta property="og:updated_time" content="2020-06-28T09:21:26.874Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Deploying a MERN Web-App to Heroku">
+<meta name="twitter:description" content="A guide to deploying a MERN stack web-app to Heroku">
+  
+  
+  
+  
+  <link rel="shortcut icon" href="/images/favicon-192x192.png">
+  
+  
+  
+  
+  <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+  
+  
+  
+  
+  <!-- title -->
+  <title>Deploying a MERN Web-App to Heroku</title>
+  <!-- styles -->
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- rss -->
+  
+  
+</head>
+<body>
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/projects/">Projects</a></li>
+         
+          <li><a href="/notes/">Notes</a></li>
+         
+          <li><a href="/Resume.pdf">Resume</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" href="/2020-06-27-south-delhi-covid/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover='$("#i-next").toggle();' onmouseout='$("#i-next").toggle();'></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover='$("#i-top").toggle();' onmouseout='$("#i-top").toggle();'></i></a></li>
+        <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover='$("#i-share").toggle();' onmouseout='$("#i-share").toggle();' onclick='$("#share").toggle();return false;'></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://kaushalvivek.github.io/2020-06-28-mern-heroku-deployment/"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://kaushalvivek.github.io/2020-06-28-mern-heroku-deployment/&text=Deploying a MERN Web-App to Heroku"><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://kaushalvivek.github.io/2020-06-28-mern-heroku-deployment/&title=Deploying a MERN Web-App to Heroku"><i class="fa fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://kaushalvivek.github.io/2020-06-28-mern-heroku-deployment/&is_video=false&description=Deploying a MERN Web-App to Heroku"><i class="fa fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Deploying a MERN Web-App to Heroku&body=Check out this article: https://kaushalvivek.github.io/2020-06-28-mern-heroku-deployment/"><i class="fa fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://kaushalvivek.github.io/2020-06-28-mern-heroku-deployment/&title=Deploying a MERN Web-App to Heroku"><i class="fa fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://kaushalvivek.github.io/2020-06-28-mern-heroku-deployment/&title=Deploying a MERN Web-App to Heroku"><i class="fa fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://kaushalvivek.github.io/2020-06-28-mern-heroku-deployment/&title=Deploying a MERN Web-App to Heroku"><i class="fa fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://kaushalvivek.github.io/2020-06-28-mern-heroku-deployment/&title=Deploying a MERN Web-App to Heroku"><i class="fa fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://kaushalvivek.github.io/2020-06-28-mern-heroku-deployment/&name=Deploying a MERN Web-App to Heroku&description="><i class="fa fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Step-1-App-Directory-Structure"><span class="toc-number">1.</span> <span class="toc-text">Step 1 - App Directory Structure</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Step-2-Add-Handler-for-Client-Build"><span class="toc-number">2.</span> <span class="toc-text">Step 2 - Add Handler for Client Build</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Step-3-Add-Scripts-to-package-json-server"><span class="toc-number">3.</span> <span class="toc-text">Step 3 - Add Scripts to package.json (server)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Step-4-Procfile"><span class="toc-number">4.</span> <span class="toc-text">Step 4 - Procfile</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Step-5-Creating-a-path-for-API"><span class="toc-number">5.</span> <span class="toc-text">Step 5 - Creating a path for API</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Step-6-Server-Port-and-Proxy"><span class="toc-number">6.</span> <span class="toc-text">Step 6 - Server Port and Proxy</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Step-7-Client-Build"><span class="toc-number">7.</span> <span class="toc-text">Step 7 - Client Build</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Step-8-MongoDB-Atlas-URI-and-Access-Settings"><span class="toc-number">8.</span> <span class="toc-text">Step 8 - MongoDB Atlas URI and Access Settings</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Step-9-Pushing-to-GitHub"><span class="toc-number">9.</span> <span class="toc-text">Step 9 - Pushing to GitHub</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Step-10-Connecting-Heroku-to-GitHub"><span class="toc-number">10.</span> <span class="toc-text">Step 10 - Connecting Heroku to GitHub</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index width mx-auto px2 my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Deploying a MERN Web-App to Heroku
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">vivekkaushal</span>
+      </span>
+      
+    <div class="postdate">
+        <time datetime="2020-06-27T21:02:00.000Z" itemprop="datePublished">2020-06-28</time>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/deployment/">Deployment</a>, <a class="tag-link" href="/tags/development/">Development</a>, <a class="tag-link" href="/tags/heroku/">Heroku</a>, <a class="tag-link" href="/tags/mern/">MERN</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p>This post builds upon the guide to developing projects in MERN stack that I posted a while back, you can find it <a href="https://kaushalvivek.github.io/2020-04-11-mern/">here</a>. This article assumes that you have a complete web application ready for deployment.</p>
+<p>Heroku probably has the best free-tier service out there for hosting MERN stack web applications. Though it requires certain non-intuitive settings before you can go about deploying your app. This article will guide you through the process of deploying your web-app on Heroku.</p>
+<ul>
+<li>We would be deploying the server and the frontend on the same deployment instance.</li>
+<li>The database being used here is MongoDB Atlas.</li>
+<li>This deployment uses npm instead of yarn for deployment.</li>
+</ul>
+<h3 id="Step-1-App-Directory-Structure"><a href="#Step-1-App-Directory-Structure" class="headerlink" title="Step 1 - App Directory Structure"></a>Step 1 - App Directory Structure</h3><p>Your app comprises of a client (the React app) and a server, the structure should be as follows for deployment on Heroku:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">/project_root</span><br><span class="line">  |_ index.js (your server file)</span><br><span class="line">  |_ models</span><br><span class="line">  |   |_ model1.js</span><br><span class="line">  |   ...</span><br><span class="line">  |_ routes</span><br><span class="line">  |   |_ route1.js</span><br><span class="line">  |   ...</span><br><span class="line">  |_ package.json</span><br><span class="line">  |_ package-lock.json</span><br><span class="line">  |_ client (react app root)</span><br><span class="line">      |</span><br><span class="line">     ... react app files</span><br></pre></td></tr></table></figure>
+
+<h3 id="Step-2-Add-Handler-for-Client-Build"><a href="#Step-2-Add-Handler-for-Client-Build" class="headerlink" title="Step 2 - Add Handler for Client Build"></a>Step 2 - Add Handler for Client Build</h3><p>Add the following code to your <em>index.js (server)</em> file. This tells the server to look for a build of the react app.</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (process.env.NODE_ENV === <span class="string">'production'</span> || process.env.NODE_ENV === <span class="string">'staging'</span>) &#123;</span><br><span class="line">  app.use(express.static(<span class="string">'client/build'</span>));</span><br><span class="line">  app.get(<span class="string">'*'</span>, (req, res) =&gt; &#123;</span><br><span class="line">    res.sendFile(path.join(__dirname + <span class="string">'/client/build/index.html'</span>));</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Step-3-Add-Scripts-to-package-json-server"><a href="#Step-3-Add-Scripts-to-package-json-server" class="headerlink" title="Step 3 - Add Scripts to package.json (server)"></a>Step 3 - Add Scripts to <em>package.json (server)</em></h3><p>Add the following to your server’s <em>package.json</em>. If a *”script”* key is already present, add *”start”* and *”heroku-postbuild”* to it.</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">"scripts": &#123;</span><br><span class="line">    "start": "node index.js",</span><br><span class="line">    "heroku-postbuild": "cd client &amp;&amp; npm install &amp;&amp; npm run build"</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure>
+
+<h3 id="Step-4-Procfile"><a href="#Step-4-Procfile" class="headerlink" title="Step 4 - Procfile"></a>Step 4 - Procfile</h3><p>Add a <em>Procfile</em> to your server root folder. Use the following commands in your terminal to do so:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">"web: node index.js"</span> &gt; Procfile</span><br></pre></td></tr></table></figure>
+
+<h3 id="Step-5-Creating-a-path-for-API"><a href="#Step-5-Creating-a-path-for-API" class="headerlink" title="Step 5 - Creating a path for API"></a>Step 5 - Creating a path for API</h3><p>We are using the same URL for our API calls and for serving our app, hence, we’ll create a sub-path specifically for APIs. This path needs to be properly defined in both our server file (<em>index.js</em>) and our <em>axios</em> API calls.</p>
+<p>While defining routes, add a parent sub-path (<em>/api</em>)to all routes. Make the following changes to your server file <em>index.js</em>:</p>
+<p>Do this:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> usersRouter = <span class="built_in">require</span>(<span class="string">'./routes/user'</span>);</span><br><span class="line">app.use(<span class="string">'/api/users'</span>, usersRouter);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> friendsRouter = <span class="built_in">require</span>(<span class="string">'./routes/friend'</span>);</span><br><span class="line">app.use(<span class="string">'/api/friends'</span>, friendsRouter);</span><br></pre></td></tr></table></figure>
+
+<p>Instead of:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> usersRouter = <span class="built_in">require</span>(<span class="string">'./routes/user'</span>);</span><br><span class="line">app.use(<span class="string">'/users'</span>, usersRouter);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> friendsRouter = <span class="built_in">require</span>(<span class="string">'./routes/friend'</span>);</span><br><span class="line">app.use(<span class="string">'/friends'</span>, friendsRouter);</span><br></pre></td></tr></table></figure>
+
+<p>This needs to be done for all the routes in your application.  </p>
+<p>When calling the API using <em>axios</em> from your react app, ensure that the API is call is directed to the correct route. Don’t define the full path or the server port, that is handled automatically in Heroku. For example, calling the <em>/api/friends</em> route defined about, well call:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">componentDidMount() &#123;</span><br><span class="line">    axios.get(<span class="string">'/api/friends/'</span>)</span><br><span class="line">      .then(<span class="function"><span class="params">response</span> =&gt;</span> &#123;</span><br><span class="line">        <span class="comment">// do stuff</span></span><br><span class="line">      &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Step-6-Server-Port-and-Proxy"><a href="#Step-6-Server-Port-and-Proxy" class="headerlink" title="Step 6 - Server Port and Proxy"></a>Step 6 - Server Port and Proxy</h3><p>We saw how we need not mention the server port in Heroku, as that is handled by the platform. We need to get this port and use it to serve our API. This is done by simply using the port defined in the environment. Add the following to the top of your server <em>index.js</em>:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> port = process.env.PORT || <span class="number">5000</span>;</span><br></pre></td></tr></table></figure>
+
+<p>Now that we’ve defined the port, we need to add a proxy to our client’s <em>package.json</em> file, so that when axios tries to reach our server in a local deployment it can reach our server. Add the following to the bottom of your <em>package.json</em> file in your <strong>client</strong> folder. <strong>NOT</strong> the one in your <strong>project_root</strong>. This is ignored by Heroku, but is used by your local deployment.</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">"proxy": "http://localhost:5000"</span><br></pre></td></tr></table></figure>
+
+<h3 id="Step-7-Client-Build"><a href="#Step-7-Client-Build" class="headerlink" title="Step 7 - Client Build"></a>Step 7 - Client Build</h3><p>Build your react app by running the following in your <em>client</em> folder:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run build</span><br></pre></td></tr></table></figure>
+
+<p>You can also use yarn to do the same:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn build</span><br></pre></td></tr></table></figure>
+
+<h3 id="Step-8-MongoDB-Atlas-URI-and-Access-Settings"><a href="#Step-8-MongoDB-Atlas-URI-and-Access-Settings" class="headerlink" title="Step 8 - MongoDB Atlas URI and Access Settings"></a>Step 8 - MongoDB Atlas URI and Access Settings</h3><p>Make sure that your MongoDB Atlas URI is correctly configured in your server <em>index.js</em>. Also ensure that your MongoDB Atlas is setup such that it would accept access requests from your server’s IP <em>(recommended to whitelisting access to all IPs for a Heroku deployment)</em>. You can find more information on how to do this here:</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=leNNivaQbDY" target="_blank" rel="noopener">Video on how to whitelist all IPs <em>(recommended setting for Heroku deployment)</em></a></li>
+<li><a href="https://stackoverflow.com/questions/42159175/connecting-heroku-app-to-atlas-mongodb-cloud-service" target="_blank" rel="noopener">More information on Heroku and MongoDB Atlas integration</a></li>
+<li><a href="https://docs.mongodb.com/manual/reference/connection-string/" target="_blank" rel="noopener">More information on MongoDB Connection String</a></li>
+</ul>
+<p>You can check my guide to creating a MERN project <a href="https://kaushalvivek.github.io/2020-04-11-mern/">here</a>, for more information on how to setup your MongoDB URI in your server <em>index.js</em>.</p>
+<h3 id="Step-9-Pushing-to-GitHub"><a href="#Step-9-Pushing-to-GitHub" class="headerlink" title="Step 9 - Pushing to GitHub"></a>Step 9 - Pushing to GitHub</h3><p>We’d be using GitHub to deploy our code. Push your code, in the existing directory structure, to GitHub. Create a new repository in GitHub and copy the <strong><em>remote_repo_URL</em></strong>. Then execute the following commands in your <em>project_root</em> folder.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line"><span class="comment"># start a git project</span></span><br><span class="line"><span class="built_in">echo</span> node_modules &gt; .gitignore</span><br><span class="line"><span class="built_in">echo</span> client/node_modules &gt; .gitignore</span><br><span class="line"><span class="comment"># add node_modules to git ignore</span></span><br><span class="line">git add .</span><br><span class="line"><span class="comment"># add files to push to repository</span></span><br><span class="line">git commit -m <span class="string">"First Commit"</span></span><br><span class="line"><span class="comment"># create your first commit</span></span><br><span class="line">git remote add origin remote_repo_url</span><br><span class="line"><span class="comment"># copy remote_repo_url from the target GitHub Project</span></span><br><span class="line">git push -u origin master</span><br><span class="line"><span class="comment"># push your code to the chosen GitHub Project</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Step-10-Connecting-Heroku-to-GitHub"><a href="#Step-10-Connecting-Heroku-to-GitHub" class="headerlink" title="Step 10 - Connecting Heroku to GitHub"></a>Step 10 - Connecting Heroku to GitHub</h3><ul>
+<li>Go to <a href="https://dashboard.heroku.com/apps" target="_blank" rel="noopener">heroku.com</a></li>
+<li>Create a new app, choose an app name. Your app url would be <em>name.herokuapp.com</em></li>
+<li>Choose <em>Connect to GitHub</em> as the deployment method</li>
+<li>If your GitHub account isn’t connected to Heroku, do so</li>
+<li>Search for, and choose the project repository we created in the previous step</li>
+<li>Enable automatic deployments and select the deployment branch</li>
+<li>Click on <strong>Deploy Branch</strong></li>
+</ul>
+<p>And that’s it! You’re done. Your app would now be deployed. If you face errors, you can debug them using Heroku’s logs. Feel free to reach out to me.</p>
+
+  </div>
+</article>
+
+
+    </div>
+    
+      <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/projects/">Projects</a></li>
+         
+          <li><a href="/notes/">Notes</a></li>
+         
+          <li><a href="/Resume.pdf">Resume</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Step-1-App-Directory-Structure"><span class="toc-number">1.</span> <span class="toc-text">Step 1 - App Directory Structure</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Step-2-Add-Handler-for-Client-Build"><span class="toc-number">2.</span> <span class="toc-text">Step 2 - Add Handler for Client Build</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Step-3-Add-Scripts-to-package-json-server"><span class="toc-number">3.</span> <span class="toc-text">Step 3 - Add Scripts to package.json (server)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Step-4-Procfile"><span class="toc-number">4.</span> <span class="toc-text">Step 4 - Procfile</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Step-5-Creating-a-path-for-API"><span class="toc-number">5.</span> <span class="toc-text">Step 5 - Creating a path for API</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Step-6-Server-Port-and-Proxy"><span class="toc-number">6.</span> <span class="toc-text">Step 6 - Server Port and Proxy</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Step-7-Client-Build"><span class="toc-number">7.</span> <span class="toc-text">Step 7 - Client Build</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Step-8-MongoDB-Atlas-URI-and-Access-Settings"><span class="toc-number">8.</span> <span class="toc-text">Step 8 - MongoDB Atlas URI and Access Settings</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Step-9-Pushing-to-GitHub"><span class="toc-number">9.</span> <span class="toc-text">Step 9 - Pushing to GitHub</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Step-10-Connecting-Heroku-to-GitHub"><span class="toc-number">10.</span> <span class="toc-text">Step 10 - Connecting Heroku to GitHub</span></a></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://kaushalvivek.github.io/2020-06-28-mern-heroku-deployment/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://kaushalvivek.github.io/2020-06-28-mern-heroku-deployment/&text=Deploying a MERN Web-App to Heroku"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://kaushalvivek.github.io/2020-06-28-mern-heroku-deployment/&title=Deploying a MERN Web-App to Heroku"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://kaushalvivek.github.io/2020-06-28-mern-heroku-deployment/&is_video=false&description=Deploying a MERN Web-App to Heroku"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Deploying a MERN Web-App to Heroku&body=Check out this article: https://kaushalvivek.github.io/2020-06-28-mern-heroku-deployment/"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://kaushalvivek.github.io/2020-06-28-mern-heroku-deployment/&title=Deploying a MERN Web-App to Heroku"><i class="fa fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://kaushalvivek.github.io/2020-06-28-mern-heroku-deployment/&title=Deploying a MERN Web-App to Heroku"><i class="fa fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://kaushalvivek.github.io/2020-06-28-mern-heroku-deployment/&title=Deploying a MERN Web-App to Heroku"><i class="fa fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://kaushalvivek.github.io/2020-06-28-mern-heroku-deployment/&title=Deploying a MERN Web-App to Heroku"><i class="fa fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://kaushalvivek.github.io/2020-06-28-mern-heroku-deployment/&name=Deploying a MERN Web-App to Heroku&description="><i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      <ul>
+        <li id="toc"><a class="icon" href="#" onclick='$("#toc-footer").toggle();return false;'><i class="fa fa-list fa-lg" aria-hidden="true"></i> TOC</a></li>
+        <li id="share"><a class="icon" href="#" onclick='$("#share-footer").toggle();return false;'><i class="fa fa-share-alt fa-lg" aria-hidden="true"></i> Share</a></li>
+        <li id="top" style="display:none"><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a></li>
+        <li id="menu"><a class="icon" href="#" onclick='$("#nav-footer").toggle();return false;'><i class="fa fa-bars fa-lg" aria-hidden="true"></i> Menu</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+    
+    <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2020 Vivek Kaushal
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/projects/">Projects</a></li>
+         
+          <li><a href="/notes/">Notes</a></li>
+         
+          <li><a href="/Resume.pdf">Resume</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
+<!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="/lib/meslo-LG/styles.css">
+<link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">
+
+
+<!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- Google Analytics -->
+
+    <script type="text/javascript">
+        var gaProperty = 'UA-107718527-1'; 
+        var disableStr = 'ga-disable-' + gaProperty; 
+        if (document.cookie.indexOf(disableStr + '=true') > -1) { 
+            window[disableStr] = true;
+        } 
+        function gaOptout() { 
+            document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/'; 
+            window[disableStr] = true; 
+            alert('Das Tracking ist jetzt deaktiviert'); 
+        } 
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ 
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), 
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) 
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); 
+
+        ga('create', gaProperty, 'auto'); 
+        ga('set', 'anonymizeIp', true); 
+        ga('send', 'pageview');
+    </script>
+
+<!-- Disqus Comments -->
+
+
