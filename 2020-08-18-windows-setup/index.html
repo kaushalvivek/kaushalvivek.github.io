@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang=en>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <!-- so meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="HandheldFriendly" content="True">
+  <script data-ad-client="ca-pub-6883143538982192" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Everything you need to setup to get started with development on a Windows PC">
+<meta name="keywords" content="Windows,Installation,Guide">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Setting up Windows Subsystem for Linux (WSL2), Windows Terminal and Visual Studio Code">
+<meta property="og:url" content="https://kaushalvivek.github.io/2020-08-18-windows-setup/index.html">
+<meta property="og:site_name" content="Vivek Kaushal">
+<meta property="og:description" content="Everything you need to setup to get started with development on a Windows PC">
+<meta property="og:locale" content="english">
+<meta property="og:updated_time" content="2020-08-18T04:01:02.948Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Setting up Windows Subsystem for Linux (WSL2), Windows Terminal and Visual Studio Code">
+<meta name="twitter:description" content="Everything you need to setup to get started with development on a Windows PC">
+  
+  
+  
+  
+  <link rel="shortcut icon" href="/images/favicon-192x192.png">
+  
+  
+  
+  
+  <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+  
+  
+  
+  
+  <!-- title -->
+  <title>Setting up Windows Subsystem for Linux (WSL2), Windows Terminal and Visual Studio Code</title>
+  <!-- styles -->
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- rss -->
+  
+  
+</head>
+<body>
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/projects/">Projects</a></li>
+         
+          <li><a href="/notes/">Notes</a></li>
+         
+          <li><a href="/Resume.pdf">Resume</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" href="/2020-08-18-home-quarantine/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover='$("#i-next").toggle();' onmouseout='$("#i-next").toggle();'></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover='$("#i-top").toggle();' onmouseout='$("#i-top").toggle();'></i></a></li>
+        <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover='$("#i-share").toggle();' onmouseout='$("#i-share").toggle();' onclick='$("#share").toggle();return false;'></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://kaushalvivek.github.io/2020-08-18-windows-setup/"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://kaushalvivek.github.io/2020-08-18-windows-setup/&text=Setting up Windows Subsystem for Linux (WSL2), Windows Terminal and Visual Studio Code"><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://kaushalvivek.github.io/2020-08-18-windows-setup/&title=Setting up Windows Subsystem for Linux (WSL2), Windows Terminal and Visual Studio Code"><i class="fa fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://kaushalvivek.github.io/2020-08-18-windows-setup/&is_video=false&description=Setting up Windows Subsystem for Linux (WSL2), Windows Terminal and Visual Studio Code"><i class="fa fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Setting up Windows Subsystem for Linux (WSL2), Windows Terminal and Visual Studio Code&body=Check out this article: https://kaushalvivek.github.io/2020-08-18-windows-setup/"><i class="fa fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://kaushalvivek.github.io/2020-08-18-windows-setup/&title=Setting up Windows Subsystem for Linux (WSL2), Windows Terminal and Visual Studio Code"><i class="fa fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://kaushalvivek.github.io/2020-08-18-windows-setup/&title=Setting up Windows Subsystem for Linux (WSL2), Windows Terminal and Visual Studio Code"><i class="fa fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://kaushalvivek.github.io/2020-08-18-windows-setup/&title=Setting up Windows Subsystem for Linux (WSL2), Windows Terminal and Visual Studio Code"><i class="fa fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://kaushalvivek.github.io/2020-08-18-windows-setup/&title=Setting up Windows Subsystem for Linux (WSL2), Windows Terminal and Visual Studio Code"><i class="fa fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://kaushalvivek.github.io/2020-08-18-windows-setup/&name=Setting up Windows Subsystem for Linux (WSL2), Windows Terminal and Visual Studio Code&description="><i class="fa fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Pre-requisites"><span class="toc-number">1.</span> <span class="toc-text">Pre-requisites</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#WSL2-Installation"><span class="toc-number">2.</span> <span class="toc-text">WSL2 Installation</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Visual-Studio-Code"><span class="toc-number">3.</span> <span class="toc-text">Visual Studio Code</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Windows-Terminal"><span class="toc-number">4.</span> <span class="toc-text">Windows Terminal</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Conclusion"><span class="toc-number">5.</span> <span class="toc-text">Conclusion</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index width mx-auto px2 my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Setting up Windows Subsystem for Linux (WSL2), Windows Terminal and Visual Studio Code
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">vivekkaushal</span>
+      </span>
+      
+    <div class="postdate">
+        <time datetime="2020-08-17T21:02:00.000Z" itemprop="datePublished">2020-08-18</time>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/guide/">Guide</a>, <a class="tag-link" href="/tags/installation/">Installation</a>, <a class="tag-link" href="/tags/windows/">Windows</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p>Microsoft has been doing great stuff for years now, and WSL2 <em>(Windows Subsystem for Linux - 2)</em> is everything that I personally neeeded to feel completely at home as a developer in Windows. WSL2 allows you to run a full fledged Linux kernel with greatly improved IO and support, as compared to WSL1. WSL2 connects flawlessly with a Windows installation of Visual Studio Code and supports Docker natively. In short, your Windows setup would serve you well in your development endeavors.</p>
+<p>In this article, I’ll discuss how to get WSL2 up and running on your system along with an integration with - <strong>Windows Terminal</strong> and <strong>Visual Studio Code</strong>.</p>
+<h2 id="Pre-requisites"><a href="#Pre-requisites" class="headerlink" title="Pre-requisites"></a>Pre-requisites</h2><p>The sole major pre-requisite for installing WSL2 is a Windows installation version <strong>2004</strong>, with a build higher than or equal to <strong>19041</strong>. You can check your Windows installation version by pressing - <strong>Windows Logo + R</strong>. If your Windows version does not match the requirements there is no need to fret, you can freely upgrade your Windows to the required version by following the listed steps:</p>
+<ol>
+<li>Install updates available for your Windows by clicking <a href="ms-settings:windowsupdate" target="_blank" rel="noopener">here</a>. Post installation, check your Windows version again, if it meets the requirement, you can skip step 2 and move on to WSL2 Installation, if it doesn’t step 2 will get you up to speed quickly.</li>
+<li>If updates for your Windows does not include an upgrade to version 2004, you can do so manually, by installing <a href="https://www.microsoft.com/en-us/software-download/windows10" target="_blank" rel="noopener">Windows Update Assisstant</a>. Run the Update Assisstant and follow instructions to update Windows to the May, 2020 release – version 2004.</li>
+</ol>
+<h2 id="WSL2-Installation"><a href="#WSL2-Installation" class="headerlink" title="WSL2 Installation"></a>WSL2 Installation</h2><p>By this point, I am assuming that you have Windows 10 version 2004 up and running, if you haven’t done so, this is a crucial pre-requisite and you should follow the steps mentioned in the previous section before coming here. If you’ve done so, follow the steps mentioned below to complete your WSL2 installation:</p>
+<ol>
+<li><p>Open Windows PowerShell as an administrator and run the following commands:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux</span><br><span class="line">dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Restart your system. </p>
+</li>
+<li><p>Download and run the <a href="https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi" target="_blank" rel="noopener">WSL2 Linux Kernel update package</a>. Ensure that the package successfully installs before moving forward.</p>
+</li>
+<li><p>Download and install a linux distribution of your choice from the Microsoft Store.</p>
+</li>
+<li><p>Setup your new installation by creating a username and a password.</p>
+</li>
+<li><p>Check which version of WSL your distribution is using by running the following command in Windows PowerShell:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wsl --list --verbose</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>To set your linux distribution ot choose WSL2 instead of WSL1, run the following command in Windows PowerShell – (set distribution name to your distribution name, and versionNumber to 2):</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wsl --set-version &lt;distribution name&gt; &lt;versionNumber&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Run the following command to set the default WSL version to 2 for new linux installations : </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wsl --set-default-version 2</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>If you face any errors in your installation, you can check <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10" target="_blank" rel="noopener">Windows instllation guide</a>.</p>
+</li>
+</ol>
+<h2 id="Visual-Studio-Code"><a href="#Visual-Studio-Code" class="headerlink" title="Visual Studio Code"></a>Visual Studio Code</h2><p>Visual Studio Code is one of the best, if not the outright best, code editors out there. Lightning fast, with a plethora of plugins and connections and lot of themes and customizations – there aren’t a lot of reasons to not use it. In this section, we’ll install Visual Studio Code and connect it with your WSL2 installation. Follow the steps mentioned below:</p>
+<ol>
+<li>Download and install <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">Visual Studio Code</a> on your Windows PC. PS : <strong>Do NOT</strong> install it on your WSL2 based Linux distribution.</li>
+<li>Lauch Visual Studio Code when it finishes installing and download the <a href="vscode:extension/ms-vscode-remote.remote-wsl" target="_blank" rel="noopener">Remote-WSL extension</a>.</li>
+<li>And that’s it! Your VSC installation should be up and running on Windows with a WSL connection. If you face issues in installation, you can refer to <a href="https://code.visualstudio.com/docs/remote/wsl-tutorial" target="_blank" rel="noopener">Microsoft’s installation documentation</a>.</li>
+</ol>
+<h2 id="Windows-Terminal"><a href="#Windows-Terminal" class="headerlink" title="Windows Terminal"></a>Windows Terminal</h2><p>Windows Terminal is a powerful shell for your linux distributions which enables you to access them from one single application in a highly customizable setup. To install and setup Windows Terminal, follow the steps mentioned below:</p>
+<ol>
+<li>Download and install Windows Terminal from the Microsoft Store.</li>
+<li>Launch Windows Terminal, click on the downward-arrow in the tab bar and click on settings.</li>
+<li>The previous step would open a <em>settings.json</em> file that stores configurations for your Windows Terminal. Select the *”guid”* of your most used linux distribution installation and paste it against the *”defaultProfile”* key. This would load your chosen distribution everytime you open a new Terminal tab.</li>
+<li>Terminal by default open in you <em>Windows</em> home folder, to change this to your <em>Linux</em> home, add a <em>cd</em> to your linux bash profile. Do the following from your linux shell:<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.bashrc</span><br><span class="line"><span class="comment"># add a new line and enter 'cd' in it</span></span><br><span class="line"><span class="comment"># save the file by pressing :wq</span></span><br><span class="line"><span class="comment"># restart your linux terminal</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>And you’re done! You’ve successfully setup a Windows Development Environment complete with VSC, WSL2 and Terminal. If you face any issues in any of the installations, feel free to reach out to me on <a href="mailto:vivek.kaushal@outlook.com" target="_blank" rel="noopener">vivek.kaushal@outlook.com</a>.</p>
+
+  </div>
+  <p>
+    If you like my content, consider supporting me!
+  </p>
+  <style>
+    .bmc-button img {
+      height: 34px !important;
+      width: 35px !important;
+      margin-bottom: 1px !important;
+      box-shadow: none !important;
+      border: none !important;
+      vertical-align: middle !important;
+    }
+
+    .bmc-button {
+      padding: 7px 15px 7px 10px !important;
+      line-height: 35px !important;
+      height: 51px !important;
+      text-decoration: none !important;
+      display: inline-flex !important;
+      color: #ffffff !important;
+      background-color: #5F7FFF !important;
+      border-radius: 5px !important;
+      border: 1px solid transparent !important;
+      padding: 7px 15px 7px 10px !important;
+      font-size: 22px !important;
+      letter-spacing: 0.6px !important;
+      box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;
+      -webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;
+      margin: 0 auto !important;
+      font-family: 'Cookie', cursive !important;
+      -webkit-box-sizing: border-box !important;
+      box-sizing: border-box !important;
+    }
+
+    .bmc-button:hover,
+    .bmc-button:active,
+    .bmc-button:focus {
+      -webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;
+      text-decoration: none !important;
+      box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;
+      opacity: 0.85 !important;
+      color: #ffffff !important;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank"
+    href="https://www.buymeacoffee.com/vREqO3z"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
+      alt="Buy me a coffee"><span style="margin-left:5px;font-size:28px !important;">Buy me a coffee</span></a>
+</article>
+
+
+    </div>
+    
+      <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/projects/">Projects</a></li>
+         
+          <li><a href="/notes/">Notes</a></li>
+         
+          <li><a href="/Resume.pdf">Resume</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Pre-requisites"><span class="toc-number">1.</span> <span class="toc-text">Pre-requisites</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#WSL2-Installation"><span class="toc-number">2.</span> <span class="toc-text">WSL2 Installation</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Visual-Studio-Code"><span class="toc-number">3.</span> <span class="toc-text">Visual Studio Code</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Windows-Terminal"><span class="toc-number">4.</span> <span class="toc-text">Windows Terminal</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Conclusion"><span class="toc-number">5.</span> <span class="toc-text">Conclusion</span></a></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://kaushalvivek.github.io/2020-08-18-windows-setup/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://kaushalvivek.github.io/2020-08-18-windows-setup/&text=Setting up Windows Subsystem for Linux (WSL2), Windows Terminal and Visual Studio Code"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://kaushalvivek.github.io/2020-08-18-windows-setup/&title=Setting up Windows Subsystem for Linux (WSL2), Windows Terminal and Visual Studio Code"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://kaushalvivek.github.io/2020-08-18-windows-setup/&is_video=false&description=Setting up Windows Subsystem for Linux (WSL2), Windows Terminal and Visual Studio Code"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Setting up Windows Subsystem for Linux (WSL2), Windows Terminal and Visual Studio Code&body=Check out this article: https://kaushalvivek.github.io/2020-08-18-windows-setup/"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://kaushalvivek.github.io/2020-08-18-windows-setup/&title=Setting up Windows Subsystem for Linux (WSL2), Windows Terminal and Visual Studio Code"><i class="fa fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://kaushalvivek.github.io/2020-08-18-windows-setup/&title=Setting up Windows Subsystem for Linux (WSL2), Windows Terminal and Visual Studio Code"><i class="fa fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://kaushalvivek.github.io/2020-08-18-windows-setup/&title=Setting up Windows Subsystem for Linux (WSL2), Windows Terminal and Visual Studio Code"><i class="fa fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://kaushalvivek.github.io/2020-08-18-windows-setup/&title=Setting up Windows Subsystem for Linux (WSL2), Windows Terminal and Visual Studio Code"><i class="fa fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://kaushalvivek.github.io/2020-08-18-windows-setup/&name=Setting up Windows Subsystem for Linux (WSL2), Windows Terminal and Visual Studio Code&description="><i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      <ul>
+        <li id="toc"><a class="icon" href="#" onclick='$("#toc-footer").toggle();return false;'><i class="fa fa-list fa-lg" aria-hidden="true"></i> TOC</a></li>
+        <li id="share"><a class="icon" href="#" onclick='$("#share-footer").toggle();return false;'><i class="fa fa-share-alt fa-lg" aria-hidden="true"></i> Share</a></li>
+        <li id="top" style="display:none"><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a></li>
+        <li id="menu"><a class="icon" href="#" onclick='$("#nav-footer").toggle();return false;'><i class="fa fa-bars fa-lg" aria-hidden="true"></i> Menu</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+    
+    <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2020 Vivek Kaushal
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        
+        <li><a href="/">Home</a></li>
+        
+        <li><a href="/about/">About</a></li>
+        
+        <li><a href="/archives/">Blog</a></li>
+        
+        <li><a href="/projects/">Projects</a></li>
+        
+        <li><a href="/notes/">Notes</a></li>
+        
+        <li><a href="/Resume.pdf">Resume</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
+<!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="/lib/meslo-LG/styles.css">
+<link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">
+
+
+<!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- Google Analytics -->
+
+    <script type="text/javascript">
+        var gaProperty = 'UA-107718527-1'; 
+        var disableStr = 'ga-disable-' + gaProperty; 
+        if (document.cookie.indexOf(disableStr + '=true') > -1) { 
+            window[disableStr] = true;
+        } 
+        function gaOptout() { 
+            document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/'; 
+            window[disableStr] = true; 
+            alert('Das Tracking ist jetzt deaktiviert'); 
+        } 
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ 
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), 
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) 
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); 
+
+        ga('create', gaProperty, 'auto'); 
+        ga('set', 'anonymizeIp', true); 
+        ga('send', 'pageview');
+    </script>
+
+<!-- Disqus Comments -->
+
+
