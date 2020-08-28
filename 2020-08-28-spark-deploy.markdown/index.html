@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang=en>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <!-- so meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="HandheldFriendly" content="True">
+  <script data-ad-client="ca-pub-6883143538982192" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Everything you need to setup A Spark Model with a REST Inference API">
+<meta name="keywords" content="Deployment,Spark,Machine LEarning">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Deploying a Spark Model with REST Inference API">
+<meta property="og:url" content="https://kaushalvivek.github.io/2020-08-28-spark-deploy.markdown/index.html">
+<meta property="og:site_name" content="Vivek Kaushal">
+<meta property="og:description" content="Everything you need to setup A Spark Model with a REST Inference API">
+<meta property="og:locale" content="english">
+<meta property="og:updated_time" content="2020-08-28T04:27:51.531Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Deploying a Spark Model with REST Inference API">
+<meta name="twitter:description" content="Everything you need to setup A Spark Model with a REST Inference API">
+  
+  
+  
+  
+  <link rel="shortcut icon" href="/images/favicon-192x192.png">
+  
+  
+  
+  
+  <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+  
+  
+  
+  
+  <!-- title -->
+  <title>Deploying a Spark Model with REST Inference API</title>
+  <!-- styles -->
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- rss -->
+  
+  
+</head>
+<body>
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/projects/">Projects</a></li>
+         
+          <li><a href="/notes/">Notes</a></li>
+         
+          <li><a href="/Resume.pdf">Resume</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/2020-08-18-windows-setup/"><i class="fa fa-chevron-left" aria-hidden="true" onmouseover='$("#i-prev").toggle();' onmouseout='$("#i-prev").toggle();'></i></a></li>
+        
+        
+        <li><a class="icon" href="/2020-08-18-home-quarantine/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover='$("#i-next").toggle();' onmouseout='$("#i-next").toggle();'></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover='$("#i-top").toggle();' onmouseout='$("#i-top").toggle();'></i></a></li>
+        <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover='$("#i-share").toggle();' onmouseout='$("#i-share").toggle();' onclick='$("#share").toggle();return false;'></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://kaushalvivek.github.io/2020-08-28-spark-deploy.markdown/"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://kaushalvivek.github.io/2020-08-28-spark-deploy.markdown/&text=Deploying a Spark Model with REST Inference API"><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://kaushalvivek.github.io/2020-08-28-spark-deploy.markdown/&title=Deploying a Spark Model with REST Inference API"><i class="fa fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://kaushalvivek.github.io/2020-08-28-spark-deploy.markdown/&is_video=false&description=Deploying a Spark Model with REST Inference API"><i class="fa fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Deploying a Spark Model with REST Inference API&body=Check out this article: https://kaushalvivek.github.io/2020-08-28-spark-deploy.markdown/"><i class="fa fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://kaushalvivek.github.io/2020-08-28-spark-deploy.markdown/&title=Deploying a Spark Model with REST Inference API"><i class="fa fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://kaushalvivek.github.io/2020-08-28-spark-deploy.markdown/&title=Deploying a Spark Model with REST Inference API"><i class="fa fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://kaushalvivek.github.io/2020-08-28-spark-deploy.markdown/&title=Deploying a Spark Model with REST Inference API"><i class="fa fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://kaushalvivek.github.io/2020-08-28-spark-deploy.markdown/&title=Deploying a Spark Model with REST Inference API"><i class="fa fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://kaushalvivek.github.io/2020-08-28-spark-deploy.markdown/&name=Deploying a Spark Model with REST Inference API&description="><i class="fa fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Converting-your-Model-to-PMML"><span class="toc-number">1.</span> <span class="toc-text">Converting your Model to PMML</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Setting-up-Openscoring"><span class="toc-number">2.</span> <span class="toc-text">Setting up Openscoring</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Model-Deployment"><span class="toc-number">3.</span> <span class="toc-text">Model Deployment</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index width mx-auto px2 my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Deploying a Spark Model with REST Inference API
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">vivekkaushal</span>
+      </span>
+      
+    <div class="postdate">
+        <time datetime="2020-08-17T21:02:00.000Z" itemprop="datePublished">2020-08-18</time>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/deployment/">Deployment</a>, <a class="tag-link" href="/tags/machine-learning/">Machine LEarning</a>, <a class="tag-link" href="/tags/spark/">Spark</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p>Deploying a machine learning model built with Apache Spark isn’t as straight forward as the deployment of a PyTorch model or a TF model. Especially when you’re planning on having  a REST API for inference requests. One way of going about it is use <a href="https://mleap-docs.combust.ml/" target="_blank" rel="noopener">MLeap</a>, but that would require modifications to training code, as MLeap relies on it’s own serialization.</p>
+<p>The best approach that I’ve found is using <a href="https://github.com/openscoring/openscoring" target="_blank" rel="noopener">Openscoring</a> and <strong>PMML (Predictive Model Markup Language)</strong>. PMML is a an XML based markup language that stores your predictive model and openscoring is used to create the inference REST API. The steps for doing so are as follows:</p>
+<h2 id="Converting-your-Model-to-PMML"><a href="#Converting-your-Model-to-PMML" class="headerlink" title="Converting your Model to PMML"></a>Converting your Model to PMML</h2><p>There are two ways of getting this done. One way is to use the <a href="https://github.com/jpmml/jpmml-sparkml" target="_blank" rel="noopener">JPMML Converter</a>. The documentation is fairly intuitive and can be quickly setup for conversion. The second, and perhaps much easier way to convert your model ot PMML is to use the inbuit <a href="https://spark.apache.org/docs/2.3.0/mllib-pmml-model-export.html" target="_blank" rel="noopener">Spark PMML Model Export</a>. Once you’ve exported your Spark model to PMML, we will look at deployment over the following steps.</p>
+<h2 id="Setting-up-Openscoring"><a href="#Setting-up-Openscoring" class="headerlink" title="Setting up Openscoring"></a>Setting up Openscoring</h2><p>In my opinion the quickest way to setup openscoring is to use it’s docker deployment. If you do not have docker setup, you can follow the <a href="https://docs.docker.com/get-docker/" target="_blank" rel="noopener">documentation on Docker</a>. Once docker is setup, do the following:</p>
+<ul>
+<li><p>clone the [openscoring-docker] repository</p>
+</li>
+<li><p>in <em>openscoring-docker/application.conf</em> change the <em>adminAddress</em> from <em>[localhost]</em> to <em>[*]</em>. This would enable you to deploy models from the host machine while accessing the docker deployment.</p>
+</li>
+<li><p>From the openscoring repository root, open <em>Dockerfile</em> and change <em>ARG version=2.0.1</em> to <em>ARG version=2.0.2</em>. Openscoring version 2.0.2 has added support for PMML 4.4. </p>
+</li>
+<li><p>From the repository root, build the docker image</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker build -t openscoring/openscoring:latest .</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Run a docker image with suitable port mapping</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -p &lt;_REST_API_inference_port_&gt;:8080 openscoring/openscoring:latest</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="Model-Deployment"><a href="#Model-Deployment" class="headerlink" title="Model Deployment"></a>Model Deployment</h2><p>Almost done! You have your model converted and the deployment environment setup. Now comes the easy part – actually deploying your model and testing for inference. You can use <a href="https://github.com/openscoring/openscoring#rest-api" target="_blank" rel="noopener">openscoring’s REST API</a> to deploy your model. Make sure you replace the port <em>8080</em> in the mentioned sample API requests with the <em><em>REST_API_inference_port</em></em> you entered while setting up your openscoring docker container.</p>
+<p>This should get your job done. If you have any queries, feel free to drop a comment below or reach out to me.</p>
+
+  </div>
+  <p>
+    If you like my content, consider supporting me!
+  </p>
+  <style>
+    .bmc-button img {
+      height: 34px !important;
+      width: 35px !important;
+      margin-bottom: 1px !important;
+      box-shadow: none !important;
+      border: none !important;
+      vertical-align: middle !important;
+    }
+
+    .bmc-button {
+      padding: 7px 15px 7px 10px !important;
+      line-height: 35px !important;
+      height: 51px !important;
+      text-decoration: none !important;
+      display: inline-flex !important;
+      color: #ffffff !important;
+      background-color: #5F7FFF !important;
+      border-radius: 5px !important;
+      border: 1px solid transparent !important;
+      padding: 7px 15px 7px 10px !important;
+      font-size: 22px !important;
+      letter-spacing: 0.6px !important;
+      box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;
+      -webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;
+      margin: 0 auto !important;
+      font-family: 'Cookie', cursive !important;
+      -webkit-box-sizing: border-box !important;
+      box-sizing: border-box !important;
+    }
+
+    .bmc-button:hover,
+    .bmc-button:active,
+    .bmc-button:focus {
+      -webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;
+      text-decoration: none !important;
+      box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;
+      opacity: 0.85 !important;
+      color: #ffffff !important;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank"
+    href="https://www.buymeacoffee.com/vREqO3z"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
+      alt="Buy me a coffee"><span style="margin-left:5px;font-size:28px !important;">Buy me a coffee</span></a>
+</article>
+
+    <div class="blog-post-comments">
+        <div id="disqus_thread">
+            <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </div>
+    </div>
+
+
+    </div>
+    
+      <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+         
+          <li><a href="/projects/">Projects</a></li>
+         
+          <li><a href="/notes/">Notes</a></li>
+         
+          <li><a href="/Resume.pdf">Resume</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Converting-your-Model-to-PMML"><span class="toc-number">1.</span> <span class="toc-text">Converting your Model to PMML</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Setting-up-Openscoring"><span class="toc-number">2.</span> <span class="toc-text">Setting up Openscoring</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Model-Deployment"><span class="toc-number">3.</span> <span class="toc-text">Model Deployment</span></a></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://kaushalvivek.github.io/2020-08-28-spark-deploy.markdown/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://kaushalvivek.github.io/2020-08-28-spark-deploy.markdown/&text=Deploying a Spark Model with REST Inference API"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://kaushalvivek.github.io/2020-08-28-spark-deploy.markdown/&title=Deploying a Spark Model with REST Inference API"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://kaushalvivek.github.io/2020-08-28-spark-deploy.markdown/&is_video=false&description=Deploying a Spark Model with REST Inference API"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Deploying a Spark Model with REST Inference API&body=Check out this article: https://kaushalvivek.github.io/2020-08-28-spark-deploy.markdown/"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://kaushalvivek.github.io/2020-08-28-spark-deploy.markdown/&title=Deploying a Spark Model with REST Inference API"><i class="fa fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://kaushalvivek.github.io/2020-08-28-spark-deploy.markdown/&title=Deploying a Spark Model with REST Inference API"><i class="fa fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://kaushalvivek.github.io/2020-08-28-spark-deploy.markdown/&title=Deploying a Spark Model with REST Inference API"><i class="fa fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://kaushalvivek.github.io/2020-08-28-spark-deploy.markdown/&title=Deploying a Spark Model with REST Inference API"><i class="fa fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://kaushalvivek.github.io/2020-08-28-spark-deploy.markdown/&name=Deploying a Spark Model with REST Inference API&description="><i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      <ul>
+        <li id="toc"><a class="icon" href="#" onclick='$("#toc-footer").toggle();return false;'><i class="fa fa-list fa-lg" aria-hidden="true"></i> TOC</a></li>
+        <li id="share"><a class="icon" href="#" onclick='$("#share-footer").toggle();return false;'><i class="fa fa-share-alt fa-lg" aria-hidden="true"></i> Share</a></li>
+        <li id="top" style="display:none"><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a></li>
+        <li id="menu"><a class="icon" href="#" onclick='$("#nav-footer").toggle();return false;'><i class="fa fa-bars fa-lg" aria-hidden="true"></i> Menu</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+    
+    <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2020 Vivek Kaushal
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        
+        <li><a href="/">Home</a></li>
+        
+        <li><a href="/about/">About</a></li>
+        
+        <li><a href="/archives/">Blog</a></li>
+        
+        <li><a href="/projects/">Projects</a></li>
+        
+        <li><a href="/notes/">Notes</a></li>
+        
+        <li><a href="/Resume.pdf">Resume</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
+<!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="/lib/meslo-LG/styles.css">
+<link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">
+
+
+<!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- Google Analytics -->
+
+    <script type="text/javascript">
+        var gaProperty = 'UA-107718527-1'; 
+        var disableStr = 'ga-disable-' + gaProperty; 
+        if (document.cookie.indexOf(disableStr + '=true') > -1) { 
+            window[disableStr] = true;
+        } 
+        function gaOptout() { 
+            document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/'; 
+            window[disableStr] = true; 
+            alert('Das Tracking ist jetzt deaktiviert'); 
+        } 
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ 
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), 
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) 
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); 
+
+        ga('create', gaProperty, 'auto'); 
+        ga('set', 'anonymizeIp', true); 
+        ga('send', 'pageview');
+    </script>
+
+<!-- Disqus Comments -->
+
+    <script type="text/javascript">
+        var disqus_shortname = 'kaushalvivek-github-io';
+
+        (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        }());
+    </script>
+
+
